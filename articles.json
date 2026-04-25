@@ -1836,5 +1836,46 @@
         ]
       }
     ]
+  },
+  {
+    "id": "munajat-1",
+    "cat": "literature",
+    "title": "মুনাজাত",
+    "titleEn": "Munajat (A Prayer)",
+    "date": "এপ্রিল ২০২৬",
+    "dateEn": "April 2026",
+    "abstract": "রুমির মতো প্রেমে দগ্ধ হওয়ার আকাঙ্ক্ষা — ঈশ্বরের কাছে এক অন্তরের নিবেদন।",
+    "abstractEn": "A longing to be consumed in love like Rumi — an intimate supplication to the Divine.",
+    "tags": ["কবিতা", "মুনাজাত", "প্রেম", "রুমি"],
+    "tagsEn": ["poetry", "prayer", "love", "Rumi"],
+    "bodyParagraphs": [
+      {
+        "type": "p",
+        "dropcap": false,
+        "text": "হে ঈশ্বর! আমাকে বানাও রুমির মতো। পারবে না?",
+        "textEn": "O God! Make me like Rumi. Can You not?"
+      },
+      {
+        "type": "p",
+        "text": "ওগো শক্তি-প্রজ্ঞাময়—",
+        "textEn": "O Mighty and All-Wise—"
+      },
+      {
+        "type": "p",
+        "text": "তোমার প্রেমে বিশ্বমাঝে,",
+        "textEn": "In Your love, amidst this world,"
+      },
+      {
+        "type": "p",
+        "text": "দগ্ধহৃদয় ঘ্রাণ ছড়াবে, প্রেমের ব্যথার গান ছড়াবে,",
+        "textEn": "A burning heart shall spread its fragrance, shall spread songs of love's ache,"
+      },
+      {
+        "type": "p",
+        "text": "আমি হব লয়!",
+        "textEn": "I shall dissolve into You!"
+      }
+    ],
+    "refs": []
   }
 ]
