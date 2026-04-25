@@ -1877,5 +1877,125 @@
       }
     ],
     "refs": []
+  },
+  {
+    "id": "ishwar-o-apeksha-1",
+    "cat": "literature",
+    "title": "ঈশ্বর ও অপেক্ষা",
+    "titleEn": "God and Waiting",
+    "date": "এপ্রিল ২০২৬",
+    "dateEn": "April 2026",
+    "abstract": "ঈশ্বরের নীরবতা ও প্রতীক্ষার ভেতর দিয়ে হৃদয়ের দহন এবং পরিশুদ্ধির এক কাব্যিক নিবেদন।",
+    "abstractEn": "A poetic meditation on divine silence, the burning of a waiting heart, and the purification that comes through longing.",
+    "tags": ["কবিতা", "ঈশ্বর", "অপেক্ষা", "দহন"],
+    "tagsEn": ["poetry", "God", "waiting", "longing"],
+    "bodyParagraphs": [
+      {
+        "type": "p",
+        "text": "অনেকটা সময় চুপ থাকেন তিনি —",
+        "textEn": "He stays silent for a long, long time —"
+      },
+      {
+        "type": "p",
+        "text": "তারপর এক মুহূর্তে দেন সমস্ত উত্তর!",
+        "textEn": "Then in one moment gives all the answers!"
+      },
+      {
+        "type": "p",
+        "text": "প্রতীক্ষাতেই জন্ম দহন হৃদয়ের —",
+        "textEn": "In waiting alone is born the burning of the heart —"
+      },
+      {
+        "type": "p",
+        "text": "সে নূরে পুড়ে পবিত্র হয় —",
+        "textEn": "Burned in that light, it becomes pure —"
+      },
+      {
+        "type": "p",
+        "text": "প্রশ্নের শরীর!",
+        "textEn": "The body of the question itself!"
+      }
+    ],
+    "refs": []
+  },
+  {
+    "id": "sannidher-akuti-1",
+    "cat": "literature",
+    "title": "সান্নিধ্যের আকুতি",
+    "titleEn": "The Longing for Nearness",
+    "date": "এপ্রিল ২০২৬",
+    "dateEn": "April 2026",
+    "abstract": "রাতের অন্ধকারে নিজের কাছে ফেরা, ভুলের মুখোমুখি হওয়া এবং সাজদার নম্রতায় ঈশ্বরের সান্নিধ্যের আকুল প্রার্থনা।",
+    "abstractEn": "Returning to oneself in the dark of night, facing one's failures, and a tearful plea for divine nearness in the humility of prostration.",
+    "tags": ["কবিতা", "সাজদা", "অনুতাপ", "আকুতি"],
+    "tagsEn": ["poetry", "prostration", "repentance", "longing"],
+    "bodyParagraphs": [
+      {
+        "type": "p",
+        "text": "আমি নিজের কাছে ফিরি রাত ঘনিয়ে এলে —",
+        "textEn": "I return to myself when the night grows deep —"
+      },
+      {
+        "type": "p",
+        "text": "সবচেয়ে স্পষ্ট হয় অন্ধকারে — ভুলগুলো আমার,",
+        "textEn": "Clearest in the dark — my mistakes,"
+      },
+      {
+        "type": "p",
+        "text": "কেটে যায় ভয়ের ঘোর, ব্যথা, কষ্ট —",
+        "textEn": "The fog of fear fades, the pain, the sorrow —"
+      },
+      {
+        "type": "p",
+        "text": "যে আমি বড্ড নষ্ট!",
+        "textEn": "The self that is so deeply broken!"
+      },
+      {
+        "type": "p",
+        "text": "সাজদার নম্রতায় ফুঁপিয়ে কেঁদেছি কত! করিনি তো শুমার!",
+        "textEn": "How many times have I sobbed in the humility of prostration! I have not kept count!"
+      },
+      {
+        "type": "p",
+        "text": "সময় হয়নি এখনো? নেবে না তোমার কোলে?",
+        "textEn": "Has the time not yet come? Will You not take me into Your embrace?"
+      }
+    ],
+    "refs": []
+  },
+  {
+    "id": "jagaran-1",
+    "cat": "literature",
+    "title": "জাগরণ",
+    "titleEn": "Awakening",
+    "date": "এপ্রিল ২০২৬",
+    "dateEn": "April 2026",
+    "abstract": "ভাঙন ও গড়নের চিরন্তন চক্রে নতুন জীবনের সন্ধান — নদীর বুকে জেগে ওঠা চরের মতো।",
+    "abstractEn": "Finding new life in the eternal cycle of breaking and rebuilding — like a sandbar rising fresh from the river's heart.",
+    "tags": ["কবিতা", "জাগরণ", "ভাঙন", "নবজন্ম"],
+    "tagsEn": ["poetry", "awakening", "breaking", "renewal"],
+    "bodyParagraphs": [
+      {
+        "type": "p",
+        "text": "ভাঙছি আমি, গড়ছি তবে রোজ —",
+        "textEn": "I break, yet I build anew each day —"
+      },
+      {
+        "type": "p",
+        "text": "ভাঙন শেষে নদীর বুকেই সদ্য জাগা চর!",
+        "textEn": "After the breaking, a freshly risen sandbar in the river's heart!"
+      },
+      {
+        "type": "p",
+        "text": "সেই চরেতে নতুন ঘাসে বনপাখিদের ভোজ,",
+        "textEn": "On that sandbar, wild birds feast on new grass,"
+      },
+      {
+        "type": "p",
+        "text": "চরের বুকে পুরোনো জেলের নতুন কুঁড়েঘর।",
+        "textEn": "On the sandbar's breast, an old fisherman's new thatched home."
+      }
+    ],
+    "refs": []
   }
 ]
