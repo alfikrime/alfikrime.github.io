@@ -1997,5 +1997,46 @@
       }
     ],
     "refs": []
+  },
+  {
+    "id": "bibarno-somoyer-arale-1",
+    "cat": "literature",
+    "title": "বিবর্ণ সময়ের আড়ালে",
+    "titleEn": "Behind the Faded Times",
+    "date": "এপ্রিল ২০২৬",
+    "dateEn": "April 2026",
+    "abstract": "বিক্ষুব্ধ সময়ের নীরবতার আড়ালে লুকিয়ে থাকা প্রাণের উচ্ছ্বাস ও প্রেমের সম্ভাবনার কাব্যিক প্রকাশ।",
+    "abstractEn": "A poetic expression of the vitality and love hidden behind the silence of turbulent times.",
+    "tags": ["কবিতা", "ঝড়", "প্রেম", "আশা"],
+    "tagsEn": ["poetry", "storm", "love", "hope"],
+    "bodyParagraphs": [
+      { "type": "p", "text": "হয়ো না ভ্রান্ত, দেখে এলোমেলো আমায়—", "textEn": "Be not deceived, seeing me in disarray—" },
+      { "type": "p", "text": "রয়েছি যে নিশ্চুপ,", "textEn": "I remain silent," },
+      { "type": "p", "text": "খুব যে বড্ড ঝড়ের মধ্যে আছি,", "textEn": "For I am in the midst of a great storm," },
+      { "type": "p", "text": "শান্ত হলেই আবহাওয়া—", "textEn": "When the weather calms—" },
+      { "type": "p", "text": "দেখবে আবার উচ্ছ্বাস-ময় রূপ!", "textEn": "You will see my vibrant self once more!" },
+      { "type": "p", "text": "দেখবে তখন কত সুন্দর আমি!", "textEn": "You will see then how beautiful I am!" },
+      { "type": "p", "text": "প্রেম পরাগের গন্ধ বিলাবো জানেন অন্তর্যামী!", "textEn": "I shall spread the fragrance of love's pollen — the All-Knowing knows!" }
+    ],
+    "refs": []
+  },
+  {
+    "id": "amitter-loy-1",
+    "cat": "literature",
+    "title": "আমিত্বের লয়",
+    "titleEn": "The Dissolution of the Self",
+    "date": "এপ্রিল ২০২৬",
+    "dateEn": "April 2026",
+    "abstract": "দহনের মধ্য দিয়ে আমিত্বের বিলুপ্তি এবং আল্লাহর স্মরণে প্রশান্তি খুঁজে পাওয়ার কাব্যিক নিবেদন।",
+    "abstractEn": "A poetic offering on the dissolution of ego through burning, and finding tranquility in the remembrance of God.",
+    "tags": ["কবিতা", "দহন", "আমিত্ব", "সাজদা", "প্রশান্তি"],
+    "tagsEn": ["poetry", "burning", "ego", "prostration", "peace"],
+    "bodyParagraphs": [
+      { "type": "p", "text": "পুড়ুক যা-কিছু— দহন-দাহের শিখায়", "textEn": "Let all burn — in the flame of fire and burning," },
+      { "type": "p", "text": "সব হারিয়েই খাঁটি হওয়া ধ্রুব সত্যের দিক-পায়।", "textEn": "Losing all is the path to becoming pure — the invariable truth." },
+      { "type": "p", "text": "বাহিরে চলুক ধ্বংস-বিলাপ, হাহাকারময় রূপ—", "textEn": "Let destruction and lament rage outside, in all its anguished form—" },
+      { "type": "p", "text": "মওলা স্মরণে সাজদায় আমি—প্রশান্ত-নিশ্চুপ।", "textEn": "In remembrance of my Lord, I prostrate — tranquil and silent." }
+    ],
+    "refs": []
   }
 ]
