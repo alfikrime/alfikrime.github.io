@@ -59,7 +59,7 @@ html,body{margin:0;padding:0;width:100%;overflow-x:hidden;background:#f5f2ec;fon
 /* HEADER */
 header{background:var(--white);border-bottom:2px solid var(--ink);position:sticky;top:0;z-index:300;width:100%}
 .h-top{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--border)}
-.h-info{font-size:10px;color:var(--muted);font-family:sans-serif}
+.h-info{font-size:13px;color:var(--ink);font-family:sans-serif}
 .h-langs{display:flex;gap:4px}
 .lb{cursor:pointer;padding:4px 10px;border-radius:2px;font-size:11px;font-family:sans-serif;border:1px solid var(--border);background:transparent;color:var(--muted);transition:all .18s}
 .lb.on{background:var(--ink);color:var(--white);border-color:var(--ink)}
@@ -232,7 +232,7 @@ function Header({page,setPage,activeCat,setActiveCat,lang,setLang}){
     <header>
       <div className="W">
         <div className="h-top">
-          <span className="h-info">Al Fikri · alfikri.netlify.app</span>
+          <span className="h-info">Al Fikri</span>
           <div className="h-langs">
             <button className={'lb'+(lang==='bn'?' on':'')} onClick={()=>setLang('bn')}>বাংলা</button>
             <button className={'lb'+(lang==='en'?' on':'')} onClick={()=>setLang('en')}>EN</button>
@@ -537,6 +537,27 @@ function App(){
   const [page,setPage]=useState('home');
   const [activeCat,setActiveCat]=useState('philosophy');
   const [article,setArticle]=useState(null);
+
+  useEffect(()=>{
+    const hash=window.location.hash.replace('#','');
+    if(!hash) return;
+    if(hash.startsWith('post-')){
+      const id=hash.replace('post-','');
+      const a=ARTICLES.find(x=>x.id===id);
+      if(a){setArticle(a);setPage('article');}
+    } else {
+      const cat=CATS.find(c=>c.id===hash);
+      if(cat){setActiveCat(hash);setPage('cat');}
+    }
+  },[]);
+
+  useEffect(()=>{
+    if(page==='article'&&article) window.location.hash='post-'+article.id;
+    else if(page==='cat') window.location.hash=activeCat;
+    else if(page==='home') history.replaceState(null,'',window.location.pathname);
+    else window.location.hash=page;
+  },[page,article,activeCat]);
+
   const openArticle=useCallback(a=>{setArticle(a);setPage('article');window.scrollTo(0,0);},[]);
   return(
     <>
