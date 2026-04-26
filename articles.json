@@ -2305,6 +2305,10 @@
         "note": "",
         "links": [
           {
+            "label": "DOI",
+            "url": "https://doi.org/10.1162/003355397555253"
+          },
+          {
             "label": "ফ্রি পাঠ",
             "url": "https://dash.harvard.edu/entities/publication/73120378-8460-6bd4-e053-0100007fdf3b"
           },
@@ -2360,6 +2364,10 @@
         "text": "Trope, Y., & Liberman, N. (2010). Construal-level theory of psychological distance. Psychological Review, 117(2), 440–463. https://doi.org/10.1037/a0018963",
         "note": "",
         "links": [
+          {
+            "label": "DOI",
+            "url": "https://doi.org/10.1037/a0018963"
+          },
           {
             "label": "ফ্রি পাঠ",
             "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3152826/"
