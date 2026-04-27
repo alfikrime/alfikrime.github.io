@@ -388,14 +388,19 @@ function Detail({a,lang,onBack}){
 
   const IFrame=({src,caption,defaultHeight})=>{
     const [h,setH]=React.useState(defaultHeight);
+    const ref=React.useRef(null);
     React.useEffect(()=>{
-      const handler=(e)=>{if(e.data&&e.data.iframeHeight) setH(e.data.iframeHeight+20);};
+      const handler=(e)=>{
+        if(e.data&&e.data.iframeHeight&&ref.current&&e.source===ref.current.contentWindow){
+          setH(e.data.iframeHeight+10);
+        }
+      };
       window.addEventListener('message',handler);
       return()=>window.removeEventListener('message',handler);
     },[]);
     return(
       <div className="body">
-        <iframe className="art-iframe" src={src} height={h} width="100%" scrolling="no"></iframe>
+        <iframe ref={ref} className="art-iframe" src={src} height={h} width="100%" scrolling="no"></iframe>
         {caption&&<div className="art-iframe-caption">{caption}</div>}
       </div>
     );
@@ -408,6 +413,9 @@ function Detail({a,lang,onBack}){
       <div key={i} className="body" style={{margin:'0 0 1.1em'}}>
         {b.items.map((it,j)=><div key={j} className={'wager-item '+(it.cls||'')}>{showEn?(it.textEn||it.text):it.text}</div>)}
       </div>
+    );
+    if(b.type==='html') return(
+      <div key={i} className="body" dangerouslySetInnerHTML={{__html: b.html}}/>
     );
     if(b.type==='iframe') return(
       <IFrame key={i} src={b.src} caption={showEn?(b.captionEn||b.caption):b.caption} defaultHeight={b.height||700}/>

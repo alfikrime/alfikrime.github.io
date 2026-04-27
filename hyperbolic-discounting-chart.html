@@ -398,6 +398,15 @@ window.addEventListener('load', function() {
 window.addEventListener('resize', function() {
   setTimeout(sendHeight, 100);
 });
+
+function reportHeight() {
+  const h = document.querySelector('.card').getBoundingClientRect().height + 30;
+  window.parent.postMessage({ iframeHeight: Math.ceil(h) }, '*');
+}
+window.addEventListener('load', function() {
+  setTimeout(reportHeight, 200);
+});
+window.addEventListener('resize', reportHeight);
 </script>
 </body>
 </html>
