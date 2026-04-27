@@ -392,11 +392,17 @@ ctx.fillText('এখনকার মূল্য', pad.left + 8, pad.top + 4);
 
 // Tell parent iframe how tall we are
 function sendHeight() {
-  const h = document.body.scrollHeight;
+  const h = document.documentElement.scrollHeight;
   window.parent.postMessage({ iframeHeight: h }, '*');
 }
-window.addEventListener('load', sendHeight);
-window.addEventListener('resize', sendHeight);
+// Canvas renders after load — wait a tick
+window.addEventListener('load', function() {
+  setTimeout(sendHeight, 100);
+  setTimeout(sendHeight, 500);
+});
+window.addEventListener('resize', function() {
+  setTimeout(sendHeight, 100);
+});
 </script>
 </body>
 </html>
