@@ -303,7 +303,7 @@ function Sidebar({lang,openArticle,setPage,setActiveCat}){
         <span className="sb-lbl">{bn?'সাম্প্রতিক':'Recent'}</span>
         {ARTICLES.length===0
           ?<p style={{fontSize:'13px',color:'var(--muted)',fontStyle:'italic'}}>{bn?'এখনো কোনো লেখা নেই':'No articles yet'}</p>
-          :ARTICLES.slice(0,4).map(a=>(
+          :ARTICLES.filter(a=>a.showOnHome!==false).slice(0,4).map(a=>(
             <div key={a.id} className="rec" onClick={()=>openArticle(a)}>
               <div className="rec-t">{bn?a.title:a.titleEn}</div>
               <div className="rec-d">{bn?a.date:a.dateEn}</div>
@@ -417,11 +417,10 @@ function Detail({a,lang,onBack}){
     );
   };
   const renderNext=()=>{
-    const idx=ARTICLES.findIndex(x=>x.id===a.id);
-    const next=ARTICLES[idx+1]||null;
-    const related=ARTICLES.filter(x=>x.id!==a.id&&x.id!==(next?.id)).slice(0,1)[0]||null;
+    const seriesNext=a.nextId?ARTICLES.find(x=>x.id===a.nextId)||null:null;
+    const related=ARTICLES.filter(x=>x.id!==a.id&&x.id!==(seriesNext?.id)).slice(0,1)[0]||null;
     const cards=[];
-    if(next) cards.push({item:next,label:bn?'পরবর্তী পর্ব':'Next Part'});
+    if(seriesNext) cards.push({item:seriesNext,label:bn?'পরবর্তী পর্ব':'Next Part'});
     else if(related) cards.push({item:related,label:bn?'আরো পড়ুন':'Read Next'});
     if(!cards.length) return null;
     return(
@@ -488,9 +487,9 @@ function Home({lang,openArticle,activeCat,setActiveCat,setPage}){
       <MCats lang={lang} activeCat={activeCat} setActiveCat={setActiveCat} setPage={setPage}/>
       <div className="s-head">
         <h2>{bn?'সর্বশেষ প্রকাশনা':'Latest Publications'}</h2>
-        <span className="s-cnt">{bn?`${ARTICLES.length}টি প্রবন্ধ`:`${ARTICLES.length} Essays`}</span>
+        <span className="s-cnt">{bn?`${ARTICLES.filter(a=>a.showOnHome!==false).length}টি প্রবন্ধ`:`${ARTICLES.filter(a=>a.showOnHome!==false).length} Essays`}</span>
       </div>
-      {ARTICLES.length===0?<Empty bn={bn}/>:ARTICLES.map(a=><Card key={a.id} a={a} lang={lang} onClick={openArticle}/>)}
+      {ARTICLES.filter(a=>a.showOnHome!==false).length===0?<Empty bn={bn}/>:ARTICLES.filter(a=>a.showOnHome!==false).map(a=><Card key={a.id} a={a} lang={lang} onClick={openArticle}/>)}
     </div>
   );
 }

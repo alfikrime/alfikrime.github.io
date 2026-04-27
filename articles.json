@@ -1,5 +1,285 @@
 [
   {
+    "id": "ishwar-ke-keno-khujte-hobe-1",
+    "cat": "psychology",
+    "title": "এপিস্টেমিক রেসপনসিবিলিটি — ঈশ্বরকে কেন খুঁজতে হবে — প্রথম পর্ব",
+    "titleEn": "Why Must One Seek God? Part I",
+    "date": "২১ এপ্রিল ২০২৬",
+    "dateEn": "21 April 2026",
+    "abstract": "মানুষ ঈশ্বরকে এড়ায় — প্রমাণ নেই বলে নয়, বরং মনোবৈজ্ঞানিক কারণে। Akrasia, Hyperbolic Discounting, Situated Cognition ও Construal Level Theory-র আলোকে এই এড়ানোর শিকড় অনুসন্ধান।",
+    "abstractEn": "People avoid the question of God — not for lack of evidence, but for psychological reasons. This essay traces the roots of that avoidance through Akrasia, Hyperbolic Discounting, Situated Cognition, and Construal Level Theory.",
+    "tags": [
+      "মনোবিজ্ঞান",
+      "দর্শন",
+      "ঈশ্বর",
+      "Akrasia",
+      "অনুসন্ধান"
+    ],
+    "tagsEn": [
+      "psychology",
+      "philosophy",
+      "God",
+      "Akrasia",
+      "inquiry"
+    ],
+    "bodyParagraphs": [
+      {
+        "type": "p",
+        "dropcap": true,
+        "text": "একজন মানুষকে কল্পনা করুন।যে শিক্ষিত। বিশ্ববিদ্যালয় পেরিয়েছে। জানে ধূমপান ক্যান্সার ডেকে আনতে পারে— তবু সিগারেট ধরায়। জানে ব্যায়াম হৃদযন্ত্র ভালো রাখে — তবু শুয়ে থাকে। জানে মৃত্যু অনিবার্য — তবু কোনো প্রস্তুতি নেই।",
+        "textEn": "Imagine a person. Educated. University-educated. Knows that smoking can cause cancer — and yet lights a cigarette. Knows that exercise keeps the heart healthy — and yet stays in bed. Knows that death is inevitable — and yet no preparation."
+      },
+      {
+        "type": "p",
+        "text": "এই মানুষটি কে?\nসে আপনি। সে আমি। সে আমাদের সবার সম্মিলিত প্রতিকৃতি।",
+        "textEn": "Who is this person?\nIt is you. It is me. It is the collective portrait of all of us."
+      },
+      {
+        "type": "p",
+        "text": "অ্যারিস্টটল এই রোগের নাম দিয়েছিলেন \"Akrasia\" — জেনেও না মানা, বুঝেও ভুল করা। \"Nicomachean Ethics\"-এর সপ্তম গ্রন্থে তিনি লিখেছেন, এটিই মানবচরিত্রের সবচেয়ে বিস্ময়কর দুর্বলতা। কারণ এখানে অজ্ঞতা নেই। তবু পতন আছে।(১)",
+        "textEn": "Aristotle gave this illness a name — \"Akrasia\" — knowing and still not following, understanding and still choosing wrong. In Book VII of the \"Nicomachean Ethics\" he wrote that this is the most astonishing weakness of human character. Because here there is no ignorance. And yet there is still the fall.(1)"
+      },
+      {
+        "type": "p",
+        "text": "দুই হাজার বছর পরে হার্ভার্ডের অর্থনীতিবিদ David Laibson এই রোগকে নতুন ভাষায় বললেন — \"Hyperbolic Discounting\"। মানুষ ভবিষ্যতের পুরস্কারকে জ্যামিতিক হারে অবমূল্যায়ন করে।(২)যা দূরে তা সত্য হলেও তার ওজন কম। যা সামনে তা মিথ্যা হলেও তার টান বেশি।",
+        "textEn": "Two thousand years later, Harvard economist David Laibson named this illness in a new language — \"Hyperbolic Discounting\". People discount future rewards at a geometric rate.(2) What is far away loses its weight, even if it is true. What is close pulls hard, even if it is false."
+      },
+      {
+        "type": "p",
+        "text": "এখানে একটি প্রশ্ন উঠতে পারে।",
+        "textEn": "A question may arise here."
+      },
+      {
+        "type": "p",
+        "text": "\"Akrasia\" কি শুধু এক দিকে কাজ করে?— মানুষ পরিচিত ধর্মীয় কাঠামো ছেড়ে বেরোতেও ভয় পায়। সেটাও কি \"Akrasia\"-র একটি রূপ নয়?",
+        "textEn": "Does \"Akrasia\" work in only one direction? — People are also afraid to leave familiar religious frameworks. Is that not also a form of \"Akrasia\"?"
+      },
+      {
+        "type": "p",
+        "text": "এই আপত্তিটি সৎ। কিন্তু এটি মূল যুক্তিকে স্পর্শ করে না।",
+        "textEn": "This objection is honest. But it does not touch the core argument."
+      },
+      {
+        "type": "p",
+        "text": "কারণ এই আলোচনার দাবি কোনো নির্দিষ্ট ধর্মীয় কাঠামোকে সত্য বলে আগে থেকে ধরে নেওয়া নয়। দাবিটি হলো — মানুষ প্রশ্নটাই এড়িয়ে যায়। সে তদন্তে বসে না। ধার্মিক হোক বা অধার্মিক — উভয়ের জন্যই এই এড়ানোর বিপদ সমান। যে মানুষ জন্মসূত্রে পাওয়া বিশ্বাসকে কখনো পরীক্ষা করেনি, সে যেমন ঝুঁকিতে আছে — যে মানুষ জন্মসূত্রে পাওয়া অবিশ্বাসকে কখনো প্রশ্ন করেনি, সেও ঠিক ততটাই ঝুঁকিতে।",
+        "textEn": "Because this discussion does not presuppose any particular religious framework to be true. The claim is this — people avoid the question itself. They do not sit down to investigate. Religious or irreligious — the danger of this avoidance is equal for both. The person who has never tested the belief they were born into is at risk — just as the person who has never questioned the disbelief they were born into is equally at risk."
+      },
+      {
+        "type": "p",
+        "text": "\"Akrasia\"-র সমস্যা অনুসন্ধানের পথে, অনুসন্ধানের গন্তব্যে নয়।",
+        "textEn": "The problem of \"Akrasia\" is on the path of inquiry. Not at its destination."
+      },
+      {
+        "type": "p",
+        "text": "মানুষ কোথায় জন্মায়, সেটা তার বেছে নেওয়া নয়। কিন্তু কোথায় জন্মায় তা-ই তার প্রথম সত্য হয়ে যায়। যে পরিবারে বড় হয়, যে বন্ধুদের সাথে চলে, যে সমাজের ভাষায় স্বপ্ন দেখে — এই বৃত্তই তার চিন্তার ভূগোল গড়ে দেয়।",
+        "textEn": "Where a person is born is not their choosing. But where they are born becomes their first truth. The family in which they grow up, the friends alongside whom they walk, the language of the society in which they dream — this circle builds the geography of their thought."
+      },
+      {
+        "type": "p",
+        "text": "জ্ঞানতাত্ত্বিকরা এই ঘটনাকে বলেন \"Situated Cognition\" — চিন্তা কখনো শূন্যে ঘটে না, সে সবসময় একটি পরিবেশে প্রোথিত।(৩) Peter Berger এবং Thomas Luckmann তাঁদের বিখ্যাত গ্রন্থ \"The Social Construction of Reality\"-তে দেখিয়েছেন, আমরা যা \"সত্য\" বলে জানি তার বেশিরভাগ আমাদের চারপাশ আমাদের শিখিয়েছে।(৪)",
+        "textEn": "Epistemologists call this \"Situated Cognition\" — thought never occurs in a vacuum, it is always rooted in an environment.(3) Peter Berger and Thomas Luckmann showed in their celebrated work \"The Social Construction of Reality\" that most of what we know as \"truth\" our surroundings have taught us.(4)"
+      },
+      {
+        "type": "p",
+        "text": "এর পরিণতিটা ভাবুন।",
+        "textEn": "Consider what that means."
+      },
+      {
+        "type": "p",
+        "text": "একজন মানুষ ঢাকার মধ্যবিত্ত পরিবারে জন্মেছে। তার স্বপ্ন — ভালো চাকরি, একটা ফ্ল্যাট, সন্তানের ভালো স্কুল। এটাই তার মহাবিশ্ব। তার উচ্চতার সংজ্ঞাও এই দৃশ্যমান জগতের মধ্যে সীমাবদ্ধ।",
+        "textEn": "A person is born into a middle-class family in Dhaka. Their dream — a good job, a flat, a good school for their child. This is their universe. Their very definition of height is confined within this visible world."
+      },
+      {
+        "type": "p",
+        "text": "এটি কি দোষের? না।",
+        "textEn": "Is this a fault? No."
+      },
+      {
+        "type": "p",
+        "text": "Daniel Kahneman দেখিয়েছেন মস্তিষ্ক দুটি পদ্ধতিতে কাজ করে — দ্রুত, স্বতঃস্ফূর্ত, পরিচিত পথে; এবং ধীর, যুক্তিশীল, অপরিচিত পথে।(৫) পরিচিত পথে চলা শক্তি বাঁচায়। কিন্তু পরিচিত পথ সবসময় সত্যের পথ নয়।",
+        "textEn": "Daniel Kahneman showed that the brain works in two ways — fast, spontaneous, along familiar paths; and slow, rational, along unfamiliar ones.(5) Moving along familiar paths saves energy. But the familiar path is not always the path of truth."
+      },
+      {
+        "type": "p",
+        "text": "যখন ঈশ্বরের প্রশ্ন ওঠে, মানুষ সাধারণত বলে — \"প্রমাণ নেই।\" \"যুক্তি নেই।\" \"বিজ্ঞান এটা মানে না।\"",
+        "textEn": "When the question of God arises, people usually say — \"There is no evidence.\" \"There is no logic.\" \"Science does not accept this.\""
+      },
+      {
+        "type": "p",
+        "text": "কিন্তু এই কারণগুলো আসল বাধা নয়।",
+        "textEn": "But these reasons are not the real obstacle."
+      },
+      {
+        "type": "p",
+        "text": "আসল বাধা বুদ্ধিবৃত্তিক নয়। আসল বাধা মনোবৈজ্ঞানিক।",
+        "textEn": "The real obstacle is not intellectual. The real obstacle is psychological."
+      },
+      {
+        "type": "p",
+        "text": "মানুষ ঈশ্বরের প্রশ্ন এড়ায় কারণ সেই অনুসন্ধানের ফল তাৎক্ষণিক নয়। আজকের সন্ধ্যায় কোনো পরিবর্তন আনে না। ক্যারিয়ারে সাহায্য করে না। সামাজিক মর্যাদা বাড়ায় না। তাই মস্তিষ্ক তাকে \"জরুরি নয়\" বলে সরিয়ে রাখে।",
+        "textEn": "People avoid the question of God because the fruits of that search are not immediate. It brings no change to this evening. It does not help a career. It does not raise social standing. So the brain sets it aside — \"not urgent.\""
+      },
+      {
+        "type": "p",
+        "text": "Yaacov Trope এবং Nira Liberman-এর \"Construal Level Theory\"এই ব্যাপারটি ব্যাখ্যা করে — মানুষ দূরবর্তী বিষয়কে বিমূর্তভাবে দেখে, নিকটবর্তী বিষয়কে সুনির্দিষ্টভাবে।(৬)দূরের জিনিস সত্য হলেও \"কংক্রিট\" মনে হয় না। এজন্য জলবায়ু পরিবর্তন জেনেও মানুষ গাড়ি চালায়। এজন্য মৃত্যু জেনেও প্রস্তুতি নেয় না।",
+        "textEn": "Yaacov Trope and Nira Liberman's \"Construal Level Theory\" explains this — people see distant things abstractly, near things concretely.(6) What is far does not feel \"concrete\" even if it is true. That is why people drive cars despite knowing about climate change. That is why they make no preparation despite knowing about death."
+      },
+      {
+        "type": "p",
+        "text": "এই একটি সত্য বোঝা গেলে সবকিছু বদলে যায়।",
+        "textEn": "Understanding this one truth changes everything."
+      },
+      {
+        "type": "p",
+        "text": "কারণ তখন প্রশ্নটা আর \"ঈশ্বর আছেন কি না\" থাকে না। প্রশ্নটা হয় — আমি কি সত্যিই কখনো খুঁজেছি?",
+        "textEn": "Because then the question is no longer \"does God exist\". The question becomes — have I ever truly searched?"
+      },
+      {
+        "type": "p",
+        "text": "উনিশ শতকের ব্রিটিশ দার্শনিক W.K. Clifford ১৮৭৭ সালে লিখেছিলেন — প্রমাণ না খোঁজাটাও একটি নৈতিক ব্যর্থতা।(৭) তিনি একটি উপমা দিয়েছিলেন। একজন জাহাজের মালিক জানে জাহাজ পুরনো। কিন্তু নিজেকে বোঝায় — সব ঠিক আছে। জাহাজ ডোবে। মানুষ মারা যায়। এই মালিক কি নির্দোষ? না — কারণ সে জানতে চায়নি।",
+        "textEn": "The nineteenth-century British philosopher W.K. Clifford wrote in 1877 — not seeking evidence is also a moral failure.(7) He offered an analogy. A ship owner knows the ship is old. But he convinces himself — everything is fine. The ship sinks. People die. Is this owner innocent? No — because he chose not to know."
+      },
+      {
+        "type": "p",
+        "text": "এখানে আবার একটি প্রশ্ন উঠবে।\nসেটা হলো — Clifford তো এই কথাও বলেছেন যে অপর্যাপ্ত প্রমাণে বিশ্বাস করাও নৈতিক ব্যর্থতা। তাহলে ঈশ্বরে বিশ্বাস করাটাই কি Clifford-এর বিচারে দোষণীয় নয়?",
+        "textEn": "Another question will arise here.\nThat is — Clifford also said that believing on insufficient evidence is a moral failure. Then is believing in God not itself blameworthy by Clifford's standard?"
+      },
+      {
+        "type": "p",
+        "text": "এই আপত্তিটি Clifford-কে আধা পড়ে তোলা।\nClifford-এর আসল দাবি দুটি।প্রথমত, অপর্যাপ্ত প্রমাণে বিশ্বাস করা যাবে না। দ্বিতীয়ত — এবং এটাই গুরুত্বপূর্ণ — প্রমাণ খোঁজার চেষ্টা না করাটাও নৈতিকভাবে দোষণীয়। এই আলোচনা দ্বিতীয় দাবিটিকে সামনে রাখছে। কারণ বেশিরভাগ মানুষ ঈশ্বরের প্রশ্নে \"প্রমাণ নেই\" বলে থামে — অথচ তারা কখনো সেই প্রমাণ খোঁজার চেষ্টাই করেনি।",
+        "textEn": "This objection is a half-reading of Clifford.\nClifford's actual claims are two. First — one must not believe on insufficient evidence. Second — and this is the important one — not even attempting to seek evidence is also morally culpable. This discussion keeps the second claim in focus. Because most people stop at \"there is no evidence\" on the question of God — yet they have never once tried to seek that evidence."
+      },
+      {
+        "type": "p",
+        "text": "যে মানুষ কখনো খোঁজেনি, তার \"প্রমাণ নেই\" বলার অধিকার কতটুকু?",
+        "textEn": "How much right does a person who has never searched have to say \"there is no evidence\"?"
+      },
+      {
+        "type": "p",
+        "text": "আর খোঁজার পরে যদি সত্যিই প্রমাণ না মেলে — সেটা ভিন্ন প্রসঙ্গ। কিন্তু না খুঁজে \"নেই\" বলা — এটা Clifford-এর নিজের মানদণ্ডেই ব্যর্থতা।",
+        "textEn": "And if after searching, evidence truly is not found — that is a separate matter. But to say \"it does not exist\" without having searched — this is a failure even by Clifford's own standard."
+      },
+      {
+        "type": "p",
+        "text": "অজ্ঞতা নিরাপদ নয়। অজ্ঞতাও একটি সিদ্ধান্ত। এবং এই সিদ্ধান্তেরও পরিণাম আছে।",
+        "textEn": "Ignorance is not safe. Ignorance is also a decision. And this decision too has its consequences."
+      }
+    ],
+    "refs": [
+      {
+        "num": 1,
+        "text": "Aristotle. Nicomachean Ethics, Book VII. (T. Irwin, Trans., 2nd ed., 1999). Hackett Publishing Company.",
+        "note": "",
+        "links": [
+          {
+            "label": "ফ্রি পাঠ",
+            "url": "https://archive.org/details/isbn_9780872204645"
+          },
+          {
+            "label": "ফ্রি পাঠ",
+            "url": "https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "text": "Laibson, D. (1997). Golden eggs and hyperbolic discounting. Quarterly Journal of Economics, 112(2), 443–478.",
+        "note": "",
+        "links": [
+          {
+            "label": "DOI",
+            "url": "https://doi.org/10.1162/003355397555253"
+          },
+          {
+            "label": "ফ্রি পাঠ",
+            "url": "https://dash.harvard.edu/entities/publication/73120378-8460-6bd4-e053-0100007fdf3b"
+          },
+          {
+            "label": "ফ্রি পাঠ",
+            "url": "https://econweb.ucsd.edu/~jandreon/Econ264/papers/Laibson%20QJE%201997.pdf"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "text": "Hutchins, E. (1995). Cognition in the wild. MIT Press.",
+        "note": "",
+        "links": [
+          {
+            "label": "ফ্রি পাঠ",
+            "url": "https://pages.ucsd.edu/~ehutchins/citw.html"
+          },
+          {
+            "label": "ফ্রি পাঠ",
+            "url": "https://uberty.org/wp-content/uploads/2015/07/Edwin_Hutchins_Cognition_in_the_Wild.pdf"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "text": "Berger, P. L., & Luckmann, T. (1966). The social construction of reality: A treatise in the sociology of knowledge. Doubleday/Anchor Books.",
+        "note": "",
+        "links": [
+          {
+            "label": "ফ্রি পাঠ",
+            "url": "https://archive.org/details/socialconstructi0000berg"
+          },
+          {
+            "label": "ফ্রি পাঠ",
+            "url": "https://amstudugm.files.wordpress.com/2011/04/social-construction-of-reality.pdf"
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "text": "Kahneman, D. (2011). Thinking, fast and slow. Farrar, Straus and Giroux.",
+        "note": "",
+        "links": [
+          {
+            "label": "ফ্রি পাঠ (অধ্যায়)",
+            "url": "https://www.scientificamerican.com/article/kahneman-excerpt-thinking-fast-and-slow/"
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "text": "Trope, Y., & Liberman, N. (2010). Construal-level theory of psychological distance. Psychological Review, 117(2), 440–463.",
+        "note": "",
+        "links": [
+          {
+            "label": "DOI",
+            "url": "https://doi.org/10.1037/a0018963"
+          },
+          {
+            "label": "ফ্রি পাঠ",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3152826/"
+          },
+          {
+            "label": "ফ্রি পাঠ",
+            "url": "https://www.researchgate.net/publication/44569219"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "text": "Clifford, W. K. (1877). The ethics of belief. Contemporary Review. পুনর্মুদ্রিত: Clifford, W. K. (1999). The ethics of belief and other essays. Prometheus Books.",
+        "note": "",
+        "links": [
+          {
+            "label": "ফ্রি পাঠ",
+            "url": "https://infidels.org/library/historical/w-k-clifford-ethics-of-belief/"
+          },
+          {
+            "label": "ফ্রি পাঠ",
+            "url": "https://people.brandeis.edu/~teuber/Clifford_ethics.pdf"
+          }
+        ]
+      }
+    ],
+    "isoDate": "2026-04-21",
+    "showOnHome": true
+  },
+  {
     "id": "teleological-1",
     "cat": "philosophy",
     "title": "টেলিওলজিক্যাল রেশনালিটি: গন্তব্যহীন সমাজ ও আলেমের প্রাসঙ্গিকতা — প্রথম পর্ব",
@@ -371,7 +651,9 @@
         "links": []
       }
     ],
-    "isoDate": "2026-04-01"
+    "isoDate": "2026-04-01",
+    "nextId": "teleological-2",
+    "showOnHome": true
   },
   {
     "id": "teleological-2",
@@ -747,7 +1029,8 @@
         ]
       }
     ],
-    "isoDate": "2026-04-03"
+    "isoDate": "2026-04-03",
+    "showOnHome": false
   },
   {
     "id": "angels-jinn-1",
@@ -1098,7 +1381,9 @@
         ]
       }
     ],
-    "isoDate": "2026-04-05"
+    "isoDate": "2026-04-05",
+    "nextId": "angels-jinn-2",
+    "showOnHome": true
   },
   {
     "id": "angels-jinn-2",
@@ -1839,7 +2124,8 @@
         ]
       }
     ],
-    "isoDate": "2026-04-07"
+    "isoDate": "2026-04-07",
+    "showOnHome": false
   },
   {
     "id": "munajat-1",
@@ -1891,7 +2177,8 @@
       }
     ],
     "refs": [],
-    "isoDate": "2026-04-09"
+    "isoDate": "2026-04-09",
+    "showOnHome": true
   },
   {
     "id": "ishwar-o-apeksha-1",
@@ -1942,7 +2229,8 @@
       }
     ],
     "refs": [],
-    "isoDate": "2026-04-11"
+    "isoDate": "2026-04-11",
+    "showOnHome": true
   },
   {
     "id": "sannidher-akuti-1",
@@ -1998,7 +2286,8 @@
       }
     ],
     "refs": [],
-    "isoDate": "2026-04-13"
+    "isoDate": "2026-04-13",
+    "showOnHome": true
   },
   {
     "id": "jagaran-1",
@@ -2044,7 +2333,8 @@
       }
     ],
     "refs": [],
-    "isoDate": "2026-04-15"
+    "isoDate": "2026-04-15",
+    "showOnHome": true
   },
   {
     "id": "bibarno-somoyer-arale-1",
@@ -2105,7 +2395,8 @@
       }
     ],
     "refs": [],
-    "isoDate": "2026-04-17"
+    "isoDate": "2026-04-17",
+    "showOnHome": true
   },
   {
     "id": "amitter-loy-1",
@@ -2153,285 +2444,7 @@
       }
     ],
     "refs": [],
-    "isoDate": "2026-04-19"
-  },
-  {
-    "id": "ishwar-ke-keno-khujte-hobe-1",
-    "cat": "psychology",
-    "title": "এপিস্টেমিক রেসপনসিবিলিটি — ঈশ্বরকে কেন খুঁজতে হবে — প্রথম পর্ব",
-    "titleEn": "Why Must One Seek God? Part I",
-    "date": "২১ এপ্রিল ২০২৬",
-    "dateEn": "21 April 2026",
-    "abstract": "মানুষ ঈশ্বরকে এড়ায় — প্রমাণ নেই বলে নয়, বরং মনোবৈজ্ঞানিক কারণে। Akrasia, Hyperbolic Discounting, Situated Cognition ও Construal Level Theory-র আলোকে এই এড়ানোর শিকড় অনুসন্ধান।",
-    "abstractEn": "People avoid the question of God — not for lack of evidence, but for psychological reasons. This essay traces the roots of that avoidance through Akrasia, Hyperbolic Discounting, Situated Cognition, and Construal Level Theory.",
-    "tags": [
-      "মনোবিজ্ঞান",
-      "দর্শন",
-      "ঈশ্বর",
-      "Akrasia",
-      "অনুসন্ধান"
-    ],
-    "tagsEn": [
-      "psychology",
-      "philosophy",
-      "God",
-      "Akrasia",
-      "inquiry"
-    ],
-    "bodyParagraphs": [
-      {
-        "type": "p",
-        "dropcap": true,
-        "text": "একজন মানুষকে কল্পনা করুন।যে শিক্ষিত। বিশ্ববিদ্যালয় পেরিয়েছে। জানে ধূমপান ক্যান্সার ডেকে আনতে পারে— তবু সিগারেট ধরায়। জানে ব্যায়াম হৃদযন্ত্র ভালো রাখে — তবু শুয়ে থাকে। জানে মৃত্যু অনিবার্য — তবু কোনো প্রস্তুতি নেই।",
-        "textEn": "Imagine a person. Educated. University-educated. Knows that smoking can cause cancer — yet lights a cigarette. Knows that exercise keeps the heart healthy — yet lies in bed. Knows that death is inevitable — yet no preparation at all."
-      },
-      {
-        "type": "p",
-        "text": "এই মানুষটি কে?\nসে আপনি। সে আমি। সে আমাদের সবার সম্মিলিত প্রতিকৃতি।",
-        "textEn": "Who is this person?\nIt is you. It is me. It is the collective portrait of all of us."
-      },
-      {
-        "type": "p",
-        "text": "অ্যারিস্টটল এই রোগের নাম দিয়েছিলেন \"Akrasia\" — জেনেও না মানা, বুঝেও ভুল করা। \"Nicomachean Ethics\"-এর সপ্তম গ্রন্থে তিনি লিখেছেন, এটিই মানবচরিত্রের সবচেয়ে বিস্ময়কর দুর্বলতা। কারণ এখানে অজ্ঞতা নেই। তবু পতন আছে।(১)",
-        "textEn": "Aristotle named this affliction \"Akrasia\" — knowing yet not obeying, understanding yet choosing wrongly. In Book VII of the \"Nicomachean Ethics\" he wrote that this is the most astonishing weakness of human character. For here there is no ignorance. Yet there is still a fall.(1)"
-      },
-      {
-        "type": "p",
-        "text": "দুই হাজার বছর পরে হার্ভার্ডের অর্থনীতিবিদ David Laibson এই রোগকে নতুন ভাষায় বললেন — \"Hyperbolic Discounting\"। মানুষ ভবিষ্যতের পুরস্কারকে জ্যামিতিক হারে অবমূল্যায়ন করে।(২)যা দূরে তা সত্য হলেও তার ওজন কম। যা সামনে তা মিথ্যা হলেও তার টান বেশি।",
-        "textEn": "Two thousand years later, Harvard economist David Laibson named this condition in a new language — \"Hyperbolic Discounting\". People devalue future rewards at a geometric rate.(2) What is distant carries less weight even if true. What is near pulls harder even if false."
-      },
-      {
-        "type": "p",
-        "text": "এখানে একটি প্রশ্ন উঠতে পারে।",
-        "textEn": "A question may arise here."
-      },
-      {
-        "type": "p",
-        "text": "\"Akrasia\" কি শুধু এক দিকে কাজ করে?— মানুষ পরিচিত ধর্মীয় কাঠামো ছেড়ে বেরোতেও ভয় পায়। সেটাও কি \"Akrasia\"-র একটি রূপ নয়?",
-        "textEn": "Does \"Akrasia\" operate in only one direction? — People also fear leaving familiar religious frameworks. Is that not also a form of \"Akrasia\"?"
-      },
-      {
-        "type": "p",
-        "text": "এই আপত্তিটি সৎ। কিন্তু এটি মূল যুক্তিকে স্পর্শ করে না।",
-        "textEn": "This objection is honest. But it does not touch the core argument."
-      },
-      {
-        "type": "p",
-        "text": "কারণ এই আলোচনার দাবি কোনো নির্দিষ্ট ধর্মীয় কাঠামোকে সত্য বলে আগে থেকে ধরে নেওয়া নয়। দাবিটি হলো — মানুষ প্রশ্নটাই এড়িয়ে যায়। সে তদন্তে বসে না। ধার্মিক হোক বা অধার্মিক — উভয়ের জন্যই এই এড়ানোর বিপদ সমান। যে মানুষ জন্মসূত্রে পাওয়া বিশ্বাসকে কখনো পরীক্ষা করেনি, সে যেমন ঝুঁকিতে আছে — যে মানুষ জন্মসূত্রে পাওয়া অবিশ্বাসকে কখনো প্রশ্ন করেনি, সেও ঠিক ততটাই ঝুঁকিতে।",
-        "textEn": "Because this discussion does not presuppose any specific religious framework to be true. The claim is that people avoid the question itself. They do not sit in inquiry. Whether religious or irreligious — the danger of this avoidance is equal for both. The person who has never tested the belief inherited at birth is at risk — just as the person who has never questioned the disbelief inherited at birth is equally at risk."
-      },
-      {
-        "type": "p",
-        "text": "\"Akrasia\"-র সমস্যা অনুসন্ধানের পথে, অনুসন্ধানের গন্তব্যে নয়।",
-        "textEn": "The problem of \"Akrasia\" lies on the path of inquiry, not in its destination."
-      },
-      {
-        "type": "p",
-        "text": "মানুষ কোথায় জন্মায়, সেটা তার বেছে নেওয়া নয়। কিন্তু কোথায় জন্মায় তা-ই তার প্রথম সত্য হয়ে যায়। যে পরিবারে বড় হয়, যে বন্ধুদের সাথে চলে, যে সমাজের ভাষায় স্বপ্ন দেখে — এই বৃত্তই তার চিন্তার ভূগোল গড়ে দেয়।",
-        "textEn": "Where a person is born is not their choice. But where they are born becomes their first truth. The family in which one grows up, the friends with whom one walks, the language of the society in which one dreams — this circle maps the geography of one's thought."
-      },
-      {
-        "type": "p",
-        "text": "জ্ঞানতাত্ত্বিকরা এই ঘটনাকে বলেন \"Situated Cognition\" — চিন্তা কখনো শূন্যে ঘটে না, সে সবসময় একটি পরিবেশে প্রোথিত।(৩) Peter Berger এবং Thomas Luckmann তাঁদের বিখ্যাত গ্রন্থ \"The Social Construction of Reality\"-তে দেখিয়েছেন, আমরা যা \"সত্য\" বলে জানি তার বেশিরভাগ আমাদের চারপাশ আমাদের শিখিয়েছে।(৪)",
-        "textEn": "Epistemologists call this \"Situated Cognition\" — thought never occurs in a vacuum, it is always embedded in an environment.(3) Peter Berger and Thomas Luckmann, in their celebrated work \"The Social Construction of Reality\", showed that most of what we know as \"truth\" has been taught to us by our surroundings.(4)"
-      },
-      {
-        "type": "p",
-        "text": "এর পরিণতিটা ভাবুন।",
-        "textEn": "Consider the consequence."
-      },
-      {
-        "type": "p",
-        "text": "একজন মানুষ ঢাকার মধ্যবিত্ত পরিবারে জন্মেছে। তার স্বপ্ন — ভালো চাকরি, একটা ফ্ল্যাট, সন্তানের ভালো স্কুল। এটাই তার মহাবিশ্ব। তার উচ্চতার সংজ্ঞাও এই দৃশ্যমান জগতের মধ্যে সীমাবদ্ধ।",
-        "textEn": "A person is born into a middle-class family in Dhaka. Their dream — a good job, a flat, a good school for their child. This is their universe. Their definition of greatness is also confined within this visible world."
-      },
-      {
-        "type": "p",
-        "text": "এটি কি দোষের? না।",
-        "textEn": "Is this blameworthy? No."
-      },
-      {
-        "type": "p",
-        "text": "Daniel Kahneman দেখিয়েছেন মস্তিষ্ক দুটি পদ্ধতিতে কাজ করে — দ্রুত, স্বতঃস্ফূর্ত, পরিচিত পথে; এবং ধীর, যুক্তিশীল, অপরিচিত পথে।(৫) পরিচিত পথে চলা শক্তি বাঁচায়। কিন্তু পরিচিত পথ সবসময় সত্যের পথ নয়।",
-        "textEn": "Daniel Kahneman showed that the brain works in two modes — fast, spontaneous, along familiar paths; and slow, rational, along unfamiliar ones.(5) Following the familiar path saves energy. But the familiar path is not always the path of truth."
-      },
-      {
-        "type": "p",
-        "text": "যখন ঈশ্বরের প্রশ্ন ওঠে, মানুষ সাধারণত বলে — \"প্রমাণ নেই।\" \"যুক্তি নেই।\" \"বিজ্ঞান এটা মানে না।\"",
-        "textEn": "When the question of God arises, people commonly say — \"There is no evidence.\" \"There is no logic.\" \"Science does not accept this.\""
-      },
-      {
-        "type": "p",
-        "text": "কিন্তু এই কারণগুলো আসল বাধা নয়।",
-        "textEn": "But these reasons are not the real obstacle."
-      },
-      {
-        "type": "p",
-        "text": "আসল বাধা বুদ্ধিবৃত্তিক নয়। আসল বাধা মনোবৈজ্ঞানিক।",
-        "textEn": "The real obstacle is not intellectual. The real obstacle is psychological."
-      },
-      {
-        "type": "p",
-        "text": "মানুষ ঈশ্বরের প্রশ্ন এড়ায় কারণ সেই অনুসন্ধানের ফল তাৎক্ষণিক নয়। আজকের সন্ধ্যায় কোনো পরিবর্তন আনে না। ক্যারিয়ারে সাহায্য করে না। সামাজিক মর্যাদা বাড়ায় না। তাই মস্তিষ্ক তাকে \"জরুরি নয়\" বলে সরিয়ে রাখে।",
-        "textEn": "People avoid the question of God because the fruits of that search are not immediate. It brings no change to this evening. It does not help one's career. It does not increase social standing. So the brain sets it aside as \"not urgent\"."
-      },
-      {
-        "type": "p",
-        "text": "Yaacov Trope এবং Nira Liberman-এর \"Construal Level Theory\"এই ব্যাপারটি ব্যাখ্যা করে — মানুষ দূরবর্তী বিষয়কে বিমূর্তভাবে দেখে, নিকটবর্তী বিষয়কে সুনির্দিষ্টভাবে।(৬)দূরের জিনিস সত্য হলেও \"কংক্রিট\" মনে হয় না। এজন্য জলবায়ু পরিবর্তন জেনেও মানুষ গাড়ি চালায়। এজন্য মৃত্যু জেনেও প্রস্তুতি নেয় না।",
-        "textEn": "Yaacov Trope and Nira Liberman's \"Construal Level Theory\" explains this — people perceive distant things abstractly and near things concretely.(6) Distant things do not feel \"concrete\" even if true. That is why people drive cars despite knowing about climate change. That is why they make no preparation despite knowing about death."
-      },
-      {
-        "type": "p",
-        "text": "এই একটি সত্য বোঝা গেলে সবকিছু বদলে যায়।",
-        "textEn": "Understanding this one truth changes everything."
-      },
-      {
-        "type": "p",
-        "text": "কারণ তখন প্রশ্নটা আর \"ঈশ্বর আছেন কি না\" থাকে না। প্রশ্নটা হয় — আমি কি সত্যিই কখনো খুঁজেছি?",
-        "textEn": "Because then the question is no longer \"Does God exist?\" The question becomes — have I ever truly searched?"
-      },
-      {
-        "type": "p",
-        "text": "উনিশ শতকের ব্রিটিশ দার্শনিক W.K. Clifford ১৮৭৭ সালে লিখেছিলেন — প্রমাণ না খোঁজাটাও একটি নৈতিক ব্যর্থতা।(৭) তিনি একটি উপমা দিয়েছিলেন। একজন জাহাজের মালিক জানে জাহাজ পুরনো। কিন্তু নিজেকে বোঝায় — সব ঠিক আছে। জাহাজ ডোবে। মানুষ মারা যায়। এই মালিক কি নির্দোষ? না — কারণ সে জানতে চায়নি।",
-        "textEn": "Nineteenth-century British philosopher W.K. Clifford wrote in 1877 — not seeking evidence is also a moral failure.(7) He offered an analogy. A ship owner knows the ship is old. But convinces himself — all is fine. The ship sinks. People die. Is this owner innocent? No — because he did not want to know."
-      },
-      {
-        "type": "p",
-        "text": "এখানে আবার একটি প্রশ্ন উঠবে।\nসেটা হলো — Clifford তো এই কথাও বলেছেন যে অপর্যাপ্ত প্রমাণে বিশ্বাস করাও নৈতিক ব্যর্থতা। তাহলে ঈশ্বরে বিশ্বাস করাটাই কি Clifford-এর বিচারে দোষণীয় নয়?",
-        "textEn": "Another question will arise here.\nThat is — Clifford also said that believing on insufficient evidence is a moral failure. So is believing in God itself not blameworthy by Clifford's standard?"
-      },
-      {
-        "type": "p",
-        "text": "এই আপত্তিটি Clifford-কে আধা পড়ে তোলা।\nClifford-এর আসল দাবি দুটি।প্রথমত, অপর্যাপ্ত প্রমাণে বিশ্বাস করা যাবে না। দ্বিতীয়ত — এবং এটাই গুরুত্বপূর্ণ — প্রমাণ খোঁজার চেষ্টা না করাটাও নৈতিকভাবে দোষণীয়। এই আলোচনা দ্বিতীয় দাবিটিকে সামনে রাখছে। কারণ বেশিরভাগ মানুষ ঈশ্বরের প্রশ্নে \"প্রমাণ নেই\" বলে থামে — অথচ তারা কখনো সেই প্রমাণ খোঁজার চেষ্টাই করেনি।",
-        "textEn": "This objection is a half-reading of Clifford.\nClifford's actual claims are two. First, one must not believe on insufficient evidence. Second — and this is crucial — not attempting to seek evidence is also morally culpable. This discussion foregrounds the second claim. Because most people stop at \"there is no evidence\" on the question of God — yet they have never attempted to seek that evidence."
-      },
-      {
-        "type": "p",
-        "text": "যে মানুষ কখনো খোঁজেনি, তার \"প্রমাণ নেই\" বলার অধিকার কতটুকু?",
-        "textEn": "How much right does a person who has never searched have to say \"there is no evidence\"?"
-      },
-      {
-        "type": "p",
-        "text": "আর খোঁজার পরে যদি সত্যিই প্রমাণ না মেলে — সেটা ভিন্ন প্রসঙ্গ। কিন্তু না খুঁজে \"নেই\" বলা — এটা Clifford-এর নিজের মানদণ্ডেই ব্যর্থতা।",
-        "textEn": "And if after searching, evidence truly is not found — that is a separate matter. But saying \"it does not exist\" without searching — this is a failure even by Clifford's own standard."
-      },
-      {
-        "type": "p",
-        "text": "অজ্ঞতা নিরাপদ নয়। অজ্ঞতাও একটি সিদ্ধান্ত। এবং এই সিদ্ধান্তেরও পরিণাম আছে।",
-        "textEn": "Ignorance is not safe. Ignorance is also a decision. And this decision too has consequences."
-      }
-    ],
-    "refs": [
-      {
-        "num": 1,
-        "text": "Aristotle. Nicomachean Ethics, Book VII. (T. Irwin, Trans., 2nd ed., 1999). Hackett Publishing Company.",
-        "note": "",
-        "links": [
-          {
-            "label": "ফ্রি পাঠ",
-            "url": "https://archive.org/details/isbn_9780872204645"
-          },
-          {
-            "label": "ফ্রি পাঠ",
-            "url": "https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf"
-          }
-        ]
-      },
-      {
-        "num": 2,
-        "text": "Laibson, D. (1997). Golden eggs and hyperbolic discounting. Quarterly Journal of Economics, 112(2), 443–478.",
-        "note": "",
-        "links": [
-          {
-            "label": "DOI",
-            "url": "https://doi.org/10.1162/003355397555253"
-          },
-          {
-            "label": "ফ্রি পাঠ",
-            "url": "https://dash.harvard.edu/entities/publication/73120378-8460-6bd4-e053-0100007fdf3b"
-          },
-          {
-            "label": "ফ্রি পাঠ",
-            "url": "https://econweb.ucsd.edu/~jandreon/Econ264/papers/Laibson%20QJE%201997.pdf"
-          }
-        ]
-      },
-      {
-        "num": 3,
-        "text": "Hutchins, E. (1995). Cognition in the wild. MIT Press.",
-        "note": "",
-        "links": [
-          {
-            "label": "ফ্রি পাঠ",
-            "url": "https://pages.ucsd.edu/~ehutchins/citw.html"
-          },
-          {
-            "label": "ফ্রি পাঠ",
-            "url": "https://uberty.org/wp-content/uploads/2015/07/Edwin_Hutchins_Cognition_in_the_Wild.pdf"
-          }
-        ]
-      },
-      {
-        "num": 4,
-        "text": "Berger, P. L., & Luckmann, T. (1966). The social construction of reality: A treatise in the sociology of knowledge. Doubleday/Anchor Books.",
-        "note": "",
-        "links": [
-          {
-            "label": "ফ্রি পাঠ",
-            "url": "https://archive.org/details/socialconstructi0000berg"
-          },
-          {
-            "label": "ফ্রি পাঠ",
-            "url": "https://amstudugm.files.wordpress.com/2011/04/social-construction-of-reality.pdf"
-          }
-        ]
-      },
-      {
-        "num": 5,
-        "text": "Kahneman, D. (2011). Thinking, fast and slow. Farrar, Straus and Giroux.",
-        "note": "",
-        "links": [
-          {
-            "label": "ফ্রি পাঠ (অধ্যায়)",
-            "url": "https://www.scientificamerican.com/article/kahneman-excerpt-thinking-fast-and-slow/"
-          }
-        ]
-      },
-      {
-        "num": 6,
-        "text": "Trope, Y., & Liberman, N. (2010). Construal-level theory of psychological distance. Psychological Review, 117(2), 440–463.",
-        "note": "",
-        "links": [
-          {
-            "label": "DOI",
-            "url": "https://doi.org/10.1037/a0018963"
-          },
-          {
-            "label": "ফ্রি পাঠ",
-            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3152826/"
-          },
-          {
-            "label": "ফ্রি পাঠ",
-            "url": "https://www.researchgate.net/publication/44569219"
-          }
-        ]
-      },
-      {
-        "num": 7,
-        "text": "Clifford, W. K. (1877). The ethics of belief. Contemporary Review. পুনর্মুদ্রিত: Clifford, W. K. (1999). The ethics of belief and other essays. Prometheus Books.",
-        "note": "",
-        "links": [
-          {
-            "label": "ফ্রি পাঠ",
-            "url": "https://infidels.org/library/historical/w-k-clifford-ethics-of-belief/"
-          },
-          {
-            "label": "ফ্রি পাঠ",
-            "url": "https://people.brandeis.edu/~teuber/Clifford_ethics.pdf"
-          }
-        ]
-      }
-    ],
-    "isoDate": "2026-04-21"
+    "isoDate": "2026-04-19",
+    "showOnHome": true
   }
 ]
