@@ -202,10 +202,23 @@ let ARTICLES = [];
 let _articlesReady = false;
 
 // Root এ render করার আগে articles লোড করবো
+function _autoDate(a) {
+  if (a.isoDate) return a;
+  const d = new Date();
+  const bn = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+  const bnNum = n => String(n).split('').map(c=>bn[+c]).join('');
+  const bnMonths = ['জানুয়ারি','ফেব্রুয়ারি','মার্চ','এপ্রিল','মে','জুন','জুলাই','আগস্ট','সেপ্টেম্বর','অক্টোবর','নভেম্বর','ডিসেম্বর'];
+  const enMonths = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  a.isoDate = d.toISOString().split('T')[0];
+  a.date = `${bnNum(d.getDate())} ${bnMonths[d.getMonth()]} ${bnNum(d.getFullYear())}`;
+  a.dateEn = `${d.getDate()} ${enMonths[d.getMonth()]} ${d.getFullYear()}`;
+  return a;
+}
+
 async function _loadArticles() {
   try {
     const res = await fetch('articles.json');
-    ARTICLES = await res.json();
+    ARTICLES = (await res.json()).map(_autoDate);
   } catch(e) {
     console.error('articles.json লোড হয়নি:', e);
     ARTICLES = [];
@@ -441,7 +454,7 @@ function Detail({a,lang,onBack}){
       <h1 className="a-title">{showEn?a.titleEn:a.title}</h1>
       <div className="a-meta">
         <span>✍ কাজী ইবনুল হোসেন</span>
-        <span>📅 {showEn?a.dateEn:a.date}</span>
+        <span>{showEn?a.dateEn:a.date}</span>
       </div>
       {a.abstract&&(
         <div className="abs-box">
