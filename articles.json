@@ -40,6 +40,12 @@
         "textEn": "Aristotle gave this illness a name — \"Akrasia\" — knowing and still not following, understanding and still choosing wrong. In Book VII of the \"Nicomachean Ethics\" he wrote that this is the most astonishing weakness of human character. Because here there is no ignorance. And yet there is still the fall.(1)"
       },
       {
+        "type": "img",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/440px-Aristotle_Altemps_Inv8575.jpg",
+        "caption": "অ্যারিস্টটল (৩৮৪–৩২২ খ্রিস্টপূর্ব) — Ludovisi সংগ্রহ, রোম",
+        "captionEn": "Aristotle (384–322 BC) — Ludovisi Collection, Rome"
+      },
+      {
         "type": "p",
         "text": "দুই হাজার বছর পরে হার্ভার্ডের অর্থনীতিবিদ David Laibson এই রোগকে নতুন ভাষায় বললেন — \"Hyperbolic Discounting\"। মানুষ ভবিষ্যতের পুরস্কারকে জ্যামিতিক হারে অবমূল্যায়ন করে।(২)যা দূরে তা সত্য হলেও তার ওজন কম। যা সামনে তা মিথ্যা হলেও তার টান বেশি।",
         "textEn": "Two thousand years later, Harvard economist David Laibson named this illness in a new language — \"Hyperbolic Discounting\". People discount future rewards at a geometric rate.(2) What is far away loses its weight, even if it is true. What is close pulls hard, even if it is false."
@@ -100,6 +106,12 @@
         "textEn": "Daniel Kahneman showed that the brain works in two ways — fast, spontaneous, along familiar paths; and slow, rational, along unfamiliar ones.(5) Moving along familiar paths saves energy. But the familiar path is not always the path of truth."
       },
       {
+        "type": "img",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Daniel_Kahneman_%282%29.jpg/440px-Daniel_Kahneman_%282%29.jpg",
+        "caption": "Daniel Kahneman — নোবেল বিজয়ী অর্থনীতিবিদ ও মনোবিজ্ঞানী",
+        "captionEn": "Daniel Kahneman — Nobel Prize-winning economist and psychologist"
+      },
+      {
         "type": "p",
         "text": "যখন ঈশ্বরের প্রশ্ন ওঠে, মানুষ সাধারণত বলে — \"প্রমাণ নেই।\" \"যুক্তি নেই।\" \"বিজ্ঞান এটা মানে না।\"",
         "textEn": "When the question of God arises, people usually say — \"There is no evidence.\" \"There is no logic.\" \"Science does not accept this.\""
@@ -138,6 +150,12 @@
         "type": "p",
         "text": "উনিশ শতকের ব্রিটিশ দার্শনিক W.K. Clifford ১৮৭৭ সালে লিখেছিলেন — প্রমাণ না খোঁজাটাও একটি নৈতিক ব্যর্থতা।(৭) তিনি একটি উপমা দিয়েছিলেন। একজন জাহাজের মালিক জানে জাহাজ পুরনো। কিন্তু নিজেকে বোঝায় — সব ঠিক আছে। জাহাজ ডোবে। মানুষ মারা যায়। এই মালিক কি নির্দোষ? না — কারণ সে জানতে চায়নি।",
         "textEn": "The nineteenth-century British philosopher W.K. Clifford wrote in 1877 — not seeking evidence is also a moral failure.(7) He offered an analogy. A ship owner knows the ship is old. But he convinces himself — everything is fine. The ship sinks. People die. Is this owner innocent? No — because he chose not to know."
+      },
+      {
+        "type": "img",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/William_Kingdon_Clifford_%281%29.jpg/440px-William_Kingdon_Clifford_%281%29.jpg",
+        "caption": "W.K. Clifford (১৮৪৫–১৮৭৯) — ব্রিটিশ দার্শনিক ও গণিতবিদ",
+        "captionEn": "W.K. Clifford (1845–1879) — British philosopher and mathematician"
       },
       {
         "type": "p",
@@ -277,7 +295,12 @@
       }
     ],
     "isoDate": "2026-04-21",
-    "showOnHome": true
+    "showOnHome": true,
+    "coverImage": {
+      "url": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1200&q=80",
+      "caption": "",
+      "captionEn": ""
+    }
   },
   {
     "id": "teleological-1",
@@ -2230,7 +2253,7 @@
     ],
     "refs": [],
     "isoDate": "2026-04-11",
-    "showOnHome": true
+    "showOnHome": false
   },
   {
     "id": "sannidher-akuti-1",
@@ -2287,7 +2310,7 @@
     ],
     "refs": [],
     "isoDate": "2026-04-13",
-    "showOnHome": true
+    "showOnHome": false
   },
   {
     "id": "jagaran-1",
@@ -2334,7 +2357,7 @@
     ],
     "refs": [],
     "isoDate": "2026-04-15",
-    "showOnHome": true
+    "showOnHome": false
   },
   {
     "id": "bibarno-somoyer-arale-1",
@@ -2396,7 +2419,7 @@
     ],
     "refs": [],
     "isoDate": "2026-04-17",
-    "showOnHome": true
+    "showOnHome": false
   },
   {
     "id": "amitter-loy-1",
@@ -2445,6 +2468,6 @@
     ],
     "refs": [],
     "isoDate": "2026-04-19",
-    "showOnHome": true
+    "showOnHome": false
   }
 ]
