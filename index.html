@@ -27,7 +27,9 @@ html,body{margin:0;padding:0;width:100%;overflow-x:hidden;background:#f5f2ec;fon
 .body .art-img{width:100%;margin:1.5em 0;text-align:center}
 .body .art-img img{max-width:100%;border-radius:4px;box-shadow:0 2px 12px rgba(0,0,0,.1)}
 .body .art-img figcaption{font-size:12px;color:var(--muted);font-family:sans-serif;margin-top:6px;font-style:italic}
-.cover-img{width:100%;max-height:340px;object-fit:cover;border-radius:4px;margin-bottom:1.5em;box-shadow:0 2px 12px rgba(0,0,0,.1)}
+.cover-img{width:100%;max-height:380px;object-fit:cover;border-radius:4px;margin-bottom:1.2em;box-shadow:0 2px 16px rgba(0,0,0,.12)}
+.body .art-iframe{width:100%;margin:1.5em 0;border:none;border-radius:4px;overflow:hidden}
+.body .art-iframe-caption{font-size:12px;color:var(--muted);font-family:sans-serif;margin-top:6px;font-style:italic;text-align:center}
 .body p.dropcap::first-letter{font-family:'Playfair Display',serif;font-size:4em;font-weight:700;float:left;line-height:.8;margin-right:.07em;margin-top:.05em;color:var(--accent)}
 .refs{background:var(--white);border:1px solid var(--border);border-radius:3px;padding:20px 24px;margin-bottom:24px}
 .refs h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border);color:var(--ink)}
@@ -392,6 +394,12 @@ function Detail({a,lang,onBack}){
         {b.items.map((it,j)=><div key={j} className={'wager-item '+(it.cls||'')}>{showEn?(it.textEn||it.text):it.text}</div>)}
       </div>
     );
+    if(b.type==='iframe') return(
+      <div key={i} className="body">
+        <iframe className="art-iframe" src={b.src} height={b.height||500} width="100%" scrolling="no" title={b.captionEn||b.caption}></iframe>
+        {b.caption&&<div className="art-iframe-caption">{showEn?(b.captionEn||b.caption):b.caption}</div>}
+      </div>
+    );
     if(b.type==='img') return(
       <div key={i} className="body">
         <figure className="art-img">
@@ -462,7 +470,7 @@ function Detail({a,lang,onBack}){
           :<button onClick={()=>setShowEn(false)} style={{background:'var(--parchment)',color:'var(--accent)',border:'1px solid var(--border)',borderRadius:'20px',padding:'5px 14px',fontSize:'11px',fontFamily:'sans-serif',cursor:'pointer',letterSpacing:'.5px'}}>বাংলায় পড়ুন</button>
         }
       </div>
-      {a.coverImage&&<img className="cover-img" src={a.coverImage.url} alt={showEn?(a.coverImage.captionEn||''):a.coverImage.caption||''} loading="lazy"/>}
+      {a.coverImage&&<img className="cover-img" src={a.coverImage.url} alt={showEn?(a.coverImage.captionEn||a.title):a.coverImage.caption||a.title} loading="lazy"/>}
       <h1 className="a-title">{showEn?a.titleEn:a.title}</h1>
       <div className="a-meta">
         <span>✍ কাজী ইবনুল হোসেন</span>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyperbolic Discounting</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600;700&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f7f3ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Noto Serif Bengali', serif;
+  }
+
+  .card {
+    width: 820px;
+    background: #fdfaf6;
+    border: 1px solid #ddd6c8;
+    padding: 52px 56px 48px;
+    position: relative;
+  }
+
+  .accent-line {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: #1a1a2e;
+  }
+
+  .tag {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #8a7a5a;
+    border: 1px solid #ddd6c8;
+    padding: 4px 10px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 34px;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: #9a8a7a;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+
+  .chart-area {
+    position: relative;
+    width: 100%;
+    margin-bottom: 36px;
+  }
+
+  canvas {
+    display: block;
+    width: 100%;
+  }
+
+  .chart-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    padding: 0 10px;
+  }
+
+  .chart-label {
+    font-size: 11px;
+    color: #9a8a7a;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.5px;
+  }
+
+  .axis-y-label {
+    font-size: 11px;
+    color: #9a8a7a;
+    font-family: 'DM Mono', monospace;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    letter-spacing: 1px;
+    position: absolute;
+    left: -36px;
+    top: 50%;
+    transform: translateX(-50%) rotate(-90deg);
+  }
+
+  .insights {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    background: #ddd6c8;
+    border: 1px solid #ddd6c8;
+    margin-bottom: 32px;
+  }
+
+  .insight {
+    background: #fdfaf6;
+    padding: 20px 20px;
+  }
+
+  .insight-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px;
+    color: #1a1a2e;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .insight-num span {
+    font-size: 16px;
+    color: #8a7a5a;
+  }
+
+  .insight-label {
+    font-size: 12px;
+    color: #6a5a4a;
+    line-height: 1.5;
+  }
+
+  .examples-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .example-pill {
+    flex: 1;
+    background: #f0ebe3;
+    border-radius: 2px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .pill-icon {
+    font-size: 20px;
+    line-height: 1;
+    margin-top: 2px;
+  }
+
+  .pill-text {
+    font-size: 12px;
+    color: #4a3a2a;
+    line-height: 1.6;
+  }
+
+  .pill-near {
+    color: #2a4a2a;
+    font-weight: 600;
+  }
+
+  .pill-far {
+    color: #7a6a5a;
+  }
+
+  .source-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd6c8;
+    padding-top: 16px;
+    font-size: 11px;
+    color: #9a8a7a;
+    font-family: 'DM Mono', monospace;
+  }
+
+  .legend {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+    align-items: center;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #6a5a4a;
+  }
+
+  .legend-line {
+    width: 28px;
+    height: 3px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="accent-line"></div>
+  <div class="tag">BEHAVIORAL ECONOMICS · DAVID LAIBSON, 1997</div>
+  <h1>Hyperbolic Discounting</h1>
+  <div class="subtitle">
+    মানুষ ভবিষ্যতের পুরস্কারকে জ্যামিতিক হারে অবমূল্যায়ন করে।<br>
+    যা দূরে তা সত্য হলেও তার ওজন কম। যা সামনে তা মিথ্যা হলেও তার টান বেশি।
+  </div>
+
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-line" style="background:#1a1a2e;"></div>
+      <span>মানুষ যেভাবে মূল্য দেয় (Hyperbolic)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-line" style="background:#b8a882;border-top:2px dashed #b8a882;height:0;"></div>
+      <span>যৌক্তিক মূল্যায়ন (Exponential)</span>
+    </div>
+  </div>
+
+  <div class="chart-area" style="position:relative;padding-left:0;">
+    <canvas id="chart" height="280"></canvas>
+    <div class="chart-labels">
+      <span class="chart-label">এখন</span>
+      <span class="chart-label">১ সপ্তাহ</span>
+      <span class="chart-label">১ মাস</span>
+      <span class="chart-label">১ বছর</span>
+      <span class="chart-label">১০ বছর</span>
+      <span class="chart-label">মৃত্যু</span>
+    </div>
+    <div style="text-align:center;margin-top:4px;font-size:11px;color:#9a8a7a;font-family:'DM Mono',monospace;letter-spacing:1px;">সময়ের দূরত্ব →</div>
+  </div>
+
+  <div class="insights">
+    <div class="insight">
+      <div class="insight-num">∞<span>%</span></div>
+      <div class="insight-label">এখনকার সুবিধাকে আমরা কতটা বেশি মূল্য দিই</div>
+    </div>
+    <div class="insight">
+      <div class="insight-num">≈0<span>%</span></div>
+      <div class="insight-label">দূর ভবিষ্যতের গুরুত্বপূর্ণ ঘটনাকে আমরা যতটা গণ্য করি</div>
+    </div>
+    <div class="insight">
+      <div class="insight-num">৭<span>সেকেন্ড</span></div>
+      <div class="insight-label">মানুষের মনোযোগের গড় আয়ু — তারপর "পরে দেখব"</div>
+    </div>
+  </div>
+
+  <div class="examples-row">
+    <div class="example-pill">
+      <div class="pill-icon">🌍</div>
+      <div class="pill-text">
+        <span class="pill-near">জলবায়ু পরিবর্তন</span> জানি — 
+        <span class="pill-far">তবু গাড়ি চালাই।</span>
+        কারণ ক্ষতি দূরে, সুবিধা এখনই।
+      </div>
+    </div>
+    <div class="example-pill">
+      <div class="pill-icon">☠️</div>
+      <div class="pill-text">
+        <span class="pill-near">মৃত্যু নিশ্চিত</span> জানি — 
+        <span class="pill-far">তবু প্রস্তুতি নেই।</span>
+        কারণ মৃত্যু "অনেক পরে।"
+      </div>
+    </div>
+    <div class="example-pill">
+      <div class="pill-icon">🔍</div>
+      <div class="pill-text">
+        <span class="pill-near">ঈশ্বরের প্রশ্ন</span> গুরুত্বপূর্ণ — 
+        <span class="pill-far">তবু খুঁজি না।</span>
+        কারণ ফল তাৎক্ষণিক নয়।
+      </div>
+    </div>
+  </div>
+
+  <div class="source-line">
+    <span>এপিস্টেমিক রেসপনসিবিলিটি · প্রথম পর্ব</span>
+    <span>Laibson (1997) · QJE 112(2)</span>
+  </div>
+</div>
+
+<script>
+const canvas = document.getElementById('chart');
+const ctx = canvas.getContext('2d');
+
+canvas.width = canvas.offsetWidth * 2;
+canvas.height = 280 * 2;
+ctx.scale(2, 2);
+
+const W = canvas.offsetWidth / 2;
+const H = 140;
+const pad = { left: 40, right: 20, top: 15, bottom: 30 };
+const chartW = W - pad.left - pad.right;
+const chartH = H - pad.top - pad.bottom;
+
+// Background
+ctx.fillStyle = '#fdfaf6';
+ctx.fillRect(0, 0, W, H);
+
+// Grid lines
+ctx.strokeStyle = '#ede6da';
+ctx.lineWidth = 1;
+for (let i = 0; i <= 4; i++) {
+  const y = pad.top + (chartH / 4) * i;
+  ctx.beginPath();
+  ctx.moveTo(pad.left, y);
+  ctx.lineTo(W - pad.right, y);
+  ctx.stroke();
+}
+
+// Y-axis labels
+ctx.fillStyle = '#b8a882';
+ctx.font = '10px DM Mono, monospace';
+ctx.textAlign = 'right';
+['সর্বোচ্চ', '৭৫%', '৫০%', '২৫%', '≈০%'].forEach((label, i) => {
+  ctx.fillText(label, pad.left - 6, pad.top + (chartH / 4) * i + 4);
+});
+
+// Hyperbolic curve (human discounting - steep drop)
+ctx.strokeStyle = '#1a1a2e';
+ctx.lineWidth = 2.5;
+ctx.beginPath();
+const points = 200;
+for (let i = 0; i <= points; i++) {
+  const t = i / points; // 0 to 1 (time)
+  const x = pad.left + t * chartW;
+  const k = 8; // steepness
+  const val = 1 / (1 + k * t); // hyperbolic function
+  const y = pad.top + chartH * (1 - val);
+  if (i === 0) ctx.moveTo(x, y);
+  else ctx.lineTo(x, y);
+}
+ctx.stroke();
+
+// Shade under hyperbolic curve
+ctx.beginPath();
+for (let i = 0; i <= points; i++) {
+  const t = i / points;
+  const x = pad.left + t * chartW;
+  const k = 8;
+  const val = 1 / (1 + k * t);
+  const y = pad.top + chartH * (1 - val);
+  if (i === 0) ctx.moveTo(x, y);
+  else ctx.lineTo(x, y);
+}
+ctx.lineTo(W - pad.right, pad.top + chartH);
+ctx.lineTo(pad.left, pad.top + chartH);
+ctx.closePath();
+ctx.fillStyle = 'rgba(26,26,46,0.06)';
+ctx.fill();
+
+// Exponential curve (rational discounting - gradual)
+ctx.strokeStyle = '#b8a882';
+ctx.lineWidth = 1.5;
+ctx.setLineDash([6, 5]);
+ctx.beginPath();
+for (let i = 0; i <= points; i++) {
+  const t = i / points;
+  const x = pad.left + t * chartW;
+  const val = Math.exp(-1.5 * t);
+  const y = pad.top + chartH * (1 - val);
+  if (i === 0) ctx.moveTo(x, y);
+  else ctx.lineTo(x, y);
+}
+ctx.stroke();
+ctx.setLineDash([]);
+
+// Annotation dot — "ঈশ্বরের প্রশ্ন" zone
+ctx.fillStyle = '#c94a4a';
+ctx.beginPath();
+ctx.arc(pad.left + chartW * 0.65, pad.top + chartH * 0.88, 5, 0, Math.PI * 2);
+ctx.fill();
+
+ctx.fillStyle = '#c94a4a';
+ctx.font = '10px Noto Serif Bengali, serif';
+ctx.textAlign = 'left';
+ctx.fillText('← ঈশ্বরের প্রশ্ন এখানে', pad.left + chartW * 0.67, pad.top + chartH * 0.88 + 4);
+
+// Start dot
+ctx.fillStyle = '#1a1a2e';
+ctx.beginPath();
+ctx.arc(pad.left, pad.top, 5, 0, Math.PI * 2);
+ctx.fill();
+
+ctx.fillStyle = '#4a3a2a';
+ctx.font = '10px Noto Serif Bengali, serif';
+ctx.textAlign = 'left';
+ctx.fillText('এখনকার মূল্য', pad.left + 8, pad.top + 4);
+</script>
+</body>
+</html>
