@@ -386,27 +386,16 @@ ctx.textAlign = 'left';
 ctx.fillText('এখনকার মূল্য', pad.left + 8, pad.top + 4);
 
 // Tell parent iframe how tall we are
-function sendHeight() {
-  const h = document.documentElement.scrollHeight;
-  window.parent.postMessage({ iframeHeight: h }, '*');
-}
-// Canvas renders after load — wait a tick
-window.addEventListener('load', function() {
-  setTimeout(sendHeight, 100);
-  setTimeout(sendHeight, 500);
-});
-window.addEventListener('resize', function() {
-  setTimeout(sendHeight, 100);
-});
+
 
 function reportHeight() {
-  const h = document.querySelector('.card').getBoundingClientRect().height + 30;
-  window.parent.postMessage({ iframeHeight: Math.ceil(h) }, '*');
+  document.body.style.overflow = 'hidden';
+  const h = document.body.scrollHeight;
+  window.parent.postMessage({ iframeHeight: h }, '*');
 }
-window.addEventListener('load', function() {
-  setTimeout(reportHeight, 200);
-});
-window.addEventListener('resize', reportHeight);
+setTimeout(reportHeight, 100);
+setTimeout(reportHeight, 600);
+window.addEventListener('resize', function() { setTimeout(reportHeight, 100); });
 </script>
 </body>
 </html>
