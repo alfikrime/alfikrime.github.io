@@ -385,6 +385,21 @@ function Detail({a,lang,onBack}){
   const allText=(a.bodyParagraphs||[]).filter(b=>b.type==='p').map(b=>b.text).join(' ');
   const mins=Math.max(1,Math.ceil(allText.split(/\s+/).length/180));
 
+
+  const IFrame=({src,caption,defaultHeight})=>{
+    const [h,setH]=React.useState(defaultHeight);
+    React.useEffect(()=>{
+      const handler=(e)=>{if(e.data&&e.data.iframeHeight) setH(e.data.iframeHeight+20);};
+      window.addEventListener('message',handler);
+      return()=>window.removeEventListener('message',handler);
+    },[]);
+    return(
+      <div className="body">
+        <iframe className="art-iframe" src={src} height={h} width="100%" scrolling="no"></iframe>
+        {caption&&<div className="art-iframe-caption">{caption}</div>}
+      </div>
+    );
+  };
   const renderBody=()=>(a.bodyParagraphs||[]).map((b,i)=>{
     const txt=showEn?(b.textEn||b.text):b.text;
     if(b.type==='sec') return <div key={i} className="body"><div className="sec-head">{txt}</div></div>;
@@ -395,10 +410,7 @@ function Detail({a,lang,onBack}){
       </div>
     );
     if(b.type==='iframe') return(
-      <div key={i} className="body">
-        <iframe className="art-iframe" src={b.src} height={b.height||500} width="100%" scrolling="no" title={b.captionEn||b.caption}></iframe>
-        {b.caption&&<div className="art-iframe-caption">{showEn?(b.captionEn||b.caption):b.caption}</div>}
-      </div>
+      <IFrame key={i} src={b.src} caption={showEn?(b.captionEn||b.caption):b.caption} defaultHeight={b.height||700}/>
     );
     if(b.type==='img') return(
       <div key={i} className="body">

@@ -47,7 +47,7 @@
       {
         "type": "iframe",
         "src": "hyperbolic-discounting-chart.html",
-        "height": 620,
+        "height": 900,
         "caption": "Hyperbolic Discounting — সময়ের সাথে মূল্যের পতন (Laibson, 1997)",
         "captionEn": "Hyperbolic Discounting — the fall of value over time (Laibson, 1997)"
       },
@@ -286,7 +286,7 @@
     "isoDate": "2026-04-21",
     "showOnHome": true,
     "coverImage": {
-      "url": "epistemic-cover-1.jpg",
+      "url": "epistemic-cover-1.png",
       "caption": "",
       "captionEn": ""
     }
