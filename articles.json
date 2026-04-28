@@ -2214,7 +2214,12 @@
     ],
     "refs": [],
     "isoDate": "2026-04-09",
-    "showOnHome": true
+    "showOnHome": true,
+    "coverImage": {
+      "url": "munajat.png",
+      "caption": "",
+      "captionEn": ""
+    }
   },
   {
     "id": "ishwar-o-apeksha-1",
@@ -2266,7 +2271,12 @@
     ],
     "refs": [],
     "isoDate": "2026-04-11",
-    "showOnHome": false
+    "showOnHome": false,
+    "coverImage": {
+      "url": "opekkha.png",
+      "caption": "",
+      "captionEn": ""
+    }
   },
   {
     "id": "sannidher-akuti-1",
@@ -2323,7 +2333,12 @@
     ],
     "refs": [],
     "isoDate": "2026-04-13",
-    "showOnHome": false
+    "showOnHome": false,
+    "coverImage": {
+      "url": "akuti.png",
+      "caption": "",
+      "captionEn": ""
+    }
   },
   {
     "id": "jagaran-1",
@@ -2370,7 +2385,12 @@
     ],
     "refs": [],
     "isoDate": "2026-04-15",
-    "showOnHome": false
+    "showOnHome": false,
+    "coverImage": {
+      "url": "jagoron.png",
+      "caption": "",
+      "captionEn": ""
+    }
   },
   {
     "id": "bibarno-somoyer-arale-1",
@@ -2432,7 +2452,12 @@
     ],
     "refs": [],
     "isoDate": "2026-04-17",
-    "showOnHome": false
+    "showOnHome": false,
+    "coverImage": {
+      "url": "biborno.png",
+      "caption": "",
+      "captionEn": ""
+    }
   },
   {
     "id": "amitter-loy-1",
@@ -2481,6 +2506,11 @@
     ],
     "refs": [],
     "isoDate": "2026-04-19",
-    "showOnHome": false
+    "showOnHome": false,
+    "coverImage": {
+      "url": "amitto.png",
+      "caption": "",
+      "captionEn": ""
+    }
   }
 ]
