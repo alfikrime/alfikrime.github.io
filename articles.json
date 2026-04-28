@@ -453,6 +453,13 @@
         "textEn": "\"Unknown\" does not mean \"zero.\" Treating an unknown probability as zero is itself an assumption. And that assumption must be proven. Science has not yet proven the claim that \"there is no afterlife.\" Because the scientific method cannot speak to matters beyond empirical experience — that lies outside its capacity."
       },
       {
+        "type": "iframe",
+        "src": "teleological-card-1.html",
+        "height": 400,
+        "caption": "",
+        "captionEn": ""
+      },
+      {
         "type": "p",
         "text": "তাই আখেরাতের সম্ভাবনা যদি শূন্যের বেশি হয় — এবং কোনো প্রমাণ এটিকে শূন্য করতে পারেনি — তাহলে সেই অসীম পরিণতির দিকে প্রস্তুতি নেওয়াই যুক্তিসঙ্গত।",
         "textEn": "Therefore, if the probability of the afterlife is greater than zero — and no evidence has been able to reduce it to zero — then making preparation for that infinite outcome is rational."
@@ -665,7 +672,12 @@
     ],
     "isoDate": "2026-04-01",
     "nextId": "teleological-2",
-    "showOnHome": true
+    "showOnHome": true,
+    "coverImage": {
+      "url": "teleological-cover-1.png",
+      "caption": "",
+      "captionEn": ""
+    }
   },
   {
     "id": "teleological-2",

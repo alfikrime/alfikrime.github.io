@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body { margin: 0; padding: 0; background: transparent; overflow: hidden; }
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 26px 28px 22px;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.06),
+    0 4px 16px rgba(0,0,0,.07),
+    0 0 0 1px rgba(0,0,0,.05);
+  overflow: hidden;
+}
+
+.top-bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #c8922a 0%, #b83232 50%, #6b46d6 100%);
+}
+
+.fig-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: #7a6e5e;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.fig-label .en { letter-spacing: 2.5px; text-transform: uppercase; }
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: #1a140d;
+  margin-bottom: 22px;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+/* দুই কলাম তুলনা */
+.compare {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.col {
+  flex: 1;
+  border-radius: 7px;
+  padding: 14px 14px 12px;
+}
+
+.col-a {
+  background: #fdf6e8;
+  border: 1px solid #dfc06a;
+}
+
+.col-b {
+  background: #f2f0fb;
+  border: 1px solid #a09ad8;
+}
+
+.col-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+.col-a .col-tag { color: #8a6010; }
+.col-b .col-tag { color: #4a3a9a; }
+
+.col-icon { font-size: 22px; margin-bottom: 7px; }
+
+.col-main {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a140d;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.col-sub {
+  font-size: 12px;
+  color: #6a5a3a;
+  line-height: 1.6;
+}
+
+/* তীর মাঝে */
+.mid-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 20px;
+  color: #b8a98a;
+  font-size: 16px;
+  padding-top: 36px;
+}
+
+/* নিচের প্রশ্ন */
+.note {
+  border-top: 1px solid #ece8e0;
+  padding-top: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.note-line {
+  width: 3px;
+  min-height: 40px;
+  background: #b83232;
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.note-text {
+  font-size: 13px;
+  color: #3d3222;
+  line-height: 1.75;
+}
+
+.note-text em {
+  color: #1a140d;
+  font-style: normal;
+  font-weight: 700;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-bar"></div>
+
+  <div class="fig-label"><span class="en">Figure</span> · টেলিওলজিক্যাল রেশনালিটি</div>
+  <div class="title">খিদে যদি খাবারের দিকে নির্দেশ করে —<br>অর্থের তৃষ্ণা কোথায় নির্দেশ করে?</div>
+
+  <div class="compare">
+    <div class="col col-a">
+      <div class="col-tag">KNOWN</div>
+      <div class="col-icon">🍚</div>
+      <div class="col-main">খিদে</div>
+      <div class="col-sub">জৈবিক সংকেত — একটি বাস্তব প্রয়োজনের দিকে নির্দেশ করে। খাবার আছে বলেই খিদে আছে।</div>
+    </div>
+
+    <div class="mid-arrow">→</div>
+
+    <div class="col col-b">
+      <div class="col-tag">QUESTION</div>
+      <div class="col-icon">🔍</div>
+      <div class="col-main">অর্থের তৃষ্ণা</div>
+      <div class="col-sub">বস্তুগত পরিতৃপ্তিতে মেটে না — উন্নত বিশ্বেও নয়। তাহলে এই সংকেত কোথায় নির্দেশ করছে?</div>
+    </div>
+  </div>
+
+  <div class="note">
+    <div class="note-line"></div>
+    <div class="note-text">
+      Frankl, Maslow, Becker — তিনজনই দেখেছেন মানুষ <em>অর্থ ছাড়া বাঁচতে পারে না।</em> কিন্তু সেই অর্থ কোনো সীমাবদ্ধ মানবিক কাঠামোয় পূর্ণ হয় না। এই তৃষ্ণাটি কি কোনো <em>বাস্তব উৎসের সংকেত নয়?</em>
+    </div>
+  </div>
+</div>
+
+<script>
+function reportHeight() {
+  const h = document.body.scrollHeight;
+  window.parent.postMessage({ iframeHeight: h }, '*');
+}
+setTimeout(reportHeight, 200);
+window.addEventListener('resize', function() { setTimeout(reportHeight, 100); });
+</script>
+</body>
+</html>
