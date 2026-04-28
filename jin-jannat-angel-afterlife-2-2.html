@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Bengali:wght@400;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { margin: 0; padding: 0; background: transparent; overflow: hidden; }
+.card {
+  background:#fffdf8;
+  border:1px solid #e0d8c8;
+  border-radius:6px;
+  padding:18px 20px 14px;
+  width:100%; max-width:640px;
+  position:relative;
+}
+.top-bar {
+  position:absolute; top:0; left:0; right:0; height:3px;
+  background:#1a1a2e; border-radius:6px 6px 0 0;
+}
+.fig-label {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:8.5px; letter-spacing:2.5px; text-transform:uppercase;
+  color:#999; margin-bottom:8px;
+}
+.title {
+  font-family:'Playfair Display',serif;
+  font-style:italic; font-size:12.5px;
+  color:#1a1a2e; margin-bottom:14px; line-height:1.45;
+}
+
+/* 3-column row layout */
+.rows { display:flex; flex-direction:column; gap:5px; margin-bottom:11px; }
+
+.row {
+  display:grid;
+  grid-template-columns:30px 1fr 1fr 72px;
+  gap:6px;
+  align-items:center;
+  background:#faf7f0;
+  border:1px solid #e0d8c8;
+  border-radius:4px;
+  padding:8px 10px;
+}
+
+.row-num {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:9px; color:#ccc; font-weight:500;
+}
+
+.row-topic { font-size:10px; line-height:1.4; }
+.row-topic strong { color:#1a1a2e; font-weight:600; display:block; font-size:10px; margin-bottom:1px; }
+.row-topic span { color:#888; font-size:9px; }
+
+.row-finding { font-size:9.5px; color:#555; line-height:1.4; }
+
+.badge {
+  border-radius:3px; padding:4px 7px;
+  font-size:8px; text-align:center;
+  font-family:'IBM Plex Mono',monospace;
+  line-height:1.3;
+}
+.b-open   { background:#fdecea; border:1px solid #e8a0a0; color:#922b21; }
+.b-open2  { background:#fdf3e3; border:1px solid #e8c97a; color:#a07820; }
+.b-note   { background:#eef0ff; border:1px solid #a0a8e0; color:#2c3580; }
+
+/* col headers */
+.col-heads {
+  display:grid;
+  grid-template-columns:30px 1fr 1fr 72px;
+  gap:6px;
+  margin-bottom:4px;
+  padding:0 10px;
+}
+.col-head {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:7.5px; color:#bbb;
+  letter-spacing:.5px; text-transform:uppercase;
+}
+
+.footer {
+  border-top:1px solid #e8e0cc;
+  padding-top:9px;
+  display:flex; align-items:flex-start; gap:8px;
+}
+.foot-line {
+  width:3px; min-height:26px;
+  background:#1a1a2e; border-radius:2px;
+  flex-shrink:0; margin-top:1px;
+}
+.foot-text { font-size:9.5px; color:#666; line-height:1.55; }
+.foot-text em { color:#1a1a2e; font-style:normal; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-bar"></div>
+  <div class="fig-label">Figure 2 · বিজ্ঞানের তিনটি অমীমাংসিত সীমানা</div>
+  <div class="title">যেখানে বিজ্ঞান থামে — সেখানে প্রশ্ন শুরু</div>
+
+  <div class="col-heads">
+    <div></div>
+    <div class="col-head">বিষয়</div>
+    <div class="col-head">বিজ্ঞানের আবিষ্কার</div>
+    <div class="col-head">অবস্থান</div>
+  </div>
+
+  <div class="rows">
+
+    <div class="row">
+      <div class="row-num">০১</div>
+      <div class="row-topic">
+        <strong>চেতনার Hard Problem</strong>
+        <span>Chalmers · Penrose-Hameroff</span>
+      </div>
+      <div class="row-finding">কার্বন থেকে সচেতন অভিজ্ঞতা কীভাবে — সম্পূর্ণ অজানা। অন্য মাধ্যম থেকে চেতনা অসম্ভব বলার ভিত্তি নেই।</div>
+      <div class="badge b-open">✗ অমীমাংসিত</div>
+    </div>
+
+    <div class="row">
+      <div class="row-num">০২</div>
+      <div class="row-topic">
+        <strong>তথ্যের অবিনাশিতা</strong>
+        <span>Wheeler (১৯৮৯) · Hawking (২০০৪)</span>
+      </div>
+      <div class="row-finding">"It from Bit" — তথ্য কখনো মুছে যায় না, রূপান্তরিত হয়। প্রতিটি ঘটনা চিরকাল সংরক্ষিত।</div>
+      <div class="badge b-note">প্রতিষ্ঠিত নীতি</div>
+    </div>
+
+    <div class="row">
+      <div class="row-num">০৩</div>
+      <div class="row-topic">
+        <strong>মহাবিশ্বের ৯৫%</strong>
+        <span>Dark Matter · Dark Energy</span>
+      </div>
+      <div class="row-finding">বিজ্ঞান নিজেই জানে মহাবিশ্বের বেশিরভাগ তার পর্যবেক্ষণের বাইরে। অদৃশ্য মানেই অনুপস্থিত নয়।</div>
+      <div class="badge b-open2">জানা নেই</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="foot-line"></div>
+    <div class="foot-text">
+      বিজ্ঞান বলেনি <em>ফেরেশতা নেই, পরলোক নেই</em> — বিজ্ঞান বলেছে <em>"আমি জানি না।"</em> দরজাটা বন্ধ নয়।
+    </div>
+  </div>
+</div>
+
+<script>
+function reportHeight() {
+  const h = document.body.scrollHeight;
+  window.parent.postMessage({ iframeHeight: h }, '*');
+}
+setTimeout(reportHeight, 200);
+window.addEventListener('resize', function() { setTimeout(reportHeight, 100); });
+</script>
+</body>
+</html>

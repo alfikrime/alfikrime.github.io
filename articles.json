@@ -1672,6 +1672,13 @@
         "textEn": "In 1989, John Archibald Wheeler — the man who coined the term \"black hole,\" one of Princeton's most influential physicists — presented an idea at a symposium in Tokyo. He said — the fundamental constituent of the universe is not matter or energy. It is information. \"It from Bit\" — the existence of every material entity is fundamentally informational. And information is never destroyed — it transforms, but does not disappear."
       },
       {
+        "type": "iframe",
+        "src": "jin-jannat-angel-afterlife-2-1.html",
+        "height": 400,
+        "caption": "",
+        "captionEn": ""
+      },
+      {
         "type": "p",
         "text": "এই ধারণাটি এতটাই গভীর ছিল যে স্টিফেন হকিং এটি নিয়ে দশকের পর দশক বিতর্ক করেছেন। তিনি প্রথমে বলেছিলেন ব্ল্যাক হোল তথ্য ধ্বংস করে। পরে ২০০৪ সালে তিনি স্বীকার করলেন — না, তথ্য আসলে ধ্বংস হয় না।",
         "textEn": "This idea was so profound that Stephen Hawking debated it for decades. He first said black holes destroy information. Later, in 2004, he acknowledged — no, information is actually not destroyed."
@@ -1883,6 +1890,13 @@
         "type": "p",
         "text": "কার্বন থেকে চেতনা — এটা আমরা ব্যাখ্যা করতে পারি না।",
         "textEn": "Consciousness from carbon — we cannot explain this."
+      },
+      {
+        "type": "iframe",
+        "src": "jin-jannat-angel-afterlife-2-2.html",
+        "height": 400,
+        "caption": "",
+        "captionEn": ""
       },
       {
         "type": "p",
@@ -2173,7 +2187,12 @@
       }
     ],
     "isoDate": "2026-04-07",
-    "showOnHome": false
+    "showOnHome": false,
+    "coverImage": {
+      "url": "jin-jannat-angel-afterlife-2.png",
+      "caption": "",
+      "captionEn": ""
+    }
   },
   {
     "id": "munajat-1",

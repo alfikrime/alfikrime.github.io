@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Bengali:wght@400;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { margin: 0; padding: 0; background: transparent; overflow: hidden; }
+.card {
+  background:#fffdf8;
+  border:1px solid #e0d8c8;
+  border-radius:6px;
+  padding:18px 20px 14px;
+  width:100%; max-width:640px;
+  position:relative;
+}
+.top-bar {
+  position:absolute; top:0; left:0; right:0; height:3px;
+  background:#1a1a2e; border-radius:6px 6px 0 0;
+}
+.fig-label {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:8.5px; letter-spacing:2.5px; text-transform:uppercase;
+  color:#999; margin-bottom:8px;
+}
+.title {
+  font-family:'Playfair Display',serif;
+  font-style:italic; font-size:12.5px;
+  color:#1a1a2e; margin-bottom:14px; line-height:1.45;
+}
+
+.two-col {
+  display:grid;
+  grid-template-columns:1fr 1px 1fr;
+  gap:0;
+  margin-bottom:11px;
+}
+.divider { background:#e0d8c8; margin:0 10px; }
+
+.col-head {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:8px; letter-spacing:1px; text-transform:uppercase;
+  margin-bottom:8px; padding-bottom:5px;
+  border-bottom:1px solid #ede6d6;
+}
+.ch-red  { color:#922b21; }
+.ch-green{ color:#1a6e34; }
+
+.item {
+  display:flex; align-items:flex-start; gap:7px;
+  margin-bottom:6px;
+}
+.item:last-child { margin-bottom:0; }
+
+.dot {
+  width:6px; height:6px; border-radius:50%;
+  flex-shrink:0; margin-top:4px;
+}
+.d-red   { background:#c0392b; }
+.d-green { background:#27ae60; }
+
+.item-text { font-size:9.5px; line-height:1.5; }
+.it-red  { color:#7b241c; }
+.it-green{ color:#1e6e34; }
+.item-text strong { font-weight:600; display:block; font-size:10px; margin-bottom:1px; }
+
+.footer {
+  border-top:1px solid #e8e0cc;
+  padding-top:9px;
+  display:flex; align-items:flex-start; gap:8px;
+}
+.foot-line {
+  width:3px; min-height:26px;
+  background:#1a1a2e; border-radius:2px;
+  flex-shrink:0; margin-top:1px;
+}
+.foot-text { font-size:9.5px; color:#666; line-height:1.55; }
+.foot-text em { color:#1a1a2e; font-style:normal; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-bar"></div>
+  <div class="fig-label">Figure 1 · দুটি ভিন্ন দাবি</div>
+  <div class="title">"God of the Gaps" বনাম বিজ্ঞানের নিজস্ব সীমাস্বীকার</div>
+
+  <div class="two-col">
+    <!-- LEFT -->
+    <div>
+      <div class="col-head ch-red">✗ দুর্বল যুক্তি</div>
+
+      <div class="item">
+        <div class="dot d-red"></div>
+        <div class="item-text it-red">
+          <strong>God of the Gaps</strong>
+          বিজ্ঞান ব্যাখ্যা করতে পারছে না — তাই ঈশ্বর করেছেন
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="dot d-red"></div>
+        <div class="item-text it-red">
+          <strong>সমস্যা</strong>
+          বিজ্ঞান এগোলে ফাঁক বন্ধ হয়, ধর্ম পিছু হটে
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="dot d-red"></div>
+        <div class="item-text it-red">
+          <strong>প্রকৃতি</strong>
+          বিজ্ঞানের সাথে প্রতিযোগিতায় — এবং হারছে
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- RIGHT -->
+    <div style="padding-left:10px;">
+      <div class="col-head ch-green">✓ শক্তিশালী যুক্তি</div>
+
+      <div class="item">
+        <div class="dot d-green"></div>
+        <div class="item-text it-green">
+          <strong>বিজ্ঞানের পদ্ধতিগত সীমা</strong>
+          "কেন কিছু আছে?" — এই প্রশ্ন বিজ্ঞানের নাগালের বাইরে (Hawking)
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="dot d-green"></div>
+        <div class="item-text it-green">
+          <strong>মহাবিশ্বের ৯৫% অজানা</strong>
+          Dark Matter ও Dark Energy — বিজ্ঞানের নিজের স্বীকারোক্তি
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="dot d-green"></div>
+        <div class="item-text it-green">
+          <strong>প্রকৃতি</strong>
+          বিজ্ঞানের সততাকে সম্মান — প্রতিযোগিতা নয়, সংলাপ
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="foot-line"></div>
+    <div class="foot-text">
+      <em>"জানি না"</em> আর <em>"নেই"</em> — এক কথা নয়। এই পার্থক্যটুকুর ভেতরেই একটি মানুষের পুরো জীবনদর্শন বদলে যেতে পারে।
+    </div>
+  </div>
+</div>
+
+<script>
+function reportHeight() {
+  const h = document.body.scrollHeight;
+  window.parent.postMessage({ iframeHeight: h }, '*');
+}
+setTimeout(reportHeight, 200);
+window.addEventListener('resize', function() { setTimeout(reportHeight, 100); });
+</script>
+</body>
+</html>
