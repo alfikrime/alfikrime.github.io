@@ -45,13 +45,6 @@
         "textEn": "Two thousand years later, Harvard economist David Laibson named this illness in a new language — \"Hyperbolic Discounting\". People discount future rewards at a geometric rate.(2) What is far away loses its weight, even if it is true. What is close pulls hard, even if it is false."
       },
       {
-        "type": "iframe",
-        "caption": "Hyperbolic Discounting — সময়ের সাথে মূল্যের পতন (Laibson, 1997)",
-        "captionEn": "Hyperbolic Discounting — the fall of value over time (Laibson, 1997)",
-        "src": "hyperbolic-discounting-chart.html",
-        "height": 750
-      },
-      {
         "type": "p",
         "text": "এখানে একটি প্রশ্ন উঠতে পারে।",
         "textEn": "A question may arise here."
@@ -100,6 +93,13 @@
         "type": "p",
         "text": "এটি কি দোষের? না।",
         "textEn": "Is this a fault? No."
+      },
+      {
+        "type": "iframe",
+        "src": "Epistemic-card-1.html",
+        "height": 400,
+        "caption": "",
+        "captionEn": ""
       },
       {
         "type": "p",
