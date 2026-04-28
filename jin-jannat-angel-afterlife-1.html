@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body { margin: 0; padding: 0; background: transparent; overflow: hidden; }
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 24px 26px 20px;
+  width: 100%;
+  max-width: 560px;
+  position: relative;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.06),
+    0 4px 16px rgba(0,0,0,.07),
+    0 0 0 1px rgba(0,0,0,.05);
+  overflow: hidden;
+}
+
+.top-bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #c8922a 0%, #b83232 50%, #6b46d6 100%);
+}
+
+.fig-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: #7a6e5e;
+  margin-bottom: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.fig-label .en { letter-spacing: 2.5px; text-transform: uppercase; }
+
+/* ── মূল অংশ ── */
+.body { margin: 0; padding: 0; background: transparent; overflow: hidden; }
+
+.big-num {
+  flex: 0 0 auto;
+  background: #1a140d;
+  border-radius: 8px;
+  padding: 14px 18px;
+  text-align: center;
+}
+
+.big-num .num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 42px;
+  font-weight: 600;
+  color: #f0d080;
+  line-height: 1;
+  letter-spacing: -1px;
+  display: block;
+}
+
+.big-num .pct {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  color: #6a5830;
+  letter-spacing: 2px;
+  margin-top: 4px;
+  display: block;
+}
+
+.body-text {
+  flex: 1;
+}
+
+.body-text .main {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a140d;
+  line-height: 1.55;
+  margin-bottom: 5px;
+}
+
+.body-text .source {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  color: #b0a070;
+  letter-spacing: 1px;
+}
+
+/* ── প্রশ্ন ── */
+.question {
+  border-top: 1px solid #ece8e0;
+  padding-top: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.q-line {
+  width: 3px;
+  min-height: 32px;
+  background: #b83232;
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.q-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: #2a1e10;
+  line-height: 1.6;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-bar"></div>
+
+  <div class="fig-label"><span class="en">Figure</span> · বিজ্ঞানের স্বীকারোক্তি</div>
+
+  <div class="body">
+    <div class="big-num">
+      <span class="num">4.9</span>
+      <span class="pct">% মাত্র</span>
+    </div>
+    <div class="body-text">
+      <div class="main">মহাবিশ্বের এটুকুই আমরা দেখি, ছুঁই, পরিমাপ করি। বাকি ৯৫.১% — বিজ্ঞানের নিজের ভাষায় — সম্পূর্ণ অদৃশ্য।</div>
+      <div class="source">ESA · Planck Collaboration · 2020</div>
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="q-line"></div>
+    <div class="q-text">তাহলে "দেখা যায় না, তাই নেই" — এই কথাটি কি আদৌ বৈজ্ঞানিক?</div>
+  </div>
+</div>
+
+<script>
+function reportHeight() {
+  const h = document.body.scrollHeight;
+  window.parent.postMessage({ iframeHeight: h }, '*');
+}
+setTimeout(reportHeight, 200);
+window.addEventListener('resize', function() { setTimeout(reportHeight, 100); });
+</script>
+</body>
+</html>

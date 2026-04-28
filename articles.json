@@ -1193,6 +1193,13 @@
         "textEn": "Where are the remaining dimensions? Brian Greene stated in \"The Elegant Universe\" — these dimensions are probably curled up at an extremely small scale. So small that no instrument of ours can detect them."
       },
       {
+        "type": "iframe",
+        "src": "jin-jannat-angel-afterlife-1.html",
+        "height": 400,
+        "caption": "",
+        "captionEn": ""
+      },
+      {
         "type": "p",
         "text": "একটি পানির পাইপ দূর থেকে দেখলে মনে হয় এটি একটি রেখা — একটি মাত্রা। কিন্তু কাছে গেলে দেখা যায় এটি আসলে একটি নলাকার পৃষ্ঠ — দুটি মাত্রা। দূর থেকে সেই গোলাকার মাত্রাটি দেখাই যায় না। অতিরিক্ত মাত্রাগুলোও হয়তো এভাবেই আছে — আমাদের দৃষ্টির বাইরে, কিন্তু বাস্তব।",
         "textEn": "A water pipe seen from a distance appears to be a line — a single dimension. But up close, it can be seen as a cylindrical surface — two dimensions. From afar, that circular dimension cannot be seen at all. The extra dimensions may exist in precisely this way — beyond our sight, but real."
@@ -1407,7 +1414,12 @@
     ],
     "isoDate": "2026-04-05",
     "nextId": "angels-jinn-2",
-    "showOnHome": true
+    "showOnHome": true,
+    "coverImage": {
+      "url": "jin-jannat-angel-afterlife-1.png",
+      "caption": "",
+      "captionEn": ""
+    }
   },
   {
     "id": "angels-jinn-2",
