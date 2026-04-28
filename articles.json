@@ -826,6 +826,13 @@
         "textEn": "This debate has not been resolved. And this very irresolution is actually the most important piece of information. Because if science cannot definitively say \"there is nothing after death\" — then that question remains open. And spending one's life treating an open question as closed — is contrary to intellectual honesty."
       },
       {
+        "type": "iframe",
+        "src": "teleological-card-2.html",
+        "height": 400,
+        "caption": "",
+        "captionEn": ""
+      },
+      {
         "type": "div"
       },
       {
@@ -1054,7 +1061,12 @@
       }
     ],
     "isoDate": "2026-04-03",
-    "showOnHome": false
+    "showOnHome": false,
+    "coverImage": {
+      "url": "teleological-cover-2.png",
+      "caption": "",
+      "captionEn": ""
+    }
   },
   {
     "id": "angels-jinn-1",

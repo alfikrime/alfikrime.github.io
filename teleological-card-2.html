@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Bengali:wght@400;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { margin: 0; padding: 0; background: transparent; overflow: hidden; }
+.card {
+  background:#fffdf8;
+  border:1px solid #e0d8c8;
+  border-radius:6px;
+  padding:18px 20px 14px;
+  width:100%; max-width:640px;
+  position:relative;
+}
+.top-bar {
+  position:absolute; top:0; left:0; right:0; height:3px;
+  background:#1a1a2e; border-radius:6px 6px 0 0;
+}
+.fig-label {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:8.5px; letter-spacing:2.5px; text-transform:uppercase;
+  color:#666; margin-bottom:8px;
+}
+.title {
+  font-family:'Playfair Display',serif;
+  font-style:italic; font-size:12.5px;
+  color:#1a1a2e; margin-bottom:16px; line-height:1.45;
+}
+
+/* Two column layout */
+.split {
+  display:grid;
+  grid-template-columns:1fr 2px 1fr;
+  gap:0;
+  margin-bottom:13px;
+  min-height:140px;
+}
+
+.col {
+  padding:0 14px;
+}
+.col:first-child { padding-left:0; }
+.col:last-child  { padding-right:0; }
+
+.divider {
+  background: repeating-linear-gradient(
+    to bottom,
+    #c8bfaf 0px,
+    #c8bfaf 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  width:2px;
+  border-radius:1px;
+}
+
+.col-head {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:7.5px; letter-spacing:1.5px; text-transform:uppercase;
+  color:#777; margin-bottom:10px;
+}
+
+.item {
+  margin-bottom:9px;
+}
+.item-label {
+  font-size:9px; color:#555; margin-bottom:2px;
+  font-family:'IBM Plex Mono',monospace; letter-spacing:.3px;
+}
+.item-text {
+  font-size:10.5px; color:#1a1a2e; line-height:1.45;
+  font-weight:600;
+}
+
+/* right col — the unmeasured */
+.col-right .item-text {
+  color:#3d2710;
+  font-style:italic;
+  font-family:'Playfair Display',serif;
+  font-size:11px;
+  font-weight:400;
+}
+
+.footer {
+  border-top:1px solid #e8e0cc;
+  padding-top:9px;
+  display:flex; gap:8px; align-items:flex-start;
+}
+.foot-line {
+  width:3px; min-height:28px;
+  background:#1a1a2e; border-radius:2px;
+  flex-shrink:0; margin-top:1px;
+}
+.foot-text {
+  font-size:9.5px; color:#444; line-height:1.6;
+}
+.foot-text em {
+  color:#1a1a2e; font-style:normal; font-weight:600;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-bar"></div>
+  <div class="fig-label">Figure 2 · McNamara Fallacy</div>
+  <div class="title">যা গোনা যায় — আর যা গোনা যায় না</div>
+
+  <div class="split">
+
+    <!-- LEFT: what science measures -->
+    <div class="col">
+      <div class="col-head">বিজ্ঞান পরিমাপ করে</div>
+
+      <div class="item">
+        <div class="item-label">Easterlin (1974)</div>
+        <div class="item-text">আয় বাড়ে, সুখ থামে</div>
+      </div>
+
+      <div class="item">
+        <div class="item-label">Newberg (2001)</div>
+        <div class="item-text">প্রার্থনায় Prefrontal cortex সক্রিয় হয়</div>
+      </div>
+
+      <div class="item">
+        <div class="item-label">Harvard Chan (2016)</div>
+        <div class="item-text">ধর্মচর্চায় মৃত্যুহার ৩৩% কম</div>
+      </div>
+
+      <div class="item">
+        <div class="item-label">van Lommel · Lancet (2001)</div>
+        <div class="item-text">মস্তিষ্ক বন্ধেও অভিজ্ঞতা — ব্যাখ্যা নেই</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- RIGHT: what remains unmeasured -->
+    <div class="col col-right">
+      <div class="col-head">পরিমাপের বাইরে</div>
+
+      <div class="item">
+        <div class="item-label">যে প্রশ্নটি থাকে</div>
+        <div class="item-text">কেন বাঁচছি?</div>
+      </div>
+
+      <div class="item">
+        <div class="item-label">মৃত্যুশয্যায়</div>
+        <div class="item-text">আমি কোথায় যাচ্ছি?</div>
+      </div>
+
+      <div class="item">
+        <div class="item-label">চূড়ান্ত কষ্টে</div>
+        <div class="item-text">এই ব্যথার কোনো অর্থ আছে?</div>
+      </div>
+
+      <div class="item">
+        <div class="item-label">বিজ্ঞানের উত্তর</div>
+        <div class="item-text">নীরব।</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="foot-line"></div>
+    <div class="foot-text">
+      যা পরিমাপ করা যায় না — তাকে গুরুত্বহীন ভাবাটাই ভুল।
+      <em>মানুষের সবচেয়ে গভীর প্রশ্নগুলো ঠিক সেখানেই বাস করে।</em>
+      এই প্রশ্নগুলোর গভীর জ্ঞান <em>কেবল আলেমের কাছেই আছে।</em>
+    </div>
+  </div>
+</div>
+
+<script>
+function reportHeight() {
+  const h = document.body.scrollHeight;
+  window.parent.postMessage({ iframeHeight: h }, '*');
+}
+setTimeout(reportHeight, 200);
+window.addEventListener('resize', function() { setTimeout(reportHeight, 100); });
+</script>
+</body>
+</html>
