@@ -309,7 +309,7 @@ function Sidebar({lang,openArticle,setPage,setActiveCat}){
         <span className="sb-lbl">{bn?'সাম্প্রতিক':'Recent'}</span>
         {ARTICLES.length===0
           ?<p style={{fontSize:'13px',color:'var(--muted)',fontStyle:'italic'}}>{bn?'এখনো কোনো লেখা নেই':'No articles yet'}</p>
-          :ARTICLES.filter(a=>a.showOnHome!==false).slice(0,4).map(a=>(
+          :ARTICLES.filter(a=>a.showOnHome!==false).slice(0,6).map(a=>(
             <div key={a.id} className="rec" onClick={()=>openArticle(a)}>
               <div className="rec-t">{bn?a.title:a.titleEn}</div>
               <div className="rec-d">{bn?a.date:a.dateEn}</div>
