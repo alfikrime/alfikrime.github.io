@@ -364,7 +364,7 @@ function Card({a,lang,onClick}){
   );
 }
 
-function Detail({a,lang,onBack}){
+function Detail({a,lang,onBack,fromCat}){
   const bn=lang==='bn';
   const cat=CATS.find(c=>c.id===a.cat);
   const [showEn,setShowEn]=useState(false);
@@ -457,20 +457,22 @@ function Detail({a,lang,onBack}){
     );
   };
   const renderNext=()=>{
+    const sourceCat=fromCat||a.cat;
     const seriesNext=a.nextId?ARTICLES.find(x=>x.id===a.nextId)||null:null;
-    const sameCatNext=ARTICLES.filter(x=>x.id!==a.id&&x.cat===a.cat&&x.id!==(seriesNext?.id)&&x.showOnHome!==false).slice(0,1)[0]||null;
-    const otherNext=ARTICLES.filter(x=>x.id!==a.id&&x.cat!==a.cat&&x.showOnHome!==false).slice(0,1)[0]||null;
+    const sameCatArts=ARTICLES.filter(x=>x.id!==a.id&&x.cat===sourceCat&&x.id!==(seriesNext?.id)&&x.showOnHome!==false);
+    const sameCatNext=sameCatArts.length>0?sameCatArts[0]:null;
+    const otherNext=ARTICLES.filter(x=>x.id!==a.id&&x.cat!==sourceCat&&x.showOnHome!==false).slice(0,1)[0]||null;
     const cards=[];
-    if(seriesNext) cards.push({item:seriesNext,label:bn?'পরবর্তী পর্ব':'Next Part'});
-    else if(sameCatNext) cards.push({item:sameCatNext,label:bn?'আরো পড়ুন':'Read Next'});
-    else if(otherNext) cards.push({item:otherNext,label:bn?'আরো পড়ুন':'Read Next'});
+    if(seriesNext) cards.push({item:seriesNext,label:bn?'পরবর্তী পর্ব':'Next Part',cat:sourceCat});
+    else if(sameCatNext) cards.push({item:sameCatNext,label:bn?'আরো পড়ুন':'Read Next',cat:sourceCat});
+    else if(otherNext) cards.push({item:otherNext,label:bn?'আরো পড়ুন':'Read Next',cat:otherNext.cat});
     if(!cards.length) return null;
     return(
       <div className="next-section">
         <div className="next-label">{bn?'আরো পড়ুন':'Continue Reading'}</div>
         <div className="next-cards">
-          {cards.map(({item,label})=>(
-            <div key={item.id} className="next-card" onClick={()=>onBack(item)}>
+          {cards.map(({item,label,cat})=>(
+            <div key={item.id} className="next-card" onClick={()=>onBack(item,cat)}>
               <div className="next-card-badge">{label}</div>
               <div className="next-card-title">{bn?item.title:item.titleEn}</div>
               {item.abstract&&<div className="next-card-abs">{bn?item.abstract:item.abstractEn}</div>}
@@ -483,7 +485,7 @@ function Detail({a,lang,onBack}){
   };
   return(
     <div className="fi" style={{width:'100%'}}>
-      <button className="back" onClick={onBack}>← {showEn?'Back':'ফিরে যান'}</button>
+      <button className="back" onClick={()=>onBack(null)}>← {showEn?'Back':'ফিরে যান'}</button>
       <div style={{marginBottom:'12px',display:'flex',alignItems:'center',gap:'10px',flexWrap:'wrap'}}>
         <span className="pill">{showEn?cat?.en:cat?.bn}</span>
         <span className="read-badge">⏱ {showEn?`${mins} min read`:`${mins} মিনিট`}</span>
@@ -498,18 +500,12 @@ function Detail({a,lang,onBack}){
         <span>✍ কাজী ইবনুল হোসেন</span>
         <span>◷ {showEn?a.dateEn:a.date}</span>
       </div>
-      {a.abstract&&(
-        <div className="abs-box">
-          <div className="abs-lbl">{showEn?'Abstract':'সারসংক্ষেপ'}</div>
-          <p className="abs-txt">{showEn?a.abstractEn:a.abstract}</p>
-        </div>
-      )}
-      <div className="tags" style={{marginBottom:'28px'}}>
-        {(showEn?a.tagsEn:a.tags).map(t=><span key={t} className="tag">#{t}</span>)}
-      </div>
       {renderBody()}
       {renderRefs()}
-      <div style={{marginTop:'28px'}}>
+      <div className="tags" style={{margin:'28px 0 16px'}}>
+        {(showEn?a.tagsEn:a.tags).map(t=><span key={t} className="tag">#{t}</span>)}
+      </div>
+      <div style={{marginTop:'0'}}>
         <div style={{fontSize:'11px',color:'var(--muted)',fontFamily:'sans-serif',letterSpacing:'1px',marginBottom:'8px'}}>{showEn?'Share':'শেয়ার করুন'}</div>
         <div className="sh-row">
           <button className="sh-btn" onClick={()=>{navigator.clipboard.writeText(window.location.href);alert(showEn?'Copied!':'লিংক কপি!');}}>🔗 {showEn?'Copy':'কপি'}</button>
@@ -615,7 +611,7 @@ function App(){
   },[page,article,activeCat]);
 
   const [fromCat,setFromCat]=React.useState(null);
-  const openArticle=useCallback((a,cat)=>{setArticle(a);setPage('article');if(cat) setFromCat(cat); window.scrollTo(0,0);},[]);
+  const openArticle=useCallback((a,cat)=>{setArticle(a);setPage('article');setFromCat(cat||a.cat);window.scrollTo(0,0);},[]);
   return(
     <>
       <Header page={page} setPage={setPage} activeCat={activeCat} setActiveCat={setActiveCat} lang={lang} setLang={setLang}/>
@@ -624,7 +620,7 @@ function App(){
           <main style={{width:'100%',minWidth:0}}>
             {page==='home'    &&<Home     lang={lang} openArticle={openArticle} activeCat={activeCat} setActiveCat={setActiveCat} setPage={setPage}/>}
             {page==='cat'     &&<CatPage  lang={lang} catId={activeCat} openArticle={openArticle} setActiveCat={setActiveCat} setPage={setPage}/>}
-            {page==='article' &&article  &&<Detail a={article} lang={lang} onBack={(next)=>{if(next&&next.id){openArticle(next,fromCat);}else if(fromCat){setActiveCat(fromCat);setPage('cat');setFromCat(null);}else{setPage('home');}}}/>}
+            {page==='article' &&article  &&<Detail a={article} lang={lang} fromCat={fromCat} onBack={(next,cat)=>{if(next&&next.id){openArticle(next,cat||fromCat);}else if(fromCat){setActiveCat(fromCat);setPage('cat');setFromCat(null);window.scrollTo(0,0);}else{setPage('home');}}}/>}
             {page==='about'   &&<About   lang={lang}/>}
             {page==='contact' &&<Contact lang={lang}/>}
           </main>
