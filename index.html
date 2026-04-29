@@ -458,10 +458,12 @@ function Detail({a,lang,onBack}){
   };
   const renderNext=()=>{
     const seriesNext=a.nextId?ARTICLES.find(x=>x.id===a.nextId)||null:null;
-    const related=ARTICLES.filter(x=>x.id!==a.id&&x.id!==(seriesNext?.id)).slice(0,1)[0]||null;
+    const sameCatNext=ARTICLES.filter(x=>x.id!==a.id&&x.cat===a.cat&&x.id!==(seriesNext?.id)&&x.showOnHome!==false).slice(0,1)[0]||null;
+    const otherNext=ARTICLES.filter(x=>x.id!==a.id&&x.cat!==a.cat&&x.showOnHome!==false).slice(0,1)[0]||null;
     const cards=[];
     if(seriesNext) cards.push({item:seriesNext,label:bn?'পরবর্তী পর্ব':'Next Part'});
-    else if(related) cards.push({item:related,label:bn?'আরো পড়ুন':'Read Next'});
+    else if(sameCatNext) cards.push({item:sameCatNext,label:bn?'আরো পড়ুন':'Read Next'});
+    else if(otherNext) cards.push({item:otherNext,label:bn?'আরো পড়ুন':'Read Next'});
     if(!cards.length) return null;
     return(
       <div className="next-section">
@@ -612,7 +614,8 @@ function App(){
     else window.location.hash=page;
   },[page,article,activeCat]);
 
-  const openArticle=useCallback(a=>{setArticle(a);setPage('article');window.scrollTo(0,0);},[]);
+  const [fromCat,setFromCat]=React.useState(null);
+  const openArticle=useCallback((a,cat)=>{setArticle(a);setPage('article');if(cat) setFromCat(cat); window.scrollTo(0,0);},[]);
   return(
     <>
       <Header page={page} setPage={setPage} activeCat={activeCat} setActiveCat={setActiveCat} lang={lang} setLang={setLang}/>
@@ -621,7 +624,7 @@ function App(){
           <main style={{width:'100%',minWidth:0}}>
             {page==='home'    &&<Home     lang={lang} openArticle={openArticle} activeCat={activeCat} setActiveCat={setActiveCat} setPage={setPage}/>}
             {page==='cat'     &&<CatPage  lang={lang} catId={activeCat} openArticle={openArticle} setActiveCat={setActiveCat} setPage={setPage}/>}
-            {page==='article' &&article  &&<Detail a={article} lang={lang} onBack={(next)=>{if(next&&next.id){openArticle(next);}else{setPage('home');}}}/>}
+            {page==='article' &&article  &&<Detail a={article} lang={lang} onBack={(next)=>{if(next&&next.id){openArticle(next,fromCat);}else if(fromCat){setActiveCat(fromCat);setPage('cat');setFromCat(null);}else{setPage('home');}}}/>}
             {page==='about'   &&<About   lang={lang}/>}
             {page==='contact' &&<Contact lang={lang}/>}
           </main>
