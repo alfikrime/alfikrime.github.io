@@ -26,13 +26,13 @@
       {
         "type": "p",
         "dropcap": true,
-        "text": "একজন মানুষকে কল্পনা করুন।যে শিক্ষিত। বিশ্ববিদ্যালয় পেরিয়েছে। জানে ধূমপান ক্যান্সার ডেকে আনতে পারে— তবু সিগারেট ধরায়। জানে ব্যায়াম হৃদযন্ত্র ভালো রাখে — তবু শুয়ে থাকে। জানে মৃত্যু অনিবার্য — তবু কোনো প্রস্তুতি নেই।",
-        "textEn": "Imagine a person. Educated. University-educated. Knows that smoking can cause cancer — and yet lights a cigarette. Knows that exercise keeps the heart healthy — and yet stays in bed. Knows that death is inevitable — and yet no preparation."
+        "text": "আচ্ছা শুনুন, এমন একজন মানুষের কথা ভাবুন যে শিক্ষিত, ধরুন সে বিশ্ববিদ্যালয় পেরিয়েছে।সে জানে, যে সে ধুমপানের কারণে নানা রোগব্যাধি —করোনারি থ্রম্বোসিস বা স্ট্রোকে আক্রান্ত হতে পারে। সে জানে যে ব্যায়াম হৃদযন্ত্র ভালো রাখে — তবু শুয়ে থাকে অবিরাম।",
+        "textEn": "Now, listen. Think of a person — educated, say, someone who has been through university. He knows that smoking can lead to all manner of illness — coronary thrombosis, perhaps, or stroke. He knows that exercise keeps the heart sound — and yet he stays in bed, endlessly."
       },
       {
         "type": "p",
-        "text": "এই মানুষটি কে?\nসে আপনি। সে আমি। সে আমাদের সবার সম্মিলিত প্রতিকৃতি।",
-        "textEn": "Who is this person?\nIt is you. It is me. It is the collective portrait of all of us."
+        "text": "এই মানুষটি কে বলে মনেহয়?\nসে কিন্তু আপনি। সে হলাম আমি।বলতে গেলে, সে আমাদের সবার সম্মিলিত প্রতিকৃতি।\nএকই কথা মৃত্যুর ক্ষেত্রে বলা যায় না?আমরা সবাই জানি মৃত্যু অনিবার্য কিন্তু কোনো প্রস্তুতি নেই।",
+        "textEn": "Who do you suppose this person is?\nIt is you, actually. It is me. To put it plainly — it is the collective portrait of all of us.\nCan the same not be said of death? We all know it is inevitable. And yet there is no preparation."
       },
       {
         "type": "p",
@@ -56,8 +56,8 @@
       },
       {
         "type": "p",
-        "text": "এই আপত্তিটি সৎ। কিন্তু এটি মূল যুক্তিকে স্পর্শ করে না।",
-        "textEn": "This objection is honest. But it does not touch the core argument."
+        "text": "এই আপত্তিটি যৌক্তিক অবশ্যই। কিন্তু খুব সম্ভবত এই নিবন্ধের আলোচ্য বিষয় কিছুটা ভিন্ন।",
+        "textEn": "This objection is certainly logical. But the subject of this essay is, in all likelihood, somewhat different."
       },
       {
         "type": "p",
