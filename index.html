@@ -459,9 +459,9 @@ function Detail({a,lang,onBack,fromCat}){
   const renderNext=()=>{
     const sourceCat=fromCat||a.cat;
     const seriesNext=a.nextId?ARTICLES.find(x=>x.id===a.nextId)||null:null;
-    const sameCatArts=ARTICLES.filter(x=>x.id!==a.id&&x.cat===sourceCat&&x.id!==(seriesNext?.id)&&x.showOnHome!==false);
+    const sameCatArts=ARTICLES.filter(x=>x.id!==a.id&&x.cat===sourceCat&&x.id!==(seriesNext?.id));
     const sameCatNext=sameCatArts.length>0?sameCatArts[0]:null;
-    const otherNext=ARTICLES.filter(x=>x.id!==a.id&&x.cat!==sourceCat&&x.showOnHome!==false).slice(0,1)[0]||null;
+    const otherNext=ARTICLES.filter(x=>x.id!==a.id&&x.cat!==sourceCat).slice(0,1)[0]||null;
     const cards=[];
     if(seriesNext) cards.push({item:seriesNext,label:bn?'পরবর্তী পর্ব':'Next Part',cat:sourceCat});
     else if(sameCatNext) cards.push({item:sameCatNext,label:bn?'আরো পড়ুন':'Read Next',cat:sourceCat});
