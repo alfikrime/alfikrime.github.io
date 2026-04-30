@@ -1500,33 +1500,23 @@
       },
       {
         "type": "p",
-        "text": "\"God of the gaps\" — অজানার দেবতা। বিজ্ঞান যেখানে থামে, সেখানে ধর্মকে বসিয়ে দাও। এই অভিযোগটির একটি সরল যুক্তি আছে — বিজ্ঞান এগোলে ধর্মের জায়গা কমে। তাহলে ধর্মের দাবিগুলো কি শুধু অজ্ঞতার ফাঁকফোকরে বেঁচে থাকে?",
-        "textEn": "\"God of the gaps\" — the god of the unknown. Wherever science stops, place religion there. This objection has a simple logic — as science advances, religion's place diminishes. So do religion's claims survive only in the gaps of ignorance?"
+        "text": "\"God of the gaps\" — অজানার দেবতা। বিজ্ঞান যেখানে থামে, সেখানে ধর্মকে বসিয়ে দাও। এই অভিযোগটির একটি সরল যুক্তি হলো — বিজ্ঞান এগোলে ধর্মের জায়গা কমে। তাহলে ধর্মের দাবিগুলো কি শুধু অজ্ঞতার ফাঁকফোকরে বেঁচে থাকে না?—এই প্রশ্ন করা যায় সহজেই।",
+        "textEn": "\"God of the gaps\" — the god of the unknown. Wherever science stops, place religion there. The logic of this objection is simple — as science advances, religion's place shrinks. So can't one easily ask: do religion's claims survive only in the gaps of ignorance?"
       },
       {
         "type": "p",
-        "text": "এই প্রশ্নটিকে গুরুত্ব দেয়া দরকার।",
-        "textEn": "This question deserves serious attention."
+        "text": "এখানে বোঝার বিষয় হলো \"God of the gaps\" যুক্তিটি আসলে দুটি ভিন্ন দাবির মধ্যে পার্থক্য করে না।",
+        "textEn": "What needs to be understood here is that the \"God of the gaps\" argument actually fails to distinguish between two different claims."
       },
       {
         "type": "p",
-        "text": "কিন্তু পাশাপাশি আরেকটু গভীরেও যাওয়া দরকার।",
-        "textEn": "But alongside it, we need to go a little deeper."
+        "text": "প্রথম দাবি — বিজ্ঞান যা ব্যাখ্যা করতে পারে না, সেখানে ঈশ্বর আছেন। এটি দুর্বল যুক্তি।সবাই বোঝে এটা। কারণ বিজ্ঞান এগোলে সেই ফাঁক বন্ধ হয়ে যায়।",
+        "textEn": "The first claim — wherever science cannot explain, God is there. This is a weak argument. Everyone knows that. Because as science advances, that gap closes."
       },
       {
         "type": "p",
-        "text": "\"God of the gaps\" যুক্তিটি আসলে দুটি ভিন্ন দাবির মধ্যে পার্থক্য করে না।",
-        "textEn": "The \"God of the gaps\" argument actually fails to distinguish between two different claims."
-      },
-      {
-        "type": "p",
-        "text": "প্রথম দাবি — বিজ্ঞান যা ব্যাখ্যা করতে পারে না, সেখানে ঈশ্বর আছেন। এটি দুর্বল যুক্তি। কারণ বিজ্ঞান এগোলে সেই ফাঁক বন্ধ হয়ে যায়।",
-        "textEn": "The first claim — wherever science cannot explain, God is there. This is a weak argument. Because as science advances, that gap closes."
-      },
-      {
-        "type": "p",
-        "text": "দ্বিতীয় দাবি — বিজ্ঞানের পদ্ধতিগত সীমার বাইরে যে প্রশ্নগুলো আছে, সেখানে ধর্ম কথা বলে। এটি সম্পূর্ণ আলাদা কথা।",
-        "textEn": "The second claim — beyond the methodological limits of science lie questions where religion speaks. This is an entirely different matter."
+        "text": "দ্বিতীয় দাবি — বিজ্ঞানের পদ্ধতিগত সীমার বাইরে যে প্রশ্নগুলো আছে, সেখানে ধর্মের কথা বলার সুযোগ থাকা।এটি সম্পূর্ণ আলাদা কথা।",
+        "textEn": "The second claim — beyond the methodological limits of science lie questions where religion has the space to speak. That is an entirely different matter."
       },
       {
         "type": "p",
