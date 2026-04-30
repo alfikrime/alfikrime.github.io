@@ -364,7 +364,7 @@ function Card({a,lang,onClick}){
   );
 }
 
-function Detail({a,lang,onBack,fromCat}){
+function Detail({a,lang,onBack,fromCat,readHistory=[]}){
   const bn=lang==='bn';
   const cat=CATS.find(c=>c.id===a.cat);
   const [showEn,setShowEn]=useState(false);
@@ -459,9 +459,9 @@ function Detail({a,lang,onBack,fromCat}){
   const renderNext=()=>{
     const sourceCat=fromCat||a.cat;
     const seriesNext=a.nextId?ARTICLES.find(x=>x.id===a.nextId)||null:null;
-    const sameCatArts=ARTICLES.filter(x=>x.id!==a.id&&x.cat===sourceCat&&x.id!==(seriesNext?.id));
+    const sameCatArts=ARTICLES.filter(x=>x.id!==a.id&&x.cat===sourceCat&&x.id!==(seriesNext?.id)&&!readHistory.includes(x.id));
     const sameCatNext=sameCatArts.length>0?sameCatArts[0]:null;
-    const otherNext=ARTICLES.filter(x=>x.id!==a.id&&x.cat!==sourceCat).slice(0,1)[0]||null;
+    const otherNext=ARTICLES.filter(x=>x.id!==a.id&&x.cat!==sourceCat&&!readHistory.includes(x.id)).slice(0,1)[0]||null;
     const cards=[];
     if(seriesNext) cards.push({item:seriesNext,label:bn?'পরবর্তী পর্ব':'Next Part',cat:sourceCat});
     else if(sameCatNext) cards.push({item:sameCatNext,label:bn?'আরো পড়ুন':'Read Next',cat:sourceCat});
@@ -611,7 +611,8 @@ function App(){
   },[page,article,activeCat]);
 
   const [fromCat,setFromCat]=React.useState(null);
-  const openArticle=useCallback((a,cat)=>{setArticle(a);setPage('article');setFromCat(cat||a.cat);window.scrollTo(0,0);},[]);
+  const [readHistory,setReadHistory]=React.useState([]);
+  const openArticle=useCallback((a,cat)=>{setArticle(a);setPage('article');setFromCat(cat||a.cat);setReadHistory(prev=>[...new Set([...prev,a.id])]);window.scrollTo(0,0);},[]);
   return(
     <>
       <Header page={page} setPage={setPage} activeCat={activeCat} setActiveCat={setActiveCat} lang={lang} setLang={setLang}/>
@@ -620,7 +621,7 @@ function App(){
           <main style={{width:'100%',minWidth:0}}>
             {page==='home'    &&<Home     lang={lang} openArticle={openArticle} activeCat={activeCat} setActiveCat={setActiveCat} setPage={setPage}/>}
             {page==='cat'     &&<CatPage  lang={lang} catId={activeCat} openArticle={openArticle} setActiveCat={setActiveCat} setPage={setPage}/>}
-            {page==='article' &&article  &&<Detail a={article} lang={lang} fromCat={fromCat} onBack={(next,cat)=>{if(next&&next.id){openArticle(next,cat||fromCat);}else if(fromCat){setActiveCat(fromCat);setPage('cat');setFromCat(null);window.scrollTo(0,0);}else{setPage('home');}}}/>}
+            {page==='article' &&article  &&<Detail a={article} lang={lang} fromCat={fromCat} readHistory={readHistory} onBack={(next,cat)=>{if(next&&next.id){openArticle(next,cat||fromCat);}else if(fromCat){setActiveCat(fromCat);setPage('cat');setFromCat(null);window.scrollTo(0,0);}else{setPage('home');}}}/>}
             {page==='about'   &&<About   lang={lang}/>}
             {page==='contact' &&<Contact lang={lang}/>}
           </main>
