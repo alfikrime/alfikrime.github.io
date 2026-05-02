@@ -375,13 +375,6 @@
         "textEn": "What happens if we go back? If everything is moving away now — once everything was together. That is, there is a beginning.\nIn 1970, Stephen Hawking and Roger Penrose mathematically demonstrated that the universe has a point of origin — where time itself began.(1) Alexander Vilenkin, a physicist and one of the foremost advocates of Multiverse theory — a man of no theology — eventually conceded that all the evidence points to the universe having had a beginning.(2)"
       },
       {
-        "type": "iframe",
-        "src": "epistemic-card-2.html",
-        "height": 400,
-        "caption": "",
-        "captionEn": ""
-      },
-      {
         "type": "p",
         "text": "যা শুরু হয়, তার কারণ থাকে।\nএটি কোনো দার্শনিকের উদ্ভাবন নয় — এটি যুক্তির সবচেয়ে মৌলিক নীতি। দার্শনিক Gottfried Wilhelm Leibniz-এর প্রশ্নটি এখনো কেউ মেটাতে পারেননি — কেন কিছুই না থেকে কিছু আছে?",
         "textEn": "Whatever begins has a cause.\nThis is no philosopher's invention — it is the most fundamental principle of reason. The question posed by Gottfried Wilhelm Leibniz has yet to be answered by anyone — why is there something rather than nothing?"
@@ -465,6 +458,13 @@
         "type": "p",
         "text": "এটি বলছে — হয়তো ধ্রুবকগুলো স্বাধীন নয়। হয়তো কোনো গভীর নিয়মে আবদ্ধ। তাহলে প্রশ্ন আসে — সেই গভীর নিয়মটি কোথা থেকে এলো? একটি নিয়ম কি নিজে নিজেই থাকে? নাকি নিয়মের পেছনেও কোনো নিয়মকর্তা আছেন?\nপ্রশ্নটি ঘুরে ফেরে বারবার আবর্তিত হয়।",
         "textEn": "It is saying — perhaps the constants are not independent. Perhaps they are bound by some deeper law. Then the question becomes — where did that deeper law come from? Can a law exist by itself? Or is there a lawgiver behind the law?\nThe question circles back, again and again."
+      },
+      {
+        "type": "iframe",
+        "src": "epistemic-card-2.html",
+        "height": 400,
+        "caption": "",
+        "captionEn": ""
       },
       {
         "type": "p",
