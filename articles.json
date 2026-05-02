@@ -375,6 +375,13 @@
         "textEn": "What happens if we go back? If everything is moving away now — once everything was together. That is, there is a beginning.\nIn 1970, Stephen Hawking and Roger Penrose mathematically demonstrated that the universe has a point of origin — where time itself began.(1) Alexander Vilenkin, a physicist and one of the foremost advocates of Multiverse theory — a man of no theology — eventually conceded that all the evidence points to the universe having had a beginning.(2)"
       },
       {
+        "type": "iframe",
+        "src": "epistemic-card-2.html",
+        "height": 400,
+        "caption": "",
+        "captionEn": ""
+      },
+      {
         "type": "p",
         "text": "যা শুরু হয়, তার কারণ থাকে।\nএটি কোনো দার্শনিকের উদ্ভাবন নয় — এটি যুক্তির সবচেয়ে মৌলিক নীতি। দার্শনিক Gottfried Wilhelm Leibniz-এর প্রশ্নটি এখনো কেউ মেটাতে পারেননি — কেন কিছুই না থেকে কিছু আছে?",
         "textEn": "Whatever begins has a cause.\nThis is no philosopher's invention — it is the most fundamental principle of reason. The question posed by Gottfried Wilhelm Leibniz has yet to be answered by anyone — why is there something rather than nothing?"
@@ -605,9 +612,23 @@
         "textEn": "Let us begin with Hinduism. According to my reading, based on data from Patanjali and Panini — of the 21 branches of the Rigveda, only 2 survive; of the 101 branches of the Yajurveda, only 2 remain (that is, 5.8%); of the 1000 branches of the Samaveda, only 2–3 (a mere 0.2%); and of the 9 branches of the Atharvaveda, only 1. Of approximately 1,131 branches in total, today only 10–15 remain alive.(9)"
       },
       {
+        "type": "iframe",
+        "src": "vedic-shakha-loss-card.html",
+        "height": 400,
+        "caption": "",
+        "captionEn": ""
+      },
+      {
         "type": "p",
         "text": "বৌদ্ধ ধর্মের ক্ষেত্রে দেখলে— বুদ্ধের মৃত্যুর পর গড়ে ওঠা আনুমানিক ১৮টি নিকায়-স্কুলের প্রতিটির আলাদা ত্রিপিটক ছিল। Yijing-এর ৭ম শতকের বিবরণ অনুযায়ী চারটি প্রধান ঐতিহ্যের একটি — সম্মিতীয় ত্রিপিটক — মূল ভাষায় সম্পূর্ণ বিলুপ্ত। মহাসাংঘিক ত্রিপিটকেরও কোনো সম্পূর্ণ সংস্করণ টিকে নেই। ১৮টির মধ্যে কেবল থেরবাদ পালি ক্যানন সম্পূর্ণরূপে জীবিত।(১০)",
         "textEn": "In the case of Buddhism — each of approximately 18 Nikaya schools that arose after the Buddha's death had its own separate Tripitaka. According to Yijing's 7th-century account, one of the four major traditions — the Sammitiya Tripitaka — is completely lost in its original language. No complete version of the Mahasanghika Tripitaka survives either. Of the 18, only the Theravada Pali Canon survives in its entirety.(10)"
+      },
+      {
+        "type": "iframe",
+        "src": "tripitaka-loss-card.html",
+        "height": 400,
+        "caption": "",
+        "captionEn": ""
       },
       {
         "type": "p",
@@ -615,9 +636,23 @@
         "textEn": "What does academic Textual Criticism say about the Bible?\nBart Ehrman, who taught at Princeton and Chapel Hill, showed in Misquoting Jesus that the manuscripts of the New Testament contain more than two hundred thousand textual variants. Bruce Metzger's The Text of the New Testament is a standard academic reference — and it too documents an extensive history of variants.(11) Moreover, within the Bible itself, at least 18–20 books are mentioned by name that were considered authoritative at the time — such as the Book of the Wars of the Lord (Numbers 21:14), the Book of Jasher (Joshua 10:13), and the Chronicles of Nathan the Prophet — but are no longer to be found today."
       },
       {
+        "type": "iframe",
+        "src": "bible-loss-card.html",
+        "height": 400,
+        "caption": "",
+        "captionEn": ""
+      },
+      {
         "type": "p",
         "text": "অথচ কুরআনের ক্ষেত্রে ছবিটি সম্পূর্ণ ভিন্ন।\nঅমুসলিম পণ্ডিত Harald Motzki — Radboud University Nijmegen-এর অধ্যাপক — তাঁর গবেষণায় দেখিয়েছেন কুরআনের সংগ্রহ ও সংরক্ষণের প্রক্রিয়া ঐতিহাসিকভাবে অত্যন্ত নির্ভরযোগ্য।(১২) লিখিত পাণ্ডুলিপি এবং মুখস্থ পরম্পরা — দুটি সমান্তরাল ধারা একসাথে চলেছে। পৃথিবীর ইতিহাসে এটি অনন্য।",
         "textEn": "Yet in the case of the Quran, the picture is entirely different.\nNon-Muslim scholar Harald Motzki — professor at Radboud University Nijmegen — demonstrated in his research that the process of collecting and preserving the Quran is historically extremely reliable.(12) Written manuscripts and the oral tradition of memorization — two parallel streams have run together. In the history of the world, this is unique."
+      },
+      {
+        "type": "iframe",
+        "src": "quran-preservation-card.html",
+        "height": 400,
+        "caption": "",
+        "captionEn": ""
       },
       {
         "type": "p",

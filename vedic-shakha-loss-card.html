@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { margin:0; padding:0; background:transparent; overflow:hidden; }
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 24px 26px 20px;
+  width: 100%;
+  max-width: 640px;
+  position: relative;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.06),
+    0 4px 16px rgba(0,0,0,.07),
+    0 0 0 1px rgba(0,0,0,.05);
+  overflow: hidden;
+}
+
+.top-bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #8B1A1A 0%, #C4922A 50%, #8B1A1A 100%);
+}
+
+.fig-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: #3a2e20;
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #1a140d;
+  margin-bottom: 16px;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 7px;
+  margin-bottom: 14px;
+}
+
+.cell {
+  border-radius: 7px;
+  border: 1px solid #ece8e0;
+  overflow: hidden;
+}
+
+.cell-head {
+  padding: 7px 10px;
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  background: #f5f0eb;
+  color: #4a3a1e;
+}
+
+.cell-body {
+  padding: 9px 10px;
+  background: #fafaf8;
+}
+
+.cell-was {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #3a2e1a;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.cell-now {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 22px;
+  font-weight: 600;
+  color: #b83232;
+  line-height: 1.1;
+  margin-bottom: 5px;
+}
+
+.cell-bar-bg {
+  height: 5px;
+  background: #ece8e0;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.cell-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #8B1A1A, #C4922A);
+}
+
+.cell-pct {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #8B1A1A;
+  font-weight: 700;
+}
+
+.total-strip {
+  background: #1a140d;
+  border-radius: 7px;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.total-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #f0dca8;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.total-val {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.total-pct {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: #e07a3a;
+}
+
+.src-block {
+  border-top: 1px solid #ece8e0;
+  padding-top: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.src-line {
+  width: 3px; min-height: 32px;
+  background: #C4922A; border-radius: 2px;
+  flex-shrink: 0; margin-top: 2px;
+}
+.src-text {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #2e2010;
+  line-height: 1.9;
+}
+.src-text strong {
+  color: #1a1008;
+  font-weight: 700;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-bar"></div>
+
+  <div class="fig-label">Vedic Studies · শাখা বিলুপ্তি</div>
+  <div class="title">বৈদিক শাখাভিত্তিক বিলুপ্তির সারণি — কতটুকু হারিয়েছে?</div>
+
+  <div class="grid">
+    <div class="cell">
+      <div class="cell-head">ঋগ্বেদ</div>
+      <div class="cell-body">
+        <div class="cell-was">আগে: ২১টি</div>
+        <div class="cell-now">১–২</div>
+        <div class="cell-bar-bg"><div class="cell-bar-fill" style="width:95%"></div></div>
+        <div class="cell-pct">~৯৫% বিলুপ্ত</div>
+      </div>
+    </div>
+    <div class="cell">
+      <div class="cell-head">যজুর্বেদ</div>
+      <div class="cell-body">
+        <div class="cell-was">আগে: ১০১টি</div>
+        <div class="cell-now">৫–৬</div>
+        <div class="cell-bar-bg"><div class="cell-bar-fill" style="width:94%"></div></div>
+        <div class="cell-pct">~৯৪% বিলুপ্ত</div>
+      </div>
+    </div>
+    <div class="cell">
+      <div class="cell-head">সামবেদ</div>
+      <div class="cell-body">
+        <div class="cell-was">আগে: ১০০০টি</div>
+        <div class="cell-now">১–২</div>
+        <div class="cell-bar-bg"><div class="cell-bar-fill" style="width:99.5%"></div></div>
+        <div class="cell-pct">&gt;৯৯% বিলুপ্ত</div>
+      </div>
+    </div>
+    <div class="cell">
+      <div class="cell-head">অথর্ববেদ</div>
+      <div class="cell-body">
+        <div class="cell-was">আগে: ৯টি</div>
+        <div class="cell-now">১</div>
+        <div class="cell-bar-bg"><div class="cell-bar-fill" style="width:89%"></div></div>
+        <div class="cell-pct">~৮৯% বিলুপ্ত</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="total-strip">
+    <span class="total-label">মোট শাখা</span>
+    <span class="total-val">~১,১৩১ → ১০–১৫টি জীবিত</span>
+    <span class="total-pct">≈ ৯৯% বিলুপ্ত</span>
+  </div>
+
+  <div class="src-block">
+    <div class="src-line"></div>
+    <div class="src-text">
+      <strong>Primary:</strong> পতঞ্জলি, মহাভাষ্য (Vyākaraṇa-Mahābhāṣya), খ্রি.পূ. ২য় শতক · ed. F. Kielhorn, Bombay, 1880–85<br>
+      <strong>Traditional:</strong> Caraṇa-vyūha (Shaunaka, AV 49th pariśiṣṭa; Kātyāyana, ŚYV 5th pariśiṣṭa)<br>
+      <strong>Modern:</strong> Jan Gonda, Vedic Literature (Saṃhitās & Brāhmaṇas), Harrassowitz, 1975 · Wikipedia, "Shakha"
+    </div>
+  </div>
+</div>
+
+<script>
+function reportHeight() {
+  const h = document.body.scrollHeight;
+  window.parent.postMessage({ iframeHeight: h }, '*');
+}
+setTimeout(reportHeight, 200);
+window.addEventListener('resize', function() { setTimeout(reportHeight, 100); });
+</script>
+</body>
+</html>

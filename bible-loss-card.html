@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { margin:0; padding:0; background:transparent; overflow:hidden; }
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 24px 26px 20px;
+  width: 100%;
+  max-width: 680px;
+  position: relative;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.06),
+    0 4px 16px rgba(0,0,0,.07),
+    0 0 0 1px rgba(0,0,0,.05);
+  overflow: hidden;
+}
+
+.top-bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #2a4a7f 0%, #8B6914 50%, #2a4a7f 100%);
+}
+
+.fig-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: #1a2a3a;
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #0d1525;
+  margin-bottom: 6px;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #2a3545;
+  font-weight: 600;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.note-box {
+  background: #f0f4fa;
+  border-left: 3px solid #8B6914;
+  border-radius: 0 6px 6px 0;
+  padding: 9px 12px;
+  margin-bottom: 14px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #1a2535;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.note-box span { color: #8B1A1A; font-weight: 700; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+
+.cell {
+  border-radius: 7px;
+  border: 1px solid #d8e0ee;
+  overflow: hidden;
+}
+
+.cell-head {
+  padding: 7px 10px;
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  background: #e8eef8;
+  color: #0d1a30;
+}
+
+.cell-body {
+  padding: 9px 10px;
+  background: #f8fafd;
+}
+
+.cell-was {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px;
+  color: #1a2535;
+  font-weight: 600;
+  margin-bottom: 3px;
+  line-height: 1.5;
+}
+
+.cell-now {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+.cell-now.lost    { color: #8B1A1A; }
+.cell-now.partial { color: #8B5a10; }
+.cell-now.removed { color: #4a6a1a; }
+
+.cell-bar-bg {
+  height: 5px;
+  background: #d8e0ee;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.cell-bar-fill { height: 100%; border-radius: 3px; }
+.fill-lost    { background: linear-gradient(90deg, #8B1A1A, #c44a2a); }
+.fill-partial { background: linear-gradient(90deg, #8B5a10, #c4a020); }
+.fill-removed { background: linear-gradient(90deg, #4a6a1a, #7aaa2a); }
+
+.cell-pct {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+}
+.pct-lost    { color: #8B1A1A; }
+.pct-partial { color: #8B5a10; }
+.pct-removed { color: #4a6a1a; }
+
+.total-strip {
+  background: #0d1525;
+  border-radius: 7px;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.total-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #a8c0e8;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.total-val {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.total-pct {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: #e0c03a;
+}
+
+.src-block {
+  border-top: 1px solid #d8e0ee;
+  padding-top: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.src-line {
+  width: 3px; min-height: 32px;
+  background: #8B6914; border-radius: 2px;
+  flex-shrink: 0; margin-top: 2px;
+}
+.src-text {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #1a2535;
+  line-height: 1.85;
+}
+.src-text strong { color: #0a1525; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-bar"></div>
+
+  <div class="fig-label">Biblical Studies · বাইবেল গ্রন্থ বিলুপ্তি</div>
+  <div class="title">বাইবেলের হারানো গ্রন্থ ও পাঠ্য বিকৃতি — কতটুকু টিকে আছে?</div>
+  <div class="subtitle">বাইবেলে ক্ষতি তিন স্তরে: (১) বাইবেলেই উল্লিখিত হারানো গ্রন্থ · (২) ক্যানন থেকে বাদ দেওয়া গ্রন্থ · (৩) পাঠ্য বিকৃতি</div>
+
+  <div class="note-box">
+    ⚠ পার্থক্য: বেদের মতো "শাখা" বা ত্রিপিটকের মতো "স্কুল" নয় —
+    বাইবেলে ক্ষতি <span>সম্পূর্ণ ভিন্ন তিনটি স্তরে</span>, এবং
+    "হারানো" ও "বাদ দেওয়া" দুটো আলাদা ঘটনা।
+  </div>
+
+  <div class="grid">
+
+    <div class="cell">
+      <div class="cell-head">বাইবেলেই উল্লিখিত হারানো গ্রন্থ</div>
+      <div class="cell-body">
+        <div class="cell-was">সদাপ্রভুর যুদ্ধের বই (গণনা ২১:১৪), যাশরের বই (যিহোশুয়া ১০:১৩), সলোমনের কার্যবিবরণ, নাথান নবীর বিবরণী, পলের পূর্বতন চিঠি...</div>
+        <div class="cell-now lost">≥ ১৮–২০টি</div>
+        <div class="cell-bar-bg"><div class="cell-bar-fill fill-lost" style="width:100%"></div></div>
+        <div class="cell-pct pct-lost">১০০% বিলুপ্ত — একটিও উদ্ধার হয়নি</div>
+      </div>
+    </div>
+
+    <div class="cell">
+      <div class="cell-head">ক্যানন থেকে বাদ দেওয়া গ্রন্থ</div>
+      <div class="cell-body">
+        <div class="cell-was">Dead Sea Scrolls-এ ~৩০% টেক্সট এই শ্রেণির — Enoch (১২ কপি), Jubilees (১৩–১৬ কপি), Tobit, Sirach প্রভৃতি</div>
+        <div class="cell-now removed">বিদ্যমান, তবে বাদ</div>
+        <div class="cell-bar-bg"><div class="cell-bar-fill fill-removed" style="width:70%"></div></div>
+        <div class="cell-pct pct-removed">গ্রন্থ আছে, ক্যাননে নেই</div>
+      </div>
+    </div>
+
+    <div class="cell">
+      <div class="cell-head">পাঠ্য বিকৃতি — Textual Criticism</div>
+      <div class="cell-body">
+        <div class="cell-was">Bart Ehrman (UNC Chapel Hill): নতুন নিয়মের পাণ্ডুলিপিগুলোতে ২,০০,০০০+ পাঠান্তর (variants) — নতুন নিয়মের মোট শব্দসংখ্যার চেয়েও বেশি। Ulrich (Notre Dame): ≥১৩টি গ্রন্থে একাধিক সমান্তরাল সংস্করণ</div>
+        <div class="cell-now partial">২ লক্ষ+ পাঠান্তর</div>
+        <div class="cell-bar-bg"><div class="cell-bar-fill fill-partial" style="width:80%"></div></div>
+        <div class="cell-pct pct-partial">কোন পাঠ "মূল" — একাডেমিকভাবে বিতর্কিত</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="total-strip">
+    <span class="total-label">সামগ্রিক চিত্র</span>
+    <span class="total-val">১৮–২০টি গ্রন্থ বিলুপ্ত · ২,০০,০০০+ পাঠান্তর · ≥১৩ গ্রন্থে বহু-সংস্করণ</span>
+    <span class="total-pct">বহুস্তরীয় ক্ষতি</span>
+  </div>
+
+  <div class="src-block">
+    <div class="src-line"></div>
+    <div class="src-text">
+      <strong>হারানো গ্রন্থ:</strong> LDS Scripture Dictionary, "Lost Books" · CARM.org: carm.org/the-bible/other-books-mentioned-in-the-bible<br>
+      <strong>Apocrypha:</strong> Dead Sea Scrolls — Israel Antiquities Authority · deadseascrolls.org.il · DSS: ~৯৫০ পাণ্ডুলিপি, Qumran, ১৯৪৭–৫৬<br>
+      <strong>পাঠ্য বিকৃতি:</strong> Bart Ehrman, Misquoting Jesus, HarperOne, 2005 (Princeton / UNC Chapel Hill) · Eugene Ulrich, The Dead Sea Scrolls and the Origins of the Bible, Eerdmans, 1999
+    </div>
+  </div>
+</div>
+
+<script>
+function reportHeight() {
+  const h = document.body.scrollHeight;
+  window.parent.postMessage({ iframeHeight: h }, '*');
+}
+setTimeout(reportHeight, 200);
+window.addEventListener('resize', function() { setTimeout(reportHeight, 100); });
+</script>
+</body>
+</html>

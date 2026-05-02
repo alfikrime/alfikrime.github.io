@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { margin:0; padding:0; background:transparent; overflow:hidden; }
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 26px 28px 22px;
+  width: 100%;
+  max-width: 640px;
+  position: relative;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.06),
+    0 4px 16px rgba(0,0,0,.07),
+    0 0 0 1px rgba(0,0,0,.05);
+  overflow: hidden;
+}
+
+.top-bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #c8922a 0%, #b83232 50%, #6b46d6 100%);
+}
+
+.fig-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: #7a6e5e;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.fig-label .en {
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: #1a140d;
+  margin-bottom: 18px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+/* Three question rows */
+.rows { margin-bottom: 16px; display: flex; flex-direction: column; gap: 2px; }
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  background: #fafaf8;
+  border: 1px solid #ece8e0;
+}
+
+.row-icon {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+.ic1 { background:#fdf3dc; border:1.5px solid #c8922a; }
+.ic2 { background:#fde8e8; border:1.5px solid #b83232; }
+.ic3 { background:#ede8fb; border:1.5px solid #6b46d6; }
+
+.row-body { flex: 1; min-width: 0; }
+
+.row-q {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a140d;
+  line-height: 1.4;
+  margin-bottom: 2px;
+  font-family: 'Noto Sans Bengali', sans-serif;
+}
+
+.row-note {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #8a7a62;
+  line-height: 1.4;
+}
+
+.row-badge {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.badge-open { background: #fdf3dc; color: #8a5a00; border: 1px solid #e0b96a; }
+.badge-none { background: #fde8e8; color: #8a1a1a; border: 1px solid #e09090; }
+.badge-na   { background: #ede8fb; color: #4a2ab8; border: 1px solid #b8a0e8; }
+
+/* note */
+.note {
+  border-top: 1px solid #ece8e0;
+  padding-top: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.note-line {
+  width: 3px; min-height: 36px;
+  background: #c8922a;
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.note-text {
+  font-size: 13px;
+  color: #3d3222;
+  line-height: 1.7;
+  font-family: 'Noto Sans Bengali', sans-serif;
+}
+.note-text em { color: #1a140d; font-style: normal; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-bar"></div>
+
+  <div class="fig-label"><span class="en">Figure 1</span> · তিনটি অমীমাংসিত প্রশ্ন</div>
+  <div class="title">বিজ্ঞান যেখানে থামে — এবং কেন এটি গুরুত্বপূর্ণ</div>
+
+  <div class="rows">
+    <div class="row">
+      <div class="row-icon ic1">🌌</div>
+      <div class="row-body">
+        <div class="row-q">মহাবিশ্ব কোথা থেকে এলো?</div>
+        <div class="row-note">Hawking–Penrose (1970): সময় নিজেই শুরু হয়েছে একটি বিন্দু থেকে</div>
+      </div>
+      <div class="row-badge badge-open">কারণ অজ্ঞাত</div>
+    </div>
+    <div class="row">
+      <div class="row-icon ic2">⚖️</div>
+      <div class="row-body">
+        <div class="row-q">মহাবিশ্ব এত নিখুঁত কেন?</div>
+        <div class="row-note">Paul Davies: দৈবচয়নের সম্ভাবনা ১ / ১০¹²³ — কার্যত শূন্য</div>
+      </div>
+      <div class="row-badge badge-none">ব্যাখ্যাহীন</div>
+    </div>
+    <div class="row">
+      <div class="row-icon ic3">🧬</div>
+      <div class="row-body">
+        <div class="row-q">প্রথম প্রাণ কীভাবে এলো?</div>
+        <div class="row-note">Francis Crick: "প্রায় একটি অলৌকিক ঘটনার মতো" — নাস্তিক বিজ্ঞানীর স্বীকারোক্তি</div>
+      </div>
+      <div class="row-badge badge-na">সমাধান নেই</div>
+    </div>
+  </div>
+
+  <div class="note">
+    <div class="note-line"></div>
+    <div class="note-text">
+      এগুলো জ্ঞানের <em>অস্থায়ী ফাঁক নয়</em> — বিজ্ঞানের <em>কাঠামোগত সীমা।</em> "বিজ্ঞান একদিন ব্যাখ্যা দেবে" — এটি বিশ্বাস, প্রমাণ নয়।
+    </div>
+  </div>
+</div>
+
+<script>
+function reportHeight() {
+  const h = document.body.scrollHeight;
+  window.parent.postMessage({ iframeHeight: h }, '*');
+}
+setTimeout(reportHeight, 200);
+window.addEventListener('resize', function() { setTimeout(reportHeight, 100); });
+</script>
+</body>
+</html>

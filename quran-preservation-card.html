@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { margin:0; padding:0; background:transparent; overflow:hidden; }
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 24px 26px 20px;
+  width: 100%;
+  max-width: 680px;
+  position: relative;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.06),
+    0 4px 16px rgba(0,0,0,.07),
+    0 0 0 1px rgba(0,0,0,.05);
+  overflow: hidden;
+}
+
+.top-bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1a4a2e 0%, #c4852a 50%, #1a4a2e 100%);
+}
+
+.fig-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: #1a2e1a;
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #0d1a0d;
+  margin-bottom: 6px;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #2e3e2e;
+  font-weight: 600;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+/* Two-column main grid */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+
+.cell {
+  border-radius: 7px;
+  border: 1px solid #d0e4d0;
+  overflow: hidden;
+}
+
+.cell-head {
+  padding: 7px 10px;
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  background: #e4f0e4;
+  color: #0d2a0d;
+}
+
+.cell-body {
+  padding: 9px 10px;
+  background: #f8fbf8;
+}
+
+.cell-desc {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px;
+  color: #2a3a2a;
+  font-weight: 600;
+  margin-bottom: 6px;
+  line-height: 1.55;
+}
+
+.cell-now {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  color: #1a5a1a;
+}
+
+.cell-bar-bg {
+  height: 5px;
+  background: #d0e4d0;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.cell-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #1a5a1a, #4aaa2a);
+}
+
+.cell-pct {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  color: #1a5a1a;
+}
+
+/* Variant note — full width below grid */
+.variant-box {
+  background: #fffbf0;
+  border: 1px solid #e0c87a;
+  border-left: 3px solid #c4852a;
+  border-radius: 0 6px 6px 0;
+  padding: 9px 12px;
+  margin-bottom: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px;
+  color: #2a200a;
+  font-weight: 600;
+  line-height: 1.75;
+}
+.variant-box .vb-head {
+  font-size: 10px;
+  color: #7a4a0a;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.variant-box span { color: #8B3a1A; font-weight: 700; }
+.variant-box .analogy {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px dashed #e0c87a;
+  color: #3a3010;
+}
+
+.total-strip {
+  background: #0d1f0d;
+  border-radius: 7px;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.total-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #a8d4a8;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.total-val {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+.total-pct {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: #7adc6a;
+}
+
+.src-block {
+  border-top: 1px solid #d0e4d0;
+  padding-top: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.src-line {
+  width: 3px; min-height: 32px;
+  background: #c4852a; border-radius: 2px;
+  flex-shrink: 0; margin-top: 2px;
+}
+.src-text {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #1a2a1a;
+  line-height: 1.85;
+}
+.src-text strong { color: #0a1a0a; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-bar"></div>
+
+  <div class="fig-label">Quranic Studies · কুরআন সংরক্ষণ</div>
+  <div class="title">কুরআনের সংরক্ষণ — ছবিটি সম্পূর্ণ ভিন্ন</div>
+  <div class="subtitle">লিখিত পাণ্ডুলিপি ও মুখস্থ পরম্পরা — দুটি সমান্তরাল ধারা একসাথে · পৃথিবীর ইতিহাসে অনন্য</div>
+
+  <div class="main-grid">
+    <div class="cell">
+      <div class="cell-head">লিখিত সংরক্ষণ</div>
+      <div class="cell-body">
+        <div class="cell-desc">নবীজির জীবদ্দশায় লেখা শুরু · উসমানি মুসহাফ (৬৫০ খ্রি.) থেকে একক মানদণ্ড · সানার পাণ্ডুলিপি (১ম শতক হিজরি) মূল পাঠের সাথে সামঞ্জস্যপূর্ণ</div>
+        <div class="cell-now">অবিচ্ছিন্ন</div>
+        <div class="cell-bar-bg"><div class="cell-bar-fill" style="width:100%"></div></div>
+        <div class="cell-pct">মূল পাঠ অক্ষুণ্ণ</div>
+      </div>
+    </div>
+
+    <div class="cell">
+      <div class="cell-head">মুখস্থ পরম্পরা (হিফয)</div>
+      <div class="cell-body">
+        <div class="cell-desc">প্রতিটি প্রজন্মে লক্ষাধিক হাফিয · সনদ-ভিত্তিক মুখস্থ শৃঙ্খল নবী পর্যন্ত · আজ পর্যন্ত নিরবচ্ছিন্নভাবে জারি</div>
+        <div class="cell-now">জীবিত ও অটুট</div>
+        <div class="cell-bar-bg"><div class="cell-bar-fill" style="width:100%"></div></div>
+        <div class="cell-pct">একমাত্র গ্রন্থ যার হাফিয কোটিতে</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sana variant clarification -->
+  <div class="variant-box">
+    <div class="vb-head">⚠ সানার পাণ্ডুলিপির পাঠান্তর — প্রকৃতি ও মাত্রা</div>
+    Sadeghi &amp; Goudarzi (Der Islam, 2012) — পার্থক্যগুলো <span>বিরলভাবেই মূল অর্থ থেকে সরে যায়</span>।
+    বেশিরভাগ ক্ষেত্রে পার্থক্য: বানান · উচ্চারণরীতি · পরিপূর্ণ সমার্থক শব্দ (Absolute Synonyms)।
+    আরবের বিভিন্ন গোত্রের মধ্যে প্রচলিত দশটি কেরাত মূলত এই জাতীয় পার্থক্য।
+    <div class="analogy">
+      উপমা: "Schedule" → UK: শেডিউল / USA: স্কেজিউল — উচ্চারণ আলাদা, শব্দ এক।
+      "Buy" ও "Purchase" — অর্থ অভিন্ন। এ প্রতিস্থাপনে মূল বক্তব্য পরিবর্তন হয় না।
+    </div>
+  </div>
+
+  <div class="total-strip">
+    <span class="total-label">তুলনামূলক চিত্র</span>
+    <span class="total-val">বেদ ৯৯% · ত্রিপিটক ৯৪% · বাইবেল ২ লক্ষ+ পাঠান্তর — কুরআন: ভিন্ন মাত্রা</span>
+    <span class="total-pct">০% বিলুপ্ত</span>
+  </div>
+
+  <div class="src-block">
+    <div class="src-line"></div>
+    <div class="src-text">
+      <strong>Motzki:</strong> Harald Motzki, "The Collection of the Quran", Al-Qantara, Vol. 23, 2002 · Radboud University Nijmegen<br>
+      <strong>Sana MS:</strong> Behnam Sadeghi &amp; Mohsen Goudarzi, "Ṣanʿāʾ 1 and the Origins of the Quran", Der Islam, Vol. 87, 2012 (Stanford / Harvard)<br>
+      <strong>Qira'at:</strong> Ibn Mujahid, Kitāb al-Sabʿa (৩rd c. AH) · Shady Nasser, The Transmission of the Variant Readings of the Quran, Brill, 2013
+    </div>
+  </div>
+</div>
+
+<script>
+function reportHeight() {
+  const h = document.body.scrollHeight;
+  window.parent.postMessage({ iframeHeight: h }, '*');
+}
+setTimeout(reportHeight, 200);
+window.addEventListener('resize', function() { setTimeout(reportHeight, 100); });
+</script>
+</body>
+</html>
