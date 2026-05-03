@@ -3135,7 +3135,7 @@
       "dialogue",
       "reason"
     ],
-    "showOnHome": false,
+    "showOnHome": true,
     "bodyParagraphs": [
       {
         "type": "sec",
