@@ -200,7 +200,7 @@ const CATS=[
   {id:'science',   bn:'বিজ্ঞান ও নৈতিকতা',    en:'Science & Ethics',         desc:'প্রতিভা, নৈতিক ব্যর্থতা এবং বিজ্ঞানের সীমার অনুসন্ধান'},
   {id:'history',   bn:'সভ্যতা ও ইতিহাস',      en:'Civilization & History',   desc:'আলোকায়ন, যুদ্ধ, ইসলামি সভ্যতা — তুলনামূলক বিশ্লেষণ'},
   {id:'psychology',bn:'মনোবিজ্ঞান ও মানবআচরণ',en:'Psychology & Human Nature','desc':'আসক্তি, সম্পর্ক, আত্মপরিচয় ও মানবিক দুর্বলতা'},
-  {id:'dialogue',  bn:'অবিশ্বাসের সংলাপ',     en:'Dialogue with Doubt',      desc:'রাসেল, ডকিন্স ও সমসাময়িক নাস্তিক চিন্তার সাথে যুক্তিনিষ্ঠ আলাপ'},
+  {id:'dialogue',  bn:'অবিশ্বাসের সংলাপ',     en:'Dialogue with Doubt',      desc:'রাসেল, ডকিন্স ও সমসাময়িক নাস্তিক চিন্তার সাথে যুক্তিনিষ্ঠ আলাপ', subcats:[{id:'russell',bn:'বার্ট্রান্ড রাসেল',en:'Bertrand Russell'}]},
   {id:'literature',bn:'সাহিত্য ও কবিতা',      en:'Literature & Poetry',      desc:'কাব্যিক গদ্য, প্রতিফলন এবং জীবনের কাব্য'},
 ];
 
@@ -537,15 +537,42 @@ function Home({lang,openArticle,activeCat,setActiveCat,setPage}){
 function CatPage({catId,lang,openArticle,setActiveCat,setPage}){
   const bn=lang==='bn';
   const cat=CATS.find(c=>c.id===catId);
-  const arts=ARTICLES.filter(a=>a.cat===catId);
+  const [activeSub,setActiveSub]=useState(null);
+  const hasSubs=cat?.subcats&&cat.subcats.length>0;
+  const arts=hasSubs&&activeSub
+    ? ARTICLES.filter(a=>a.cat===catId&&a.subcat===activeSub)
+    : ARTICLES.filter(a=>a.cat===catId&&(!hasSubs||!a.subcat));
   return(
     <div className="fi" style={{width:'100%'}}>
       <MCats lang={lang} activeCat={catId} setActiveCat={setActiveCat} setPage={setPage}/>
       <div className="c-head">
-        <h2>{bn?cat?.bn:cat?.en}</h2>
-        <p>{cat?.desc}</p>
+        {activeSub
+          ? <><button className="back" style={{marginBottom:'10px'}} onClick={()=>setActiveSub(null)}>← {bn?'ফিরে যান':'Back'}</button>
+              <h2>{bn?cat?.subcats.find(s=>s.id===activeSub)?.bn:cat?.subcats.find(s=>s.id===activeSub)?.en}</h2>
+              <p style={{fontSize:'13px',color:'var(--muted)',fontStyle:'italic'}}>{bn?cat?.bn:cat?.en}</p></>
+          : <><h2>{bn?cat?.bn:cat?.en}</h2><p>{cat?.desc}</p></>
+        }
       </div>
-      {arts.length===0?<Empty bn={bn}/>:arts.map(a=><Card key={a.id} a={a} lang={lang} onClick={openArticle}/>)}
+      {hasSubs&&!activeSub&&(
+        <div style={{display:'flex',flexDirection:'column',gap:'10px',marginBottom:'24px'}}>
+          {cat.subcats.map(s=>{
+            const cnt=ARTICLES.filter(a=>a.cat===catId&&a.subcat===s.id).length;
+            return(
+              <div key={s.id} onClick={()=>setActiveSub(s.id)}
+                style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'14px 18px',border:'1px solid var(--border)',borderRadius:'3px',cursor:'pointer',background:'var(--white)',transition:'box-shadow .2s'}}
+                onMouseEnter={e=>e.currentTarget.style.boxShadow='0 4px 18px rgba(92,61,30,.1)'}
+                onMouseLeave={e=>e.currentTarget.style.boxShadow='none'}>
+                <div>
+                  <div style={{fontFamily:"'Playfair Display',serif",fontSize:'17px',fontWeight:600,color:'var(--ink)',marginBottom:'3px'}}>{bn?s.bn:s.en}</div>
+                  <div style={{fontSize:'12px',color:'var(--muted)',fontFamily:'sans-serif'}}>{cnt} {bn?'টি লেখা':'articles'}</div>
+                </div>
+                <span style={{fontSize:'20px',color:'var(--accent)'}}>›</span>
+              </div>
+            );
+          })}
+        </div>
+      )}
+      {(!hasSubs||activeSub)&&(arts.length===0?<Empty bn={bn}/>:arts.map(a=><Card key={a.id} a={a} lang={lang} onClick={openArticle}/>))}
     </div>
   );
 }
