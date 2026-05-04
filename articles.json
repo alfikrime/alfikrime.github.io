@@ -1120,7 +1120,7 @@
       },
       {
         "type": "p",
-        "text": "এটি ন্যায্য প্রশ্ন। এবং সৎভাবে বলতে হবে — না, এই একটি তথ্য থেকে সরাসরি সেই সিদ্ধান্তে পৌঁছানো যায় না। আর ফ্রাঙ্কল নিজেও থামেননি সেখানে।",
+        "text": "— না, এই একটি তথ্য থেকে সরাসরি সেই সিদ্ধান্তে পৌঁছানো যায় না। আর ফ্রাঙ্কল নিজেও থামেননি সেখানে।",
         "textEn": "This is a fair question. And honestly — no, from this single piece of evidence one cannot directly reach that conclusion. And Frankl himself did not stop there."
       },
       {
@@ -1529,8 +1529,8 @@
       },
       {
         "type": "p",
-        "text": "কিন্তু শেষ কথাটি এই নয়। শেষ কথাটি হলো — এই লেখা পড়ে যদি কেউ একটু থামেন। একটু ভাবেন। নিজেকে জিজ্ঞেস করেন: আমি কোন গন্তব্যের জন্য প্রস্তুতি নিচ্ছি? তাহলেই এই লেখার উদ্দেশ্য পূর্ণ হয়।",
-        "textEn": "But the final word is not this. The final word is — if anyone, having read this essay, pauses for a moment. Thinks for a moment. Asks themselves: for which destination am I preparing? Then the purpose of this essay will have been fulfilled."
+        "text": "কিন্তু সে যাই হোক,আলেম যে দায়িত্বই পালন করুক না কেন,নিজের মধ্যেও আত্ম-জিজ্ঞাসার সৃষ্টি হওয়া  প্রয়োজন—প্রশ্ন করা উচিত নিজেকে—আসলে আমি কোন গন্তব্যের জন্য প্রস্তুতি নিচ্ছি? ",
+        "textEn": "But whatever the case — whatever responsibility the scholar fulfils — within oneself too, a genuine self-questioning must arise. One ought to ask oneself: for which destination, truly, am I preparing?"
       },
       {
         "type": "p",
@@ -2276,16 +2276,6 @@
       },
       {
         "type": "p",
-        "text": "এই আপত্তিটি সৎ।",
-        "textEn": "This objection is honest."
-      },
-      {
-        "type": "p",
-        "text": "এবং উত্তরটাও সৎভাবে দেওয়া দরকার।",
-        "textEn": "And the answer must also be given honestly."
-      },
-      {
-        "type": "p",
         "text": "না — এই দুটো হুবহু এক নয়। পদার্থবিজ্ঞানের তথ্য-সংরক্ষণ নীতি থেকে সরাসরি আমলনামা প্রমাণ হয় না। এটা বলাও ঠিক হবে না।",
         "textEn": "No — these two are not exactly the same. The law of information conservation in physics does not directly prove the amal-nama. It would not be right to say that."
       },
@@ -2321,11 +2311,6 @@
         "type": "p",
         "text": "অভিযোগটি হলো — কোয়ান্টাম মেকানিক্সের ধারণাগুলো ব্যবহার করে ধর্মীয় বিশ্বাসকে বৈজ্ঞানিক রং দেওয়ার চেষ্টা করা হচ্ছে। এটি বিজ্ঞানের অপব্যবহার।",
         "textEn": "The objection is that quantum mechanical concepts are being used to give religious belief a scientific veneer. This is a misuse of science."
-      },
-      {
-        "type": "p",
-        "text": "এই অভিযোগটির একটি ন্যায্য দিক আছে।",
-        "textEn": "This objection has a fair side."
       },
       {
         "type": "p",
@@ -2384,11 +2369,6 @@
       },
       {
         "type": "p",
-        "text": "একটা কথা সৎভাবে বলা দরকার।",
-        "textEn": "Something needs to be said honestly."
-      },
-      {
-        "type": "p",
         "text": "এই পুরো আলোচনায় কোথাও দাবি করা হয়নি যে বিজ্ঞান ফেরেশতার অস্তিত্ব প্রমাণ করেছে। কোথাও বলা হয়নি কোয়ান্টাম মেকানিক্স আখেরাত প্রমাণ করে।",
         "textEn": "Nowhere in this entire discussion has it been claimed that science has proven the existence of angels. Nowhere has it been said that quantum mechanics proves the afterlife."
       },
@@ -2424,11 +2404,6 @@
       },
       {
         "type": "p",
-        "text": "এই প্রশ্নটির একটি ন্যায্য দিক আছে।",
-        "textEn": "This question has a fair side."
-      },
-      {
-        "type": "p",
         "text": "কিন্তু এটাও বোঝা উচিত যে ছদ্মবেশ আর সংলাপ — এক কথা নয়।",
         "textEn": "But it should also be understood that disguise and dialogue are not the same thing."
       },
@@ -2441,11 +2416,6 @@
         "type": "p",
         "text": "আপত্তিটি সৎ।",
         "textEn": "The objection is honest."
-      },
-      {
-        "type": "p",
-        "text": "কিন্তু এখানে একটি মৌলিক প্রশ্ন এড়িয়ে যাওয়া হচ্ছে।",
-        "textEn": "But a fundamental question is being avoided here."
       },
       {
         "type": "p",
@@ -2668,16 +2638,6 @@
         "type": "p",
         "text": "কিন্তু দরজাটা বন্ধ ভেবে বসে থাকা — সেটা হয়তো সবচেয়ে বড় ভুল।",
         "textEn": "But sitting believing the door is closed — that may be the greatest mistake."
-      },
-      {
-        "type": "p",
-        "text": "এই লেখা পড়ে যদি কেউ একটু থামেন। একটু ভাবেন।",
-        "textEn": "If after reading this someone pauses for a moment. Thinks a little."
-      },
-      {
-        "type": "p",
-        "text": "আর বন্ধ দরজায় করাঘাতের সৎ সাহস করেন, তাহলেই যথেষ্ট।",
-        "textEn": "And finds the honest courage to knock on a door they thought was closed — that is enough."
       }
     ],
     "refs": [
