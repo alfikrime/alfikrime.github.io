@@ -3340,5 +3340,460 @@
       }
     ],
     "refs": []
+  },
+  {
+    "id": "russell-genetic-fallacy-1",
+    "cat": "philosophy",
+    "title": "রাসেল যে ফাঁদে পা দিয়েছেন:Genetic Fallacy এবং ধর্মের উৎপত্তির প্রশ্ন—প্রথম পর্ব",
+    "titleEn": "The Trap Russell Fell Into: Genetic Fallacy and the Question of Religion's Origin — Part One",
+    "coverImage": "Russell-refute-genetic-fallacy-cover-1.png",
+    "date": "০৬ মে ২০২৬",
+    "dateEn": "06 May 2026",
+    "abstract": "রাসেল বলেছেন ধর্মের উৎপত্তি ভয়ে — এই দাবিটি নিজেই Genetic Fallacy। একজন বড় যুক্তিবিদ নিজের মানদণ্ড নিজে ভাঙলেন কীভাবে — এবং উইলিয়াম জেমস ও Neurotheology কীভাবে সেই দাবিকে চ্যালেঞ্জ করে।",
+    "abstractEn": "Russell claimed religion originates in fear — but this claim itself commits the Genetic Fallacy. How one of history's greatest logicians broke his own standards, and how William James and Neurotheology challenge his central premise.",
+    "tags": [
+      "দর্শন",
+      "রাসেল",
+      "Genetic Fallacy",
+      "ধর্ম",
+      "যুক্তিবিদ্যা"
+    ],
+    "tagsEn": [
+      "philosophy",
+      "Russell",
+      "Genetic Fallacy",
+      "religion",
+      "logic"
+    ],
+    "bodyParagraphs": [
+      {
+        "type": "sec",
+        "text": "এক.",
+        "textEn": "One."
+      },
+      {
+        "type": "p",
+        "dropcap": true,
+        "text": "১৯৩৫ সালে \"Religion and Science\" নামে একটি বই বেরোল। বইয়ের লেখক বারট্রান্ড আর্থার উইলিয়াম রাসেল। সেখানে একটি উদ্ধৃতি রয়েছে —\n\n*\"Religion is based, I think, primarily and mainly upon fear. It is partly the terror of the unknown and partly, as I have said, the wish to feel that you have a kind of elder brother who will stand by you in all your troubles and disputes… Fear is the basis of the whole thing — fear of the mysterious, fear of defeat, fear of death.\"* [1]",
+        "textEn": "In 1935, a book appeared under the title \"Religion and Science.\" Its author was Bertrand Arthur William Russell. Within it lies a passage —\n\n*\"Religion is based, I think, primarily and mainly upon fear. It is partly the terror of the unknown and partly, as I have said, the wish to feel that you have a kind of elder brother who will stand by you in all your troubles and disputes… Fear is the basis of the whole thing — fear of the mysterious, fear of defeat, fear of death.\"* [1]"
+      },
+      {
+        "type": "p",
+        "text": "এখন পর্যন্ত প্রায় নব্বই বছর পার হয়ে গেছে। কিন্তু বিতর্ক,বক্তৃতায়,প্রবন্ধে বাক্যটি এখনো উদ্ধৃত হয়। বাংলাভাষী পাঠকের কাছেও পরিচিত এই ধারণা। ধারণাটি হলো — ধর্ম মানুষের ভয় থেকে জন্মেছে — মৃত্যুর ভয়, অজানার ভয়, কিংবা প্রাকৃতিক শক্তির ভয়।",
+        "textEn": "Nearly ninety years have passed. Yet the passage continues to be cited — in debates, lectures, essays. Bengali readers too are familiar with the idea. The idea being: religion was born from human fear — fear of death, fear of the unknown, fear of natural forces."
+      },
+      {
+        "type": "p",
+        "text": "এই দাবিটি হঠাৎ করে শুনলে মনে হবে বেশ গভীর ও বৈজ্ঞানিক এবং এতটাই আত্মবিশ্বাসী যে সাধারণ পাঠক সহজেই মাথা নেড়ে বলেন — হ্যাঁ, এটাই তো সত্যি।",
+        "textEn": "Heard for the first time, the claim sounds deep, scientific, and self-assured enough that the ordinary reader readily nods — yes, that must be true."
+      },
+      {
+        "type": "p",
+        "text": "কিন্তু দাবিটির ভেতরেই একটি গভীর দার্শনিক ভুল রয়েছে। এবং সেই ভুলটি সাধারণ কোনো ভুল নয় — এটি এমন একটি ভুল, যা রাসেল নিজে তাঁর যুক্তিবিদ্যার পাঠে বারবার অন্যদের বেলায় চিহ্নিত করেছেন। নিজের বেলায় করেননি।",
+        "textEn": "But within the claim itself lies a profound philosophical error. And it is not an ordinary error — it is precisely the kind of error Russell himself repeatedly identified in others throughout his work in logic. He never applied it to himself."
+      },
+      {
+        "type": "p",
+        "text": "এই নিবন্ধ সেই ভুলটি নিয়ে।",
+        "textEn": "This essay is about that error."
+      },
+      {
+        "type": "sec",
+        "text": "দুই.",
+        "textEn": "Two."
+      },
+      {
+        "type": "p",
+        "text": "শুরু করার আগে একটা কথা বলে রাখা দরকার। রাসেলের যুক্তিকে দুর্বল সংস্করণে উপস্থাপন করে খণ্ডন করার একটি প্রবণতা অনেকের মধ্যে দেখা যায়। দার্শনিকরা এই কাজটিকে বলেন *Straw Man Fallacy*। এই নিবন্ধে সেটা করা হবে না। রাসেলের যুক্তিটি তার সবচেয়ে শক্তিশালী রূপেই বোঝা দরকার।",
+        "textEn": "Before proceeding, something must be said. There is a tendency among many to refute Russell by presenting a weakened version of his argument. Philosophers call this the *Straw Man Fallacy*. This essay will not do that. Russell's argument must be understood in its strongest form."
+      },
+      {
+        "type": "p",
+        "text": "রাসেলের দাবি কেবল এটুকু নয় যে কিছু মানুষ ভয় থেকে ধর্মে আসে। সেটা তুচ্ছ দাবি হতো — কারণ কেউ অস্বীকার করত না। রাসেলের দাবি অনেক বড়। তাঁর মতে ধর্মের উৎপত্তিই ভয়ে, এবং সেই কারণেই ধর্ম মানবজাতির জন্য ক্ষতিকর।",
+        "textEn": "Russell's claim is not merely that some people come to religion through fear. That would be a trivial claim — no one would deny it. Russell's claim is far larger. In his view, religion's very origin lies in fear, and it is for this reason that religion is harmful to humanity."
+      },
+      {
+        "type": "p",
+        "text": "এই দাবিটি আসলে একটি যুক্তিশৃঙ্খল। তার কাঠামো এরকম —\n\nপ্রথম প্রস্তাব: ধর্মের উৎপত্তি মৃত্যুভয়ে, অজানার ভয়ে এবং প্রকৃতির শক্তির ভয়ে।\n\nদ্বিতীয় প্রস্তাব: ভয় একটি আদিম ও অযৌক্তিক মানবিক প্রতিক্রিয়া। বাস্তবতার সঠিক উপলব্ধি থেকে নয়, বরং বাস্তবতার অজ্ঞতা থেকে জন্ম নেওয়া।\n\nউপসংহার: সুতরাং ধর্মীয় বিশ্বাস তার মূলে অযৌক্তিক এবং বাস্তবতার ভুল উপলব্ধির উপর দাঁড়ানো।",
+        "textEn": "This claim is in fact a chain of argument. Its structure runs as follows —\n\nFirst premise: Religion originates in the fear of death, fear of the unknown, and fear of nature's forces.\n\nSecond premise: Fear is a primitive and irrational human response. It is born not from a correct perception of reality, but from ignorance of reality.\n\nConclusion: Therefore religious belief is, at its root, irrational — standing upon a mistaken perception of reality."
+      },
+      {
+        "type": "p",
+        "text": "এই যুক্তিশৃঙ্খলটি রাসেলের পুরো ধর্মবিরোধী অবস্থানের একটি ভিত্তিস্তম্ভ। এটি ভুল প্রমাণিত হলে পুরো কাঠামোই দুর্বল হয়ে পড়ে।",
+        "textEn": "This chain of argument is one of the foundational pillars of Russell's entire anti-religious position. If it is shown to be flawed, the entire structure weakens."
+      },
+      {
+        "type": "sec",
+        "text": "তিন.",
+        "textEn": "Three."
+      },
+      {
+        "type": "p",
+        "text": "একটি পরিচিত ফ্যালাসি দিয়ে শুরু করতে চাই। যার নাম *Genetic Fallacy* — দর্শনের ইতিহাসে একটি সুপরিচিত যুক্তিদোষ। এর মানে হলো — কোনো বিশ্বাস বা দাবির উৎপত্তির কারণ দিয়ে সেই বিশ্বাসের সত্যাসত্য নির্ধারণ করা। অর্থাৎ, এই বিশ্বাসটি এভাবে জন্মেছে, সুতরাং এটি সত্য নয় — এই ধরনের যুক্তি মূলত ভুল। কারণ কোনো বিশ্বাসের জন্মের ইতিহাস তার সত্যাসত্যের সাথে যুক্তিগতভাবে সম্পর্কিত নয়।",
+        "textEn": "I wish to begin with a familiar fallacy. Its name is the *Genetic Fallacy* — a well-known logical error in the history of philosophy. It means: determining the truth or falsity of a belief by the circumstances of its origin. That is, this belief came into being in this way, therefore it is not true — this kind of argument is fundamentally flawed. Because the history of how a belief arose is not logically connected to its truth or falsity."
+      },
+      {
+        "type": "p",
+        "text": "কয়েকটি উদাহরণে বিষয়টা স্পষ্ট হবে।",
+        "textEn": "A few examples will make this clear."
+      },
+      {
+        "type": "p",
+        "text": "ধরুন কেউ বলল — তুমি বিবর্তনবাদে বিশ্বাস করো কারণ তোমার বিশ্ববিদ্যালয়ের শিক্ষক তোমাকে তা পড়িয়েছেন, নিজে গবেষণা করোনি — সুতরাং বিবর্তনবাদ মিথ্যা। এখানে ভুলটি হলো — বিবর্তনবাদ সত্য কি মিথ্যা, তা নির্ভর করে জৈবিক প্রমাণের উপর — কেউ কোথা থেকে সেই বিশ্বাস অর্জন করল, তার উপর নয়। যদিও ডারউইন যেই অর্থে বিবর্তনবাদ বলেছিলেন, একদল সেটাকে \"মানুষ ঈশ্বর কর্তৃক সৃষ্ট নয়\" — এর প্রমাণ স্বরূপ গ্রহণ করেছে এবং তা যে মস্ত বিভ্রান্তি — সেই আলোচনার জায়গা এটা নয়। তবুও কেবল নিজে গবেষণা করেনি বলে ভুল — এটা বলাও যথার্থ যৌক্তিক নয়।",
+        "textEn": "Suppose someone says — you believe in evolution because your university professor taught it to you, you have not researched it yourself — therefore evolution is false. The error here is this: whether evolution is true or false depends on biological evidence — not on where someone acquired that belief. Though it must be said that there are those who have taken what Darwin meant by evolution as proof that \"humans were not created by God\" — and that is an enormous confusion, but this is not the place for that discussion. Still, to say something is wrong merely because one has not researched it oneself is also not logically sound."
+      },
+      {
+        "type": "p",
+        "text": "যাইহোক, আরেকটি উদাহরণ দেওয়া যাক।",
+        "textEn": "In any case, let another example be given."
+      },
+      {
+        "type": "p",
+        "text": "ধরুন কেউ বলল — নিউটন মাধ্যাকর্ষণ তত্ত্ব আবিষ্কার করেছিলেন কারণ একটি আপেল তার মাথায় পড়েছিল — সুতরাং মাধ্যাকর্ষণ তত্ত্ব অবৈজ্ঞানিক। এই যুক্তি কি হাস্যকর হবে না? একটি তত্ত্বের অনুপ্রেরণা যাই হোক, তার বৈজ্ঞানিক বৈধতা নির্ভর করে প্রমাণ ও যাচাইযোগ্যতার উপর।",
+        "textEn": "Suppose someone says — Newton discovered the theory of gravity because an apple fell on his head — therefore the theory of gravity is unscientific. Would that argument not be laughable? Whatever the inspiration for a theory, its scientific validity depends on evidence and verifiability."
+      },
+      {
+        "type": "p",
+        "text": "সুতরাং বুঝতেই পারছেন — উৎপত্তি আর সত্যাসত্য এক জিনিস নয়।",
+        "textEn": "So it is clear — origin and truth are not the same thing."
+      },
+      {
+        "type": "p",
+        "text": "এখন স্বাভাবিকভাবেই একটি প্রশ্ন উঠতে পারে। রাসেল কি সত্যিই এতটা সরল যুক্তি করেছেন? তিনি কি শুধু বলেছেন — ভয় থেকে এসেছে, তাই মিথ্যা? নাকি তাঁর যুক্তিটি আরও সূক্ষ্ম? তিনি কি আসলে বলতে চেয়েছেন যে ভয়-চালিত বিশ্বাস-গঠন পদ্ধতি সত্য নির্ণয়ের নির্ভরযোগ্য পদ্ধতি নয় — অর্থাৎ এটি একটি *Epistemic Debunking Argument*?",
+        "textEn": "A natural question arises here. Has Russell really made such a simple argument? Did he merely say — it came from fear, therefore it is false? Or is his argument more subtle? Did he actually mean to argue that the method of belief-formation driven by fear is not a reliable method for determining truth — that is, that this is an *Epistemic Debunking Argument*?"
+      },
+      {
+        "type": "p",
+        "text": "আধুনিক দর্শনে *Epistemic Debunking Argument*-এর কাঠামো এরকম — যদি দেখানো যায় যে একটি বিশ্বাস এমন একটি পদ্ধতিতে গঠিত হয়েছে যা সত্যের প্রতি সংবেদনশীল নয়, যাকে বলে *not truth-tracking*, তাহলে সেই বিশ্বাসের জ্ঞানতাত্ত্বিক মর্যাদা প্রশ্নবিদ্ধ হয়। রাসেল যদি এই অর্থে বলেন যে ভয় সত্য নির্ণয়ের নির্ভরযোগ্য পদ্ধতি নয় — তাহলে তাঁকে কেবল *Genetic Fallacy* বলে উড়িয়ে দেওয়া যাবে না।",
+        "textEn": "In modern philosophy, the structure of the *Epistemic Debunking Argument* runs as follows — if it can be shown that a belief was formed through a method that is not sensitive to truth — what is called *not truth-tracking* — then the epistemic status of that belief becomes questionable. If Russell means to say that fear is not a reliable method for determining truth — then he cannot simply be dismissed with the label *Genetic Fallacy*."
+      },
+      {
+        "type": "p",
+        "text": "এই আপত্তি স্বীকার করতে হবে।",
+        "textEn": "This objection must be acknowledged."
+      },
+      {
+        "type": "p",
+        "text": "কিন্তু এখানেই *Debunking Argument*-এর নিজস্ব একটি গভীর সমস্যা আছে — এবং সেটি রাসেলের নিজের দার্শনিক অবস্থাকেই বিপদে ফেলে।",
+        "textEn": "But here lies a deep problem with the *Debunking Argument* itself — and it places Russell's own philosophical position in jeopardy."
+      },
+      {
+        "type": "p",
+        "text": "*Debunking Argument* কাজ করতে হলে প্রথমে স্বাধীনভাবে প্রমাণ করতে হবে যে ভয়-চালিত বিশ্বাস সত্য থেকে বিচ্ছিন্ন। কিন্তু এই দাবিটি আগে থেকেই ধরে নেয় যে ধর্মীয় বিশ্বাসের বিষয়বস্তু — অর্থাৎ একজন স্রষ্টার অস্তিত্ব — মিথ্যা। কারণ যদি ঈশ্বর সত্যিই থাকেন, এবং যদি তিনিই মানুষকে এমনভাবে তৈরি করেছেন যে অস্তিত্বের মুখোমুখি হলে সে সত্যের দিকেই যায় — তাহলে ভয় বা বিস্ময়ের মধ্য দিয়ে ঈশ্বরের দিকে ফেরা হতে পারে সত্যের দিকেই ফেরা।",
+        "textEn": "For the *Debunking Argument* to work, it must first be independently demonstrated that fear-driven belief is disconnected from truth. But this claim already assumes that the content of religious belief — namely, the existence of a Creator — is false. Because if God truly exists, and if He created human beings in such a way that when confronted with existence they are drawn toward truth — then turning toward God through fear or wonder may itself be turning toward truth."
+      },
+      {
+        "type": "p",
+        "text": "অর্থাৎ, *Debunking Argument*-টি যা প্রমাণ করতে চায়, তা আগে থেকেই ধরে নেয়। দর্শনের ভাষায় এটি *question-begging* — বৃত্তাকার যুক্তি।",
+        "textEn": "That is, the *Debunking Argument* already assumes what it sets out to prove. In philosophical terms, this is *question-begging* — circular reasoning."
+      },
+      {
+        "type": "p",
+        "text": "এই প্রসঙ্গে আলভিন প্লান্টিঙ্গার কথা না বললেই নয়। তিনি এই সমস্যাটিকে আরও গভীরে নিয়ে গেছেন তাঁর *Evolutionary Argument Against Naturalism* (EAAN)-এ, যা প্রথম উপস্থাপিত হয় *Warrant and Proper Function* গ্রন্থের দ্বাদশ অধ্যায়ে।[2]তিনি দেখান — যদি *naturalism* সত্য হয়, অর্থাৎ ঈশ্বর নেই এবং মানুষ কেবল বিবর্তনের ফল, তাহলে আমাদের জ্ঞানীয় ক্ষমতার নির্ভরযোগ্যতা নিয়েই প্রশ্ন ওঠে। কারণ বিবর্তন কাজ করে *survival*-এর জন্য, *truth-tracking*-এর জন্য নয়। এখন রাসেল যদি বিজ্ঞান ও যুক্তির উপর নির্ভর করেন, তাহলে তাঁকে বিশ্বাস করতে হবে যে তাঁর নিজের জ্ঞানীয় ক্ষমতা সত্যের প্রতি সংবেদনশীল। কিন্তু *naturalism*-এর ভেতরে সেই নিশ্চয়তা কোথা থেকে আসবে?",
+        "textEn": "Alvin Plantinga cannot go unmentioned here. He carried this problem further in his *Evolutionary Argument Against Naturalism* (EAAN), first presented in the twelfth chapter of *Warrant and Proper Function*.[2] He shows — if *naturalism* is true, that is, if there is no God and humans are merely the product of evolution, then the reliability of our own cognitive faculties becomes questionable. Because evolution works for *survival*, not for *truth-tracking*. Now if Russell relies on science and reason, he must believe that his own cognitive faculties are sensitive to truth. But within *naturalism*, where does that assurance come from?"
+      },
+      {
+        "type": "p",
+        "text": "এই সমস্যাটি রাসেল এড়িয়ে গেছেন। তিনি ধর্মীয় বিশ্বাসের জ্ঞানতাত্ত্বিক ভিত্তি প্রশ্ন করেছেন, কিন্তু তাঁর নিজের *naturalist* ভিত্তিটি একই প্রশ্নের মুখোমুখি হলে কী উত্তর দেবে — তা বলেননি।",
+        "textEn": "This problem Russell sidestepped. He questioned the epistemic foundation of religious belief, but did not say what answer his own *naturalist* foundation would give when confronted with the same question."
+      },
+      {
+        "type": "p",
+        "text": "সুতরাং রাসেলের *Genetic Fallacy*-র চেয়ে গভীর যুক্তিটিও শেষ পর্যন্ত একটি বৃত্তে আটকে যায়।",
+        "textEn": "So Russell's deeper argument — beyond the *Genetic Fallacy* — ultimately becomes trapped in a circle."
+      },
+      {
+        "type": "iframe",
+        "src": "russell-genetic-fallacy-card-1.html",
+        "height": 280,
+        "caption": "",
+        "captionEn": ""
+      },
+      {
+        "type": "sec",
+        "text": "চার.",
+        "textEn": "Four."
+      },
+      {
+        "type": "p",
+        "text": "এখানেই বিষয়টি বিশেষভাবে তীক্ষ্ণ হয়ে ওঠে।\nরাসেল কেবল একজন দার্শনিক নন — তিনি যুক্তিবিদ্যার ইতিহাসের অন্যতম প্রধান পণ্ডিত। *Principia Mathematica*-তে তিনি আনুষ্ঠানিক যুক্তির ভিত্তি নির্মাণে অবদান রেখেছেন। তাঁর দর্শনের কাজের একটি বড় অংশ জুড়ে রয়েছে যুক্তিদোষ চিহ্নিত করা এবং সুনির্দিষ্ট, বৈধ যুক্তি নির্মাণের পদ্ধতি বের করা।",
+        "textEn": "It is here that the matter becomes particularly sharp.\nRussell is not merely a philosopher — he is one of the foremost scholars in the history of logic. In *Principia Mathematica* he contributed to building the foundations of formal logic. A large part of his philosophical work is devoted to identifying logical fallacies and working out methods for constructing precise, valid arguments."
+      },
+      {
+        "type": "p",
+        "text": "তাহলে *Genetic Fallacy* কি রাসেলের অজানা ছিল? না, একদমই না। এটি যুক্তিবিদ্যার প্রাথমিক পাঠ্যক্রমেই পড়ানো হয়। রাসেলের মতো একজন মানুষের কাছে এটি ছিল অ্যালফাবেটের মতো সহজ।",
+        "textEn": "Was the *Genetic Fallacy* then unknown to Russell? No, not at all. It is taught in the elementary curriculum of logic. For someone like Russell, it was as familiar as the alphabet."
+      },
+      {
+        "type": "p",
+        "text": "তাহলে প্রশ্ন হলো — এত বড় একজন যুক্তিবিদ এই মৌলিক ভুলটি কেন করলেন?",
+        "textEn": "The question then is — why did so great a logician commit this elementary error?"
+      },
+      {
+        "type": "p",
+        "text": "এর দুটি সম্ভাব্য ব্যাখ্যা আছে।",
+        "textEn": "There are two possible explanations."
+      },
+      {
+        "type": "p",
+        "text": "প্রথমটি তুলনামূলকভাবে দাতব্য। রাসেল হয়তো মনে করেছিলেন তিনি দুটি আলাদা দাবি করছেন — একটি মনোবৈজ্ঞানিক, একটি দার্শনিক। এই ব্যাখ্যায় মনোবৈজ্ঞানিক দাবিটি একটি স্বাধীন পর্যবেক্ষণ মাত্র — দার্শনিক দাবিটির প্রমাণ নয়।",
+        "textEn": "The first is comparatively charitable. Perhaps Russell believed he was making two separate claims — one psychological, one philosophical. In this reading, the psychological claim is merely an independent observation — not evidence for the philosophical claim."
+      },
+      {
+        "type": "p",
+        "text": "কিন্তু রাসেলের লেখা মনোযোগ দিয়ে পড়লে এই দাতব্য ব্যাখ্যা টেকে না। *Why I Am Not a Christian*-এ তিনি স্পষ্টতই এই দুটি দাবিকে একটি যুক্তিশৃঙ্খলে যুক্ত করেছেন। ধর্মের ভয়-ভিত্তিক উৎপত্তিকেই তিনি তার অযৌক্তিকতার প্রমাণ হিসেবে উপস্থাপন করেছেন।[1] এটি *Genetic Fallacy* — এর বাইরে আর কিছু নয়।",
+        "textEn": "But reading Russell's writing carefully, this charitable explanation does not hold. In *Why I Am Not a Christian* he quite explicitly links these two claims into a single chain of argument. He presents religion's fear-based origin as the very proof of its irrationality.[1] This is the *Genetic Fallacy* — nothing more and nothing less."
+      },
+      {
+        "type": "p",
+        "text": "দ্বিতীয় ব্যাখ্যাটি কিছুটা কঠোর। রাসেল হয়তো জানতেন, কিন্তু সেই মুহূর্তে তাঁর আবেগ ও গভীর প্রতিশ্রুতি তাঁর যুক্তিবিদ্যাকে অতিক্রম করে গেছে। এই সিরিজে পরে যখন রাসেলের মনোবৈজ্ঞানিক বিশ্লেষণে যাওয়া হবে, তখন এই সম্ভাবনাটি বিস্তারিত আলোচনা করা হবে।",
+        "textEn": "The second explanation is somewhat harsher. Perhaps Russell knew, but in that moment his emotion and deep commitments overrode his logic. When this series later turns to a psychological analysis of Russell, this possibility will be discussed in detail."
+      },
+      {
+        "type": "p",
+        "text": "যেভাবেই ব্যাখ্যা করা হোক, ফলাফল একই — রাসেলের এই যুক্তিটি তাঁর নিজের দার্শনিক মানদণ্ডে পূর্ণভাবে টেকে না।",
+        "textEn": "However one explains it, the result is the same — Russell's argument does not fully hold up against his own philosophical standards."
+      },
+      {
+        "type": "sec",
+        "text": "পাঁচ.",
+        "textEn": "Five."
+      },
+      {
+        "type": "p",
+        "text": "রাসেলের যুক্তির আরেকটি সমস্যা আছে — এটি নীতিগতভাবে সামঞ্জস্যহীন।",
+        "textEn": "There is another problem with Russell's argument — it is inconsistent in principle."
+      },
+      {
+        "type": "p",
+        "text": "যদি ধরে নেওয়া হয় যে একটি বিশ্বাসের মনোবৈজ্ঞানিক উৎস তার বৈধতা নির্ধারণ করে — তাহলে একই মানদণ্ড বিজ্ঞানের ক্ষেত্রেও প্রযোজ্য হওয়া উচিত। কিন্তু সেখানে কী পাওয়া যায়?",
+        "textEn": "If it is assumed that the psychological source of a belief determines its validity — then the same standard ought to apply to science as well. But what does one find there?"
+      },
+      {
+        "type": "p",
+        "text": "আধুনিক বিজ্ঞানের বিকাশের ইতিহাস ঘাঁটলে দেখা যাবে, বৈজ্ঞানিক গবেষণার পৃষ্ঠপোষকতার পেছনে অনেক সময়ই ছিল যুদ্ধের প্রয়োজন, ঔপনিবেশিক আধিপত্য বিস্তারের উদ্দেশ্য এবং অর্থনৈতিক স্বার্থ। রসায়নবিদ্যার একটি বড় অংশ বিকশিত হয়েছে সামরিক প্রয়োজনে — বিষাক্ত গ্যাস থেকে বিস্ফোরক পর্যন্ত। আর পদার্থবিদ্যার সর্বোচ্চ অর্জন হিসেবে যাকে দেখা হয় — পারমাণবিক শক্তি — তার প্রথম প্রয়োগ ছিল দুটি শহর ধ্বংস করা।",
+        "textEn": "Examining the history of modern science's development, one finds that the patronage behind scientific research was very often driven by the needs of war, the aims of colonial domination, and economic interest. A large part of chemistry developed for military purposes — from poison gas to explosives. And what is regarded as the supreme achievement of physics — nuclear power — had as its first application the destruction of two cities."
+      },
+      {
+        "type": "p",
+        "text": "এই ইতিহাস কি তাহলে প্রমাণ করে বিজ্ঞান মিথ্যা? অবশ্যই না। কারণ বিজ্ঞানের সত্যাসত্য নির্ভর করে তার পদ্ধতি ও প্রমাণের উপর — উৎপত্তির নৈতিক বিশুদ্ধতার উপর নয়।",
+        "textEn": "Does that history then prove science is false? Of course not. Because the truth or falsity of science depends on its method and evidence — not on the moral purity of its origins."
+      },
+      {
+        "type": "p",
+        "text": "এখন পাঠক হয়তো বলবেন — এই তুলনাটি ঠিক ন্যায্য নয়। বিজ্ঞানের অর্থায়নের উৎস যাই হোক, বিজ্ঞানের পদ্ধতি তো আলাদা। বৈজ্ঞানিক পদ্ধতি — পর্যবেক্ষণ, পরীক্ষণ, যাচাইযোগ্যতা — এটি সত্যের প্রতি সংবেদনশীল। কিন্তু ধর্মীয় বিশ্বাসের পদ্ধতি — ভয়, ইচ্ছাপূরণ, কর্তৃত্বগ্রহণ — তা নয়।",
+        "textEn": "The reader may now say — this comparison is not quite fair. Whatever the source of science's funding, science's method is different. The scientific method — observation, experiment, verifiability — is sensitive to truth. But the method of religious belief — fear, wish-fulfilment, deference to authority — is not."
+      },
+      {
+        "type": "p",
+        "text": "এই আপত্তিটি বলিষ্ঠ, সন্দেহ নেই। কিন্তু এতে রাসেল রক্ষা পান না।",
+        "textEn": "This objection is robust, without doubt. But it does not save Russell."
+      },
+      {
+        "type": "p",
+        "text": "কারণ রাসেল ধর্মীয় বিশ্বাসের পদ্ধতি নিয়ে প্রাথমিকভাবে যুক্তি করেননি — তিনি বলেছেন উৎপত্তি ভয়ে। পদ্ধতির প্রশ্ন সম্পূর্ণ আলাদা একটি আলোচনা। এবং যদি পদ্ধতির প্রশ্নই কেন্দ্রীয় হয়, তাহলে রাসেলের \"primarily and mainly upon fear\" বাক্যটি সেই যুক্তির জন্য আদৌ প্রয়োজন নেই — এটি বাড়তি এবং বিভ্রান্তিকর।",
+        "textEn": "Because Russell did not primarily argue about the method of religious belief — he said the origin is in fear. The question of method is an entirely separate discussion. And if the question of method is central, then Russell's phrase \"primarily and mainly upon fear\" is not needed for that argument at all — it is surplus and misleading."
+      },
+      {
+        "type": "p",
+        "text": "আরও গভীরে গেলে প্রশ্ন আসে — ধর্মীয় বিশ্বাসের পদ্ধতি কি সত্যিই *truth-tracking* নয়? উইলিয়াম অলস্টন তাঁর *Perceiving God* গ্রন্থে দেখিয়েছেন, ধর্মীয় অভিজ্ঞতাকে *non-reliable* ঘোষণা করতে হলে যে মানদণ্ড ব্যবহার করা হয় — সেই একই মানদণ্ড প্রয়োগ করলে ইন্দ্রিয়-অভিজ্ঞতার নির্ভরযোগ্যতাও প্রশ্নবিদ্ধ হয়।[3] রাসেল এই *epistemic asymmetry*-র কোনো নিরপেক্ষ ভিত্তি দেননি।",
+        "textEn": "Going deeper still, the question arises — is the method of religious belief truly *not truth-tracking*? William Alston showed in his *Perceiving God* that the very standard used to declare religious experience *non-reliable* — if applied consistently — would also render sense-experience questionable.[3] Russell gave no neutral basis for this *epistemic asymmetry*."
+      },
+      {
+        "type": "p",
+        "text": "দার্শনিক ভাষায় এই অসামঞ্জস্যতাকে বলে *Special Pleading* — একটি নির্দিষ্ট ক্ষেত্রে এমন মানদণ্ড প্রয়োগ করা যা অন্য ক্ষেত্রে প্রয়োগ করা হয় না, কোনো যুক্তিসংগত কারণ ছাড়াই। রাসেল ঠিক এই কাজটিই করেছেন।",
+        "textEn": "In philosophical terms this inconsistency is called *Special Pleading* — applying to a specific domain a standard that is not applied elsewhere, without any principled reason for the difference. Russell did exactly this."
+      },
+      {
+        "type": "sec",
+        "text": "ছয়.",
+        "textEn": "Six."
+      },
+      {
+        "type": "p",
+        "text": "এখন পর্যন্ত আমরা রাসেলের যুক্তিতে কাঠামোগত ভুল দেখেছি। কিন্তু একটি আলাদা প্রশ্ন রয়ে যায় — রাসেলের প্রথম প্রস্তাবটি কি আদৌ সত্য? ধর্মের উৎপত্তি কি সত্যিই প্রাথমিকভাবে ভয়?",
+        "textEn": "Thus far we have seen structural errors in Russell's argument. But a separate question remains — is Russell's first premise even true? Does religion truly originate primarily in fear?"
+      },
+      {
+        "type": "p",
+        "text": "এই প্রশ্নের উত্তর খুঁজতে হলে আমাদের যেতে হবে ১৯০২ সালে।",
+        "textEn": "To find an answer to this question, we must go back to 1902."
+      },
+      {
+        "type": "p",
+        "text": "সে বছর আধুনিক মনোবিজ্ঞানের ইতিহাসে একটি অসাধারণ গ্রন্থ প্রকাশিত হয়। লেখক উইলিয়াম জেমস — ১৮৪২ থেকে ১৯১০। হার্ভার্ড বিশ্ববিদ্যালয়ের মনোবিজ্ঞানী এবং দার্শনিক। আধুনিক মনোবিজ্ঞানের প্রতিষ্ঠাতাদের একজন। বইটির নাম *The Varieties of Religious Experience: A Study in Human Nature*। এই গ্রন্থে প্রথমবারের মতো ধর্মীয় অভিজ্ঞতাকে বৈজ্ঞানিক ও মনোবৈজ্ঞানিক দৃষ্টিকোণ থেকে পদ্ধতিগতভাবে বিশ্লেষণ করা হলো।[4]",
+        "textEn": "That year, a remarkable book appeared in the history of modern psychology. Its author was William James — 1842 to 1910. Psychologist and philosopher at Harvard University. One of the founders of modern psychology. The book's title: *The Varieties of Religious Experience: A Study in Human Nature*. For the first time, this work analysed religious experience systematically from a scientific and psychological standpoint.[4]"
+      },
+      {
+        "type": "p",
+        "text": "জেমসের পদ্ধতি ছিল অভিজ্ঞতামূলক। তিনি অসংখ্য মানুষের ধর্মীয় অভিজ্ঞতার বিবরণ সংগ্রহ করেন — বিভিন্ন ধর্ম ও সংস্কৃতি থেকে। এবং তাঁর বিশ্লেষণে যা বেরিয়ে আসে, তা রাসেলের দাবিকে সরাসরি চ্যালেঞ্জ করে।",
+        "textEn": "James's method was empirical. He gathered accounts of religious experience from countless people — from across different religions and cultures. And what his analysis yielded directly challenges Russell's claim."
+      },
+      {
+        "type": "p",
+        "text": "তবে এখানে একটি সৎ স্বীকারোক্তি দেওয়া দরকার। জেমসের গ্রন্থে *The Sick Soul* নামে একটি অধ্যায় আছে — যেখানে তিনি ভয়, অস্তিত্বের আতঙ্ক, মৃত্যুচেতনাকে ধর্মীয় অভিজ্ঞতার একটি অংশ হিসেবে স্বীকার করেছেন। এই অর্থে জেমস রাসেলকে সম্পূর্ণ খণ্ডন করেননি। তাঁরা আসলে ভিন্ন স্তরে কথা বলছেন — রাসেল ধর্মের আদিম উৎপত্তি নিয়ে, জেমস ধর্মীয় অভিজ্ঞতার সমগ্র পরিসর নিয়ে।",
+        "textEn": "But an honest acknowledgement is needed here. James's book contains a chapter called *The Sick Soul* — where he acknowledges fear, existential dread, and the consciousness of death as one part of religious experience. In this sense James did not entirely refute Russell. They are in fact speaking on different levels — Russell about the primitive origin of religion, James about the full range of religious experience."
+      },
+      {
+        "type": "p",
+        "text": "তাহলে জেমস আমাদের কী দেন?",
+        "textEn": "What then does James give us?"
+      },
+      {
+        "type": "p",
+        "text": "জেমস দেন বৈচিত্র্য। এবং সেই বৈচিত্র্যই রাসেলের \"primarily and mainly\" দাবিকে ভেঙে দেয়।",
+        "textEn": "James gives us variety. And it is that variety which breaks Russell's claim of \"primarily and mainly.\""
+      },
+      {
+        "type": "p",
+        "text": "তিনি চিহ্নিত করেন বেশ কয়েকটি প্রাথমিক ধর্মীয় অভিজ্ঞতার ধরন। রূপান্তরের অভিজ্ঞতা — এমন একটি অভিজ্ঞতা যেখানে মানুষ তার পুরোনো সত্তা থেকে নতুন সত্তায় রূপান্তরিত বোধ করে। এটি ভয়ের অভিজ্ঞতা নয়, এটি মুক্তির অভিজ্ঞতা। মরমি ঐক্যের অভিজ্ঞতা — সমগ্র সত্তার সাথে একাত্ম হওয়ার অনুভূতি, যেখানে সাধারণ চেতনার সীমানা মুছে যায়। এটি ভয়ের বিপরীত — প্রশান্তি ও আনন্দের অভিজ্ঞতা। কৃতজ্ঞতার অভিজ্ঞতা — অস্তিত্বের প্রতি, সৃষ্টির প্রতি এক গভীর কৃতজ্ঞতার অনুভব। এবং অর্থের অনুভব — মানুষের একটি মৌলিক প্রয়োজন হলো তার অস্তিত্বের অর্থ অনুভব করা, এবং ধর্মীয় অভিজ্ঞতা সেই অর্থকে সমৃদ্ধ করে।",
+        "textEn": "He identifies several primary types of religious experience. The experience of conversion — an experience in which a person feels transformed from an old self into a new one. This is not an experience of fear; it is an experience of liberation. The experience of mystical union — a feeling of becoming one with all of being, where the boundaries of ordinary consciousness dissolve. This is the opposite of fear — an experience of peace and joy. The experience of gratitude — a deep sense of gratitude toward existence, toward creation. And the sense of meaning — one of the fundamental needs of the human being is to feel the meaning of their existence, and religious experience enriches that meaning."
+      },
+      {
+        "type": "p",
+        "text": "এই অভিজ্ঞতাগুলোর কোনোটিই ভয় থেকে জন্মায় না।",
+        "textEn": "None of these experiences is born from fear."
+      },
+      {
+        "type": "p",
+        "text": "জেমস নিজে ধার্মিক ছিলেন না। তিনি একজন প্র্যাগম্যাটিস্ট দার্শনিক ছিলেন যিনি ধর্মীয় বিষয়ে অজ্ঞেয়বাদী অবস্থান নিয়েছিলেন। কিন্তু তাঁর অভিজ্ঞতামূলক গবেষণা তাঁকে এই সিদ্ধান্তে নিয়ে যায় যে ধর্মীয় অভিজ্ঞতা মানুষের একটি বাস্তব ও জটিল মনোবৈজ্ঞানিক ঘটনা — কেবল ভয়ের সরল প্রতিক্রিয়া নয়।",
+        "textEn": "James himself was not religious. He was a pragmatist philosopher who took an agnostic position on religious matters. But his empirical research led him to conclude that religious experience is a real and complex psychological phenomenon in human beings — not a simple reaction to fear."
+      },
+      {
+        "type": "p",
+        "text": "এখানে আরেকটি গুরুত্বপূর্ণ বিষয় উল্লেখ না করলেই নয়। জেমসের এই গ্রন্থ প্রকাশিত হয়েছিল ১৯০২ সালে — রাসেলের *Religion and Science*-এর তেত্রিশ বছর আগে। রাসেল জেমসকে চিনতেন, পড়েছিলেন। এমনকি লুডভিগ ভিটগেনস্টাইন একবার রাসেলকে লিখেছিলেন যে জেমসের *Varieties* তাঁর অনেক উপকারে আসছে।[5] তবু রাসেল এই গবেষণাকে উপেক্ষা করে বললেন — \"primarily and mainly upon fear\"।",
+        "textEn": "One more important point cannot go unmentioned here. James's book was published in 1902 — thirty-three years before Russell's *Religion and Science*. Russell knew James, had read him. Ludwig Wittgenstein even wrote to Russell that James's *Varieties* was doing him a great deal of good.[5] Yet Russell ignored this research and said — \"primarily and mainly upon fear.\""
+      },
+      {
+        "type": "iframe",
+        "src": "russell-genetic-fallacy-card-2.html",
+        "height": 370,
+        "caption": "",
+        "captionEn": ""
+      },
+      {
+        "type": "p",
+        "text": "কেন? এই প্রশ্নের উত্তর এই সিরিজে পরে আসবে।",
+        "textEn": "Why? The answer to this question will come later in this series."
+      },
+      {
+        "type": "sec",
+        "text": "সাত.",
+        "textEn": "Seven."
+      },
+      {
+        "type": "p",
+        "text": "বিশ শতকের শেষ দশকে একটি নতুন বৈজ্ঞানিক শাখা জন্ম নেয়। নাম *Neurotheology* — ধর্মীয় অভিজ্ঞতার স্নায়ুবৈজ্ঞানিক গবেষণা। এই শাখার অন্যতম প্রধান গবেষক পেনসিলভানিয়া বিশ্ববিদ্যালয়ের নিউরোসায়েন্টিস্ট অ্যান্ড্রু নিউবার্গ। তিনি ও তাঁর সহকর্মীরা SPECT ইমেজিং ব্যবহার করে ধ্যান ও প্রার্থনার সময় মানুষের মস্তিষ্কের কার্যকলাপ পর্যবেক্ষণ করেন। তাঁদের গবেষণার ফলাফল প্রকাশিত হয় *Why God Won't Go Away: Brain Science and the Biology of Belief* গ্রন্থে।[6] এবং সেই ফলাফল রাসেলের দাবির বিপরীতে একটি সম্পূর্ণ ভিন্ন চিত্র উপস্থাপন করে।",
+        "textEn": "In the final decade of the twentieth century, a new scientific field was born. Its name: *Neurotheology* — the neuroscientific study of religious experience. One of the leading researchers in this field is neuroscientist Andrew Newberg of the University of Pennsylvania. He and his colleagues used SPECT imaging to observe brain activity during meditation and prayer. Their findings were published in *Why God Won't Go Away: Brain Science and the Biology of Belief*.[6] And those findings present a picture completely at odds with Russell's claim."
+      },
+      {
+        "type": "p",
+        "text": "ভয়ের সময় মস্তিষ্কে কী ঘটে? সক্রিয় হয় *amygdala* — মস্তিষ্কের বিপদ-সংকেত কেন্দ্র। এটি *fight-or-flight* প্রতিক্রিয়া সক্রিয় করে, কর্টিসল নামের স্ট্রেস হরমোন নিঃসরণ ঘটায়।",
+        "textEn": "What happens in the brain during fear? The *amygdala* becomes active — the brain's danger-signal centre. It activates the *fight-or-flight* response, triggering the release of the stress hormone cortisol."
+      },
+      {
+        "type": "p",
+        "text": "কিন্তু গভীর ধ্যান বা প্রার্থনার সময় নিউবার্গ দেখলেন সম্পূর্ণ ভিন্ন নিউরাল প্যাটার্ন। মস্তিষ্কের *parietal lobe* — যা স্ব ও পর-এর মধ্যে সীমানা তৈরি করে — এর কার্যকলাপ হ্রাস পায়। *Prefrontal cortex* — মনোযোগ ও গভীর চিন্তার কেন্দ্র — সক্রিয় হয়। এবং মস্তিষ্কে *serotonin* ও *dopamine*-এর মাত্রা বৃদ্ধি পায় — যে হরমোনগুলো প্রশান্তি ও আনন্দের সাথে সম্পর্কিত।",
+        "textEn": "But during deep meditation or prayer, Newberg observed a completely different neural pattern. The *parietal lobe* — which creates the boundary between self and other — shows decreased activity. The *prefrontal cortex* — the centre of attention and deep thought — becomes active. And levels of *serotonin* and *dopamine* in the brain increase — the hormones associated with peace and joy."
+      },
+      {
+        "type": "p",
+        "text": "এখানে একটি গুরুত্বপূর্ণ সীমাবদ্ধতা স্বীকার করা দরকার। নিউবার্গ ধর্মের উৎপত্তি মাপেননি — তিনি মেপেছেন ইতিমধ্যে বিশ্বাসী মানুষদের ধর্মীয় অভিজ্ঞতার নিউরাল সংকেত। রাসেল যদি বলেন ধর্মের আদিম উৎপত্তি ভয়ে, তাহলে নিউবার্গের গবেষণা সেই প্রশ্নের সরাসরি উত্তর নয়।",
+        "textEn": "An important limitation must be acknowledged here. Newberg did not measure the origin of religion — he measured the neural signals of religious experience in people who already believe. If Russell is arguing that the primitive origin of religion lies in fear, then Newberg's research is not a direct answer to that question."
+      },
+      {
+        "type": "p",
+        "text": "তাহলে নিউবার্গ আমাদের কী দেন?",
+        "textEn": "What then does Newberg give us?"
+      },
+      {
+        "type": "p",
+        "text": "নিউবার্গ দেন একটি গুরুত্বপূর্ণ তথ্য — ধর্মীয় অভিজ্ঞতা মস্তিষ্কে একটি স্বতন্ত্র অবস্থা তৈরি করে যা ভয়ের অবস্থা থেকে স্নায়ুবৈজ্ঞানিকভাবে আলাদা। অর্থাৎ ধর্মীয় অভিজ্ঞতাকে কেবল ভয়ের একটি রূপান্তর বলার আর কোনো সুযোগ নেই। এটি একটি স্বতন্ত্র মানবিক অভিজ্ঞতা।",
+        "textEn": "Newberg gives us an important piece of information — religious experience creates a distinct state in the brain that is neuroscientifically separate from the state of fear. That is, there is no longer any room to call religious experience merely a transformation of fear. It is a distinct human experience."
+      },
+      {
+        "type": "p",
+        "text": "পাঠক হয়তো এখানে বলবেন — নিউবার্গের গবেষণা একটি *category error* করছে। তিনি দেখাচ্ছেন বিদ্যমান বিশ্বাসীদের অভিজ্ঞতা কেমন, কিন্তু রাসেল বলছেন ধর্মের আদিম জন্মের কারণ ভয়। এই দুটো তো আলাদা প্রশ্ন।",
+        "textEn": "The reader may say here — Newberg's research commits a *category error*. He is showing what the experience of existing believers is like, but Russell is talking about the cause of religion's primitive birth. These are surely separate questions."
+      },
+      {
+        "type": "p",
+        "text": "আপত্তিটি আংশিক সত্য। কিন্তু এটি রাসেলকে রক্ষা করে না। কারণ রাসেলের দাবি কেবল আদিম উৎপত্তি নিয়ে নয় — তিনি বলেন ভয় ধর্মের ভিত্তি, এবং এই ভয়ের উপর দাঁড়িয়ে আছে সমস্ত ধর্মীয় বিশ্বাস। যদি আধুনিক ধর্মীয় অভিজ্ঞতায় ভয়ের নিউরাল প্যাটার্ন না থাকে — তাহলে ভয়কে সেই বিশ্বাসের ভিত্তি বলার যুক্তিটি কোথায় দাঁড়ায়?",
+        "textEn": "The objection is partially true. But it does not save Russell. Because Russell's claim is not only about primitive origin — he says fear is the foundation of religion, and all religious belief rests upon this fear. If modern religious experience shows no neural pattern of fear — then where does the argument for calling fear the foundation of that belief stand?"
+      }
+    ],
+    "refs": [
+      {
+        "num": 1,
+        "text": "Russell, Bertrand. \"Why I Am Not a Christian.\" In Why I Am Not a Christian and Other Essays on Religion and Related Subjects, edited by Paul Edwards, p. 22. New York: Simon & Schuster (Touchstone), 1957. মূল বক্তৃতা: ৬ মার্চ ১৯২৭, Battersea Town Hall, London।",
+        "links": [
+          {
+            "label": "Internet Archive (১৯৫৭ সংস্করণ)",
+            "url": "https://archive.org/details/dli.ernet.53996"
+          },
+          {
+            "label": "পাঠ্য রূপ (Notre Dame)",
+            "url": "https://www3.nd.edu/~afreddos/courses/264/whynot.htm"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "text": "Plantinga, Alvin. Warrant and Proper Function, Chapter 12, pp. 216–237. Oxford: Oxford University Press, 1993. ISBN: 978-0-19-507864-0.",
+        "links": [
+          {
+            "label": "EAAN প্রবন্ধের মুক্ত পাঠ",
+            "url": "https://wmit-pages-prod.s3.amazonaws.com/wp-content/uploads/sites/283/2022/06/16130225/plantingaeaan.pdf"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "text": "Alston, William P. Perceiving God: The Epistemology of Religious Experience. Ithaca, NY: Cornell University Press, 1991. ISBN: 978-0-8014-2597-4.",
+        "links": [
+          {
+            "label": "Internet Archive",
+            "url": "https://archive.org/details/perceivinggodepi0000alst"
+          },
+          {
+            "label": "JSTOR",
+            "url": "https://www.jstor.org/stable/10.7591/j.ctt5hh24c"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "text": "James, William. The Varieties of Religious Experience: A Study in Human Nature. New York: Longmans, Green, 1902.",
+        "links": [
+          {
+            "label": "Project Gutenberg",
+            "url": "https://www.gutenberg.org/ebooks/621"
+          },
+          {
+            "label": "Internet Archive (মূল ১৯০২)",
+            "url": "https://archive.org/details/varietiesofrelig00jameuoft"
+          },
+          {
+            "label": "Notre Dame PDF",
+            "url": "https://csrs.nd.edu/assets/59930/williams_1902.pdf"
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "text": "ভিটগেনস্টাইনের মন্তব্য উদ্ধৃত: McGuinness, Brian. Wittgenstein: A Life. Berkeley: University of California Press, 1988.",
+        "links": []
+      },
+      {
+        "num": 6,
+        "text": "Newberg, Andrew B., Eugene G. D'Aquili, and Vince Rause. Why God Won't Go Away: Brain Science and the Biology of Belief. New York: Ballantine Books, 2001. ISBN: 978-0-345-44033-4.",
+        "links": [
+          {
+            "label": "Internet Archive",
+            "url": "https://archive.org/details/isbn_9780965033923"
+          }
+        ]
+      }
+    ]
   }
 ]

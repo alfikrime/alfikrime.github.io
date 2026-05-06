@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { margin:0; padding:0; background:transparent; overflow:hidden; }
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px 24px 18px;
+  width: 100%;
+  max-width: 680px;
+  position: relative;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.06),
+    0 4px 16px rgba(0,0,0,.07),
+    0 0 0 1px rgba(0,0,0,.05);
+  overflow: hidden;
+}
+
+.top-bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #2a4a7f 0%, #8B6914 50%, #2a4a7f 100%);
+}
+
+.fig-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #1a2a3a;
+  margin-bottom: 7px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: #0d1525;
+  margin-bottom: 14px;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+/* Two-column layout */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* Left: definition box */
+.def-box {
+  background: #f0f4fa;
+  border-left: 3px solid #2a4a7f;
+  border-radius: 0 6px 6px 0;
+  padding: 10px 12px;
+}
+.def-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #2a4a7f;
+  margin-bottom: 5px;
+}
+.def-text {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-size: 10.5px;
+  color: #1a2535;
+  line-height: 1.7;
+}
+.def-text em {
+  font-style: normal;
+  color: #8B1A1A;
+  font-weight: 700;
+}
+
+/* Right: 3-step argument */
+.steps-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.step {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.step-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #2a4a7f;
+  border-radius: 3px;
+  padding: 2px 5px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  letter-spacing: 0.5px;
+}
+.step:last-child .step-num {
+  background: #8B6914;
+}
+.step-text {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-size: 10.5px;
+  color: #1a2535;
+  line-height: 1.6;
+}
+.step-text span {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px;
+  color: #8B1A1A;
+  font-weight: 600;
+}
+
+/* Connector arrow between steps */
+.step-arrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  color: #8B6914;
+  padding-left: 28px;
+  margin: -2px 0;
+}
+
+/* Hook strip at bottom */
+.hook-strip {
+  background: #0d1525;
+  border-radius: 6px;
+  padding: 9px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.hook-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  color: #a8c0e8;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.hook-q {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-size: 11px;
+  color: #e0c03a;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: right;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-bar"></div>
+
+  <div class="fig-label">Russell Series · পর্ব ০১ · যুক্তিদোষ বিশ্লেষণ</div>
+  <div class="title">Genetic Fallacy — এবং রাসেলের যুক্তিকাঠামো</div>
+
+  <div class="two-col">
+
+    <div class="def-box">
+      <div class="def-label">Genetic Fallacy কী?</div>
+      <div class="def-text">
+        কোনো বিশ্বাসের <em>উৎপত্তির কারণ</em> দিয়ে তার <em>সত্যাসত্য</em> নির্ধারণ করা।<br><br>
+        "এটা এভাবে জন্মেছে — তাই এটা সত্য নয়।"<br><br>
+        উৎপত্তি আর সত্যাসত্য <em>যুক্তিগতভাবে আলাদা।</em>
+      </div>
+    </div>
+
+    <div class="steps-box">
+      <div class="step">
+        <div class="step-num">P1</div>
+        <div class="step-text">ধর্মের উৎপত্তি <span>ভয়ে</span> — মৃত্যুভয়, অজানার ভয়, প্রকৃতির ভয়</div>
+      </div>
+      <div class="step-arrow">↓</div>
+      <div class="step">
+        <div class="step-num">P2</div>
+        <div class="step-text">ভয় একটি <span>আদিম ও অযৌক্তিক</span> প্রতিক্রিয়া — বাস্তবতার অজ্ঞতা থেকে জন্মানো</div>
+      </div>
+      <div class="step-arrow">↓</div>
+      <div class="step">
+        <div class="step-num">∴</div>
+        <div class="step-text">ধর্মীয় বিশ্বাস মূলে <span>অযৌক্তিক</span> — বাস্তবতার ভুল উপলব্ধির উপর দাঁড়ানো</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hook-strip">
+    <span class="hook-label">পরবর্তী প্রশ্ন</span>
+    <span class="hook-q">এত বড় যুক্তিবিদ এই মৌলিক ভুলটি কেন করলেন?</span>
+  </div>
+</div>
+
+<script>
+function reportHeight() {
+  const h = document.body.scrollHeight;
+  window.parent.postMessage({ iframeHeight: h }, '*');
+}
+setTimeout(reportHeight, 200);
+window.addEventListener('resize', function() { setTimeout(reportHeight, 100); });
+</script>
+</body>
+</html>

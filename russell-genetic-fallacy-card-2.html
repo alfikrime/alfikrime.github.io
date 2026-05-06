@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { margin:0; padding:0; background:transparent; overflow:hidden; }
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px 24px 18px;
+  width: 100%;
+  max-width: 680px;
+  position: relative;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.06),
+    0 4px 16px rgba(0,0,0,.07),
+    0 0 0 1px rgba(0,0,0,.05);
+  overflow: hidden;
+}
+
+.top-bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #2a4a7f 0%, #8B6914 50%, #2a4a7f 100%);
+}
+
+.fig-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #1a2a3a;
+  margin-bottom: 7px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: #0d1525;
+  margin-bottom: 12px;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+/* Note box */
+.note-box {
+  background: #f0f4fa;
+  border-left: 3px solid #8B6914;
+  border-radius: 0 6px 6px 0;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #1a2535;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.note-box span { color: #8B1A1A; font-weight: 700; }
+
+/* Three-column grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 7px;
+  margin-bottom: 11px;
+}
+
+.cell {
+  border-radius: 7px;
+  border: 1px solid #d8e0ee;
+  overflow: hidden;
+}
+.cell-head {
+  padding: 6px 9px;
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  background: #e8eef8;
+  color: #0d1a30;
+  line-height: 1.4;
+}
+.cell-body {
+  padding: 8px 9px;
+  background: #f8fafd;
+}
+.cell-who {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  color: #2a4a7f;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.cell-text {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-size: 10px;
+  color: #1a2535;
+  line-height: 1.65;
+}
+.cell-text em {
+  font-style: normal;
+  color: #4a6a1a;
+  font-weight: 700;
+}
+.cell-text strong {
+  color: #8B1A1A;
+  font-weight: 700;
+}
+
+/* Russell claim vs reality bar */
+.vs-strip {
+  background: #0d1525;
+  border-radius: 6px;
+  padding: 9px 14px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 11px;
+}
+.vs-side {
+  flex: 1;
+}
+.vs-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.vs-tag.russell { color: #e07060; }
+.vs-tag.evidence { color: #7aaa4a; }
+.vs-val {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.vs-val.russell { color: #f0c0b0; }
+.vs-val.evidence { color: #c0e090; }
+.vs-divider {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 18px;
+  color: #8B6914;
+  font-weight: 600;
+  padding: 0 12px;
+  flex-shrink: 0;
+}
+
+/* Hook strip */
+.hook-strip {
+  background: #f0f4fa;
+  border-radius: 6px;
+  border: 1px solid #d8e0ee;
+  padding: 9px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.hook-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  color: #2a4a7f;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.hook-q {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-size: 11px;
+  color: #8B1A1A;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: right;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-bar"></div>
+
+  <div class="fig-label">Russell Series · পর্ব ০১ · প্রমাণিক খণ্ডন</div>
+  <div class="title">ধর্মীয় অভিজ্ঞতা কি শুধুই ভয়? — James ও Neurotheology</div>
+
+  <div class="note-box">
+    ⚠ রাসেলের দাবি: ধর্ম <span>"primarily and mainly upon fear"</span> — কিন্তু ১৯০২-এ জেমস এবং পরে নিউবার্গ যা পেলেন, তা সম্পূর্ণ ভিন্ন চিত্র।
+  </div>
+
+  <div class="grid">
+
+    <div class="cell">
+      <div class="cell-head">William James · ১৯০২</div>
+      <div class="cell-body">
+        <div class="cell-who">Varieties of Religious Experience</div>
+        <div class="cell-text">
+          ধর্মীয় অভিজ্ঞতার ধরন: <em>রূপান্তর, মরমি ঐক্য, কৃতজ্ঞতা, অর্থের অনুভব</em> —
+          এর কোনোটিই ভয় থেকে জন্মায় না।
+          <br><br>
+          <strong>রাসেলের ৩৩ বছর আগে।</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="cell">
+      <div class="cell-head">Andrew Newberg · Neurotheology</div>
+      <div class="cell-body">
+        <div class="cell-who">UPenn · SPECT Imaging</div>
+        <div class="cell-text">
+          ভয়ের সময়: <strong>amygdala সক্রিয়, cortisol↑</strong><br><br>
+          গভীর প্রার্থনায়: <em>prefrontal cortex সক্রিয়, serotonin↑, parietal lobe↓</em> — ভয়ের বিপরীত নিউরাল প্যাটার্ন।
+        </div>
+      </div>
+    </div>
+
+    <div class="cell">
+      <div class="cell-head">Special Pleading — রাসেলের অসামঞ্জস্য</div>
+      <div class="cell-body">
+        <div class="cell-who">Epistemic Asymmetry</div>
+        <div class="cell-text">
+          ধর্মীয় অভিজ্ঞতায় যে মানদণ্ড — সেটা ইন্দ্রিয়-অভিজ্ঞতায় প্রয়োগ করলে <strong>বিজ্ঞানও টেকে না।</strong>
+          <br><br>
+          Alston · <em>Perceiving God · ১৯৯১</em>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="vs-strip">
+    <div class="vs-side">
+      <div class="vs-tag russell">রাসেলের দাবি</div>
+      <div class="vs-val russell">ধর্ম = ভয়ের প্রতিক্রিয়া</div>
+    </div>
+    <div class="vs-divider">≠</div>
+    <div class="vs-side" style="text-align:right">
+      <div class="vs-tag evidence" style="text-align:right">প্রমাণ বলছে</div>
+      <div class="vs-val evidence">ধর্মীয় অভিজ্ঞতা স্বতন্ত্র মানবিক ঘটনা</div>
+    </div>
+  </div>
+
+  <div class="hook-strip">
+    <span class="hook-label">পরের পর্বে</span>
+    <span class="hook-q">রাসেল জেমসকে জানতেন — তবু এড়িয়ে গেলেন কেন?</span>
+  </div>
+</div>
+
+<script>
+function reportHeight() {
+  const h = document.body.scrollHeight;
+  window.parent.postMessage({ iframeHeight: h }, '*');
+}
+setTimeout(reportHeight, 200);
+window.addEventListener('resize', function() { setTimeout(reportHeight, 100); });
+</script>
+</body>
+</html>
