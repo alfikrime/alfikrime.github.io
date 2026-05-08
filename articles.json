@@ -3338,15 +3338,11 @@
         "textEn": "Next: \"The Trap Russell Fell Into — Genetic Fallacy and the Question of Religion's Origin\""
       }
     ],
-    "refs": [],
-    "category": "dialogue",
-    "categoryEn": "Dialogue with Doubt",
-    "subcategory": "russell",
-    "subcategoryEn": "Bertrand Russell"
+    "refs": []
   },
   {
     "id": "russell-genetic-fallacy-1",
-    "cat": "philosophy",
+    "cat": "dialogue",
     "title": "রাসেল যে ফাঁদে পা দিয়েছেন:Genetic Fallacy এবং ধর্মের উৎপত্তির প্রশ্ন—প্রথম পর্ব",
     "titleEn": "The Trap Russell Fell Into: Genetic Fallacy and the Question of Religion's Origin — Part One",
     "coverImage": {
@@ -3802,9 +3798,6 @@
         ]
       }
     ],
-    "category": "dialogue",
-    "categoryEn": "Dialogue with Doubt",
-    "subcategory": "russell",
-    "subcategoryEn": "Bertrand Russell"
+    "subcat": "russell"
   }
 ]
