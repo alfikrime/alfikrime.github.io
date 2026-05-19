@@ -177,6 +177,9 @@ header{background:var(--white);border-bottom:2px solid var(--ink);position:stick
 .pg-links{margin-top:18px;padding-top:16px;border-top:1px solid var(--border)}
 .pg-link{font-size:14px;margin-bottom:9px;font-family:sans-serif}
 
+.m-search-wrap{display:block}
+@media(min-width:900px){.m-search-wrap{display:none}}
+
 /* FOOTER */
 footer{background:var(--ink);color:#999;padding:38px 0 18px;margin-top:44px;width:100%}
 .f-grid{display:grid;grid-template-columns:1fr;gap:24px;margin-bottom:24px}
@@ -196,12 +199,12 @@ footer{background:var(--ink);color:#999;padding:38px 0 18px;margin-top:44px;widt
 const {useState,useEffect,useCallback}=React;
 
 const CATS=[
-  {id:'philosophy',bn:'দর্শন ও কালাম',         en:'Philosophy & Theology',    desc:'ঈশ্বর, অস্তিত্ব, তাওহীদ ও secular ethics-এর প্রশ্নমালা'},
-  {id:'science',   bn:'বিজ্ঞান ও নৈতিকতা',    en:'Science & Ethics',         desc:'প্রতিভা, নৈতিক ব্যর্থতা এবং বিজ্ঞানের সীমার অনুসন্ধান'},
-  {id:'history',   bn:'সভ্যতা ও ইতিহাস',      en:'Civilization & History',   desc:'আলোকায়ন, যুদ্ধ, ইসলামি সভ্যতা — তুলনামূলক বিশ্লেষণ'},
-  {id:'psychology',bn:'মনোবিজ্ঞান ও মানবআচরণ',en:'Psychology & Human Nature','desc':'আসক্তি, সম্পর্ক, আত্মপরিচয় ও মানবিক দুর্বলতা'},
-  {id:'dialogue',  bn:'অবিশ্বাসের সংলাপ',     en:'Dialogue with Doubt',      desc:'রাসেল, ডকিন্স ও সমসাময়িক নাস্তিক চিন্তার সাথে যুক্তিনিষ্ঠ আলাপ', subcats:[{id:'russell',bn:'বার্ট্রান্ড রাসেল',en:'Bertrand Russell'}]},
-  {id:'literature',bn:'সাহিত্য ও কবিতা',      en:'Literature & Poetry',      desc:'কাব্যিক গদ্য, প্রতিফলন এবং জীবনের কাব্য'},
+  {id:'philosophy',bn:'দর্শন ও কালাম',         en:'Philosophy & Theology'},
+  {id:'science',   bn:'বিজ্ঞান ও নৈতিকতা',    en:'Science & Ethics'},
+  {id:'history',   bn:'সভ্যতা ও ইতিহাস',      en:'Civilization & History'},
+  {id:'psychology',bn:'মনোবিজ্ঞান ও মানবআচরণ',en:'Psychology & Human Nature'},
+  {id:'dialogue',  bn:'অবিশ্বাসের সংলাপ',     en:'Dialogue with Doubt',      subcats:[{id:'russell',bn:'বার্ট্রান্ড রাসেল',en:'Bertrand Russell'}]},
+  {id:'literature',bn:'সাহিত্য ও কবিতা',      en:'Literature & Poetry'},
 ];
 
 // articles.json থেকে লোড হবে
@@ -288,14 +291,41 @@ function Header({page,setPage,activeCat,setActiveCat,lang,setLang}){
 function Sidebar({lang,openArticle,setPage,setActiveCat}){
   const bn=lang==='bn';
   const [q,setQ]=useState('');
+  const [results,setResults]=useState([]);
+  const [searched,setSearched]=useState(false);
+  const doSearch=(val)=>{
+    const term=(val||q).trim().toLowerCase();
+    if(!term){setResults([]);setSearched(false);return;}
+    const found=ARTICLES.filter(a=>{
+      const title=(bn?a.title:a.titleEn)||'';
+      const abs=(bn?a.abstract:a.abstractEn)||'';
+      const tags=(a.tags||[]).join(' ');
+      return (title+abs+tags).toLowerCase().includes(term);
+    });
+    setResults(found);
+    setSearched(true);
+  };
   return(
     <aside className="sb">
       <div className="sb-bl">
         <span className="sb-lbl">{bn?'অনুসন্ধান':'Search'}</span>
         <div className="s-row">
-          <input className="s-in" value={q} onChange={e=>setQ(e.target.value)} placeholder={bn?'লেখা খুঁজুন...':'Search...'}/>
-          <button className="s-go">→</button>
+          <input className="s-in" value={q} onChange={e=>{setQ(e.target.value);if(!e.target.value){setResults([]);setSearched(false);}}} onKeyDown={e=>e.key==='Enter'&&doSearch()} placeholder={bn?'লেখা খুঁজুন...':'Search...'}/>
+          <button className="s-go" onClick={()=>doSearch()}>→</button>
         </div>
+        {searched&&(
+          <div style={{marginTop:'10px'}}>
+            {results.length===0
+              ?<p style={{fontSize:'12px',color:'var(--muted)',fontStyle:'italic',marginTop:'8px'}}>{bn?'কিছু পাওয়া যায়নি':'Nothing found'}</p>
+              :results.map(a=>(
+                <div key={a.id} className="rec" onClick={()=>{openArticle(a);setQ('');setResults([]);setSearched(false);}}>
+                  <div className="rec-t">{bn?a.title:a.titleEn}</div>
+                  <div className="rec-d">{bn?a.date:a.dateEn}</div>
+                </div>
+              ))
+            }
+          </div>
+        )}
       </div>
       <div className="sb-bl">
         <span className="sb-lbl">{bn?'বিষয়শ্রেণী':'Categories'}</span>
@@ -310,7 +340,7 @@ function Sidebar({lang,openArticle,setPage,setActiveCat}){
         <span className="sb-lbl">{bn?'সাম্প্রতিক':'Recent'}</span>
         {ARTICLES.length===0
           ?<p style={{fontSize:'13px',color:'var(--muted)',fontStyle:'italic'}}>{bn?'এখনো কোনো লেখা নেই':'No articles yet'}</p>
-          :ARTICLES.slice(0,6).map(a=>(
+          :[...ARTICLES].sort((a,b)=>(b.isoDate||'').localeCompare(a.isoDate||'')).slice(0,6).map(a=>(
             <div key={a.id} className="rec" onClick={()=>openArticle(a)}>
               <div className="rec-t">{bn?a.title:a.titleEn}</div>
               <div className="rec-d">{bn?a.date:a.dateEn}</div>
@@ -332,6 +362,46 @@ function MCats({lang,activeCat,setActiveCat,setPage}){
           {bn?c.bn:c.en}
         </button>
       ))}
+    </div>
+  );
+}
+
+function MobileSearch({lang,openArticle}){
+  const bn=lang==='bn';
+  const [q,setQ]=useState('');
+  const [results,setResults]=useState([]);
+  const [searched,setSearched]=useState(false);
+  const doSearch=(val)=>{
+    const term=(val||q).trim().toLowerCase();
+    if(!term){setResults([]);setSearched(false);return;}
+    const found=ARTICLES.filter(a=>{
+      const title=(bn?a.title:a.titleEn)||'';
+      const abs=(bn?a.abstract:a.abstractEn)||'';
+      const tags=(a.tags||[]).join(' ');
+      return (title+abs+tags).toLowerCase().includes(term);
+    });
+    setResults(found);
+    setSearched(true);
+  };
+  return(
+    <div style={{marginBottom:'14px',display:'block'}} className="m-search">
+      <div className="s-row">
+        <input className="s-in" value={q} onChange={e=>{setQ(e.target.value);if(!e.target.value){setResults([]);setSearched(false);}}} onKeyDown={e=>e.key==='Enter'&&doSearch()} placeholder={bn?'লেখা খুঁজুন...':'Search articles...'}/>
+        <button className="s-go" onClick={()=>doSearch()}>→</button>
+      </div>
+      {searched&&(
+        <div style={{marginTop:'8px',background:'var(--white)',border:'1px solid var(--border)',borderRadius:'3px',padding:'8px'}}>
+          {results.length===0
+            ?<p style={{fontSize:'12px',color:'var(--muted)',fontStyle:'italic',margin:0}}>{bn?'কিছু পাওয়া যায়নি':'Nothing found'}</p>
+            :results.map(a=>(
+              <div key={a.id} className="rec" onClick={()=>{openArticle(a);setQ('');setResults([]);setSearched(false);}}>
+                <div className="rec-t">{bn?a.title:a.titleEn}</div>
+                <div className="rec-d">{bn?a.date:a.dateEn}</div>
+              </div>
+            ))
+          }
+        </div>
+      )}
     </div>
   );
 }
@@ -510,6 +580,7 @@ function Detail({a,lang,onBack,fromCat,readHistory=[]}){
         <div style={{fontSize:'11px',color:'var(--muted)',fontFamily:'sans-serif',letterSpacing:'1px',marginBottom:'8px'}}>{showEn?'Share':'শেয়ার করুন'}</div>
         <div className="sh-row">
           <button className="sh-btn" onClick={()=>{navigator.clipboard.writeText(window.location.href);alert(showEn?'Copied!':'লিংক কপি!');}}>🔗 {showEn?'Copy':'কপি'}</button>
+          <button className="sh-btn" onClick={()=>window.open('https://wa.me/?text='+encodeURIComponent((showEn?a.titleEn:a.title)+' '+window.location.href))}>WhatsApp</button>
           <button className="sh-btn" onClick={()=>window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(showEn?a.titleEn:a.title))}>𝕏</button>
           <button className="sh-btn" onClick={()=>window.open('https://www.facebook.com/sharer/sharer.php?u='+window.location.href)}>Facebook</button>
           <button className="sh-btn" onClick={()=>window.print()}>🖨</button>
@@ -525,11 +596,14 @@ function Home({lang,openArticle,activeCat,setActiveCat,setPage}){
   return(
     <div className="fi" style={{width:'100%'}}>
       <MCats lang={lang} activeCat={activeCat} setActiveCat={setActiveCat} setPage={setPage}/>
+      <div style={{display:'block'}} className="m-search-wrap">
+        <MobileSearch lang={lang} openArticle={openArticle}/>
+      </div>
       <div className="s-head">
         <h2>{bn?'সর্বশেষ প্রকাশনা':'Latest Publications'}</h2>
         <span className="s-cnt">{bn?`${ARTICLES.filter(a=>a.showOnHome!==false).length}টি প্রবন্ধ`:`${ARTICLES.filter(a=>a.showOnHome!==false).length} Essays`}</span>
       </div>
-      {ARTICLES.filter(a=>a.showOnHome!==false).length===0?<Empty bn={bn}/>:ARTICLES.filter(a=>a.showOnHome!==false).map(a=><Card key={a.id} a={a} lang={lang} onClick={openArticle}/>)}
+      {ARTICLES.filter(a=>a.showOnHome!==false).length===0?<Empty bn={bn}/>:[...ARTICLES].filter(a=>a.showOnHome!==false).sort((a,b)=>(b.isoDate||'').localeCompare(a.isoDate||'')).map(a=><Card key={a.id} a={a} lang={lang} onClick={openArticle}/>)}
     </div>
   );
 }
@@ -540,17 +614,20 @@ function CatPage({catId,lang,openArticle,setActiveCat,setPage}){
   const [activeSub,setActiveSub]=useState(null);
   const hasSubs=cat?.subcats&&cat.subcats.length>0;
   const arts=hasSubs&&activeSub
-    ? ARTICLES.filter(a=>a.cat===catId&&a.subcat===activeSub)
-    : ARTICLES.filter(a=>a.cat===catId&&(!hasSubs||!a.subcat));
+    ? [...ARTICLES].filter(a=>a.cat===catId&&a.subcat===activeSub).sort((a,b)=>(b.isoDate||'').localeCompare(a.isoDate||''))
+    : [...ARTICLES].filter(a=>a.cat===catId&&(!hasSubs||!a.subcat)).sort((a,b)=>(b.isoDate||'').localeCompare(a.isoDate||''));
   return(
     <div className="fi" style={{width:'100%'}}>
       <MCats lang={lang} activeCat={catId} setActiveCat={setActiveCat} setPage={setPage}/>
+      <div className="m-search-wrap">
+        <MobileSearch lang={lang} openArticle={openArticle}/>
+      </div>
       <div className="c-head">
         {activeSub
           ? <><button className="back" style={{marginBottom:'10px'}} onClick={()=>setActiveSub(null)}>← {bn?'ফিরে যান':'Back'}</button>
               <h2>{bn?cat?.subcats.find(s=>s.id===activeSub)?.bn:cat?.subcats.find(s=>s.id===activeSub)?.en}</h2>
               <p style={{fontSize:'13px',color:'var(--muted)',fontStyle:'italic'}}>{bn?cat?.bn:cat?.en}</p></>
-          : <><h2>{bn?cat?.bn:cat?.en}</h2><p>{cat?.desc}</p></>
+          : <><h2>{bn?cat?.bn:cat?.en}</h2></>}
         }
       </div>
       {hasSubs&&!activeSub&&(
@@ -604,9 +681,7 @@ function Contact({lang}){
       <div className="pg">
         <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:'clamp(21px,5vw,27px)',marginBottom:'20px'}}>{bn?'যোগাযোগ':'Contact'}</h2>
         <div className="pg-body">
-          <p>📧 yourname@email.com</p>
-          <p>🔗 ORCID: 0000-0000-0000-0000</p>
-          <p>🎓 Google Scholar: {bn?'লিংক যোগ করুন':'Add your link'}</p>
+          <p>📧 kaziibnulhossain@gmail.com</p>
         </div>
       </div>
     </div>
@@ -673,9 +748,8 @@ function App(){
               ))}
             </div>
             <div>
-              <div className="f-sub">Links</div>
-              <span className="f-lnk">Google Scholar</span>
-              <span className="f-lnk">ResearchGate</span>
+              <div className="f-sub">{lang==='bn'?'যোগাযোগ':'Contact'}</div>
+              <span className="f-lnk">📧 kaziibnulhossain@gmail.com</span>
             </div>
           </div>
           <div className="f-bot">© ২০২৬ কাজী ইবনুল হোসেন &nbsp;·&nbsp; {lang==='bn'?'সর্বস্বত্ব সংরক্ষিত':'All Rights Reserved'}</div>
