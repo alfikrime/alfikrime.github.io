@@ -3357,7 +3357,7 @@
       "captionEn": ""
     },
     "date": "০৬ মে ২০২৬",
-    "dateEn": "06 May 2026",
+    "dateEn": "May 6, 2026",
     "abstract": "রাসেল বলেছেন ধর্মের উৎপত্তি ভয়ে — এই দাবিটি নিজেই Genetic Fallacy। একজন বড় যুক্তিবিদ নিজের মানদণ্ড নিজে ভাঙলেন কীভাবে — এবং উইলিয়াম জেমস ও Neurotheology কীভাবে সেই দাবিকে চ্যালেঞ্জ করে।",
     "abstractEn": "Russell claimed religion originates in fear — but this claim itself commits the Genetic Fallacy. How one of history's greatest logicians broke his own standards, and how William James and Neurotheology challenge his central premise.",
     "tags": [
@@ -3805,7 +3805,8 @@
       }
     ],
     "subcat": "russell",
-    "nextId": "russell-genetic-fallacy-2"
+    "nextId": "russell-genetic-fallacy-2",
+    "isoDate": "2026-05-06"
   },
   {
     "id": "russell-genetic-fallacy-2",
@@ -4096,6 +4097,7 @@
           }
         ]
       }
-    ]
+    ],
+    "isoDate": "2026-05-10"
   }
 ]
